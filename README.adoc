@@ -4,4 +4,6 @@ Comprehensive list of Amazon Web Service Products, with an ability to quickly lo
 
 Go to site: https://amazonoraws.com[amazonoraws.com]
 
+This repository hosts the source code for the above site.
+
 image::amazon-or-aws.png[amazonoraws.com]
