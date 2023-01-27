@@ -63,7 +63,7 @@ function filter() {
     const resultContainer = document.getElementById('filtered');
     resultContainer.innerHTML = "";
     setDisplay('filtered', 'none');
-    const display = results.filter(item => item.additionalFields.productName.includes(filterExpr))
+    const display = results.filter(item => item.additionalFields.productName.toLowerCase().includes(filterExpr.toLowerCase()))
       .reduce((acc, item) => acc + buildCard(item), '');    
     resultContainer.innerHTML = display;
     setDisplay('filtered', 'block');
