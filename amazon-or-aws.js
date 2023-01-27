@@ -1,9 +1,22 @@
+function buildDisplayObject(item, i) {
+  return {
+    index: i,
+    productName: item.additionalFields.productName,
+    productSummary: item.additionalFields.productSummary,
+    launchDate: item.additionalFields.launchDate,
+    productUrl: item.additionalFields.productUrl,
+    freeTierAvailability: item.additionalFields.freeTierAvailability,
+    productCategory: item.additionalFields.productCategory
+  }
+}
+
 function buildRow(item, i) {
-  const indexCell = '<th scope="row">' + i + '</th>';
-  const name = '<td>' + item.additionalFields.productName + '</td>';
-  const desc = '<td>' + item.additionalFields.productSummary + '</td>';
-  const launchDate = '<td>' + item.additionalFields.launchDate + '</td>';
-  const link = '<td><a href="' + item.additionalFields.productUrl + '">View</a></td>';
+  const display = buildDisplayObject(item, i);
+  const indexCell = '<th scope="row">' + display.index + '</th>';
+  const name = '<td>' + display.productName + '</td>';
+  const desc = '<td>' + display.productSummary + '</td>';
+  const launchDate = '<td>' + display.launchDate + '</td>';
+  const link = '<td><a href="' + display.productUrl + '">View</a></td>';
   return indexCell + name + desc + launchDate + link;
 }
 
@@ -28,28 +41,26 @@ function onload() {
 const results = onload();
 
 function buildCard(item) {
-  const name = item.additionalFields.productName;
-  const desc = item.additionalFields.productSummary;
-  const launchDate = item.additionalFields.launchDate;
-  const link = '<a href="' + item.additionalFields.productUrl + '">View</a>';
-  return '<article><h3>' + name + '</h3>' + '<p>' + desc + '</p>' 
-    + '<footer><small>' 
-    + 'Category: ' + item.additionalFields.productCategory 
-    + ' | Launch Date: ' + launchDate 
-    + ' | View Details: ' + link 
-    + '</small></footer></article>';
+  const display = buildDisplayObject(item, 0);
+  const link = '<a href="' + display.productUrl + '">View Details</a>';
+  const freeTier = '<p>' + display.freeTierAvailability + '</p>';
+  return '<article><h3>' + display.productName + '</h3>' 
+    + '<p>' + display.productSummary + '</p>' 
+    + '<p>Category: ' + display.productCategory + '</p>' 
+    + '<p>Launch Date: ' + display.launchDate + '</p>' 
+    + '<footer><small>' + freeTier + link + '</small></footer></article>';
 }
 
 function setDisplay(id, value) {
   const loading = document.getElementById(id);
   if (loading) {
-      loading.style.display = value;
+    loading.style.display = value;
   }
 }
 
 function filter() {
   const filterExpr = document.getElementById('search').value.trim();
-  if (filterExpr && filterExpr.length >= 3 && results) {
+  if (filterExpr && filterExpr.length >= 2 && results) {
     const resultContainer = document.getElementById('filtered');
     resultContainer.innerHTML = "";
     setDisplay('filtered', 'none');
