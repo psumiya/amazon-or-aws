@@ -48,7 +48,7 @@ function filter() {
     const resultContainer = document.getElementById('filtered');
     resultContainer.innerHTML = "";
     results.forEach(function (item, index) {
-      if (item.productName.includes(filterExpr)) {
+      if (item.additionalFields.productName.includes(filterExpr)) {
         const card = buildCard(item);
         resultContainer.innerHTML = card;
         console.log('event=added-filter-result');
