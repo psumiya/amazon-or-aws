@@ -5,3 +5,5 @@ Comprehensive list of Amazon Web Service Products, with an ability to quickly lo
 Go to site: https://amazonoraws.com[amazonoraws.com]
 
 image::amazon-or-aws.png[amazonoraws.com]
+
+link:amazon-or-aws.mov[View Screen Recording]
