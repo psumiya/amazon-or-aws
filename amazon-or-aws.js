@@ -32,28 +32,34 @@ function buildCard(item) {
   const desc = item.additionalFields.productSummary;
   const launchDate = item.additionalFields.launchDate;
   const link = '<a href="' + item.additionalFields.productUrl + '">View</a>';
-  return '<h3>' + name + '</h3>' + '<p>' + desc + '</p>' 
+  return '<article><h3>' + name + '</h3>' + '<p>' + desc + '</p>' 
     + '<footer><small>' 
     + 'Category: ' + item.additionalFields.productCategory 
     + ' | Launch Date: ' + launchDate 
-    + ' | Link: ' + link 
-    + '</small></footer>';
+    + ' | View Details: ' + link 
+    + '</small></footer></article>';
+}
+
+function setDisplay(id, value) {
+  const loading = document.getElementById(id);
+  if (loading) {
+      loading.style.display = value;
+  }
 }
 
 function filter() {
-  console.log('event=filter-triggered');
   const filterExpr = document.getElementById('search').value.trim();
   if (filterExpr && filterExpr.length >= 3 && results) {
-    console.log('event=begin-filter');
     const resultContainer = document.getElementById('filtered');
     resultContainer.innerHTML = "";
+    setDisplay('filtered', 'none');
+    var display = "";
     results.forEach(function (item, index) {
       if (item.additionalFields.productName.includes(filterExpr)) {
-        const card = buildCard(item);
-        resultContainer.innerHTML = card;
-        console.log('event=added-filter-result');
+        display = display + buildCard(item);
       }      
     });
-    console.log('event=end-filter');
+    resultContainer.innerHTML = display;
+    setDisplay('filtered', 'block');
   }
 }
