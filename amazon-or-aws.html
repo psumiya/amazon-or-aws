@@ -19,8 +19,8 @@
     <section id="heading">
       <hgroup>
         <h1>Amazon or AWS?</h1>
-        <h2>Find whether the name of a service offered by Amazon Web Services is prefixed with Amazon or
-          AWS.</h2>
+        <h2>Find whether the name of a service offered by Amazon Web Services is prefixed with Amazon or AWS.
+        </h2>
       </hgroup>
     </section>
 
@@ -28,11 +28,11 @@
       <input type="search" id="search" name="search" placeholder="Service Name" onkeyup="filter()">
     </section>
 
-    <section id="filtered" style="display: none;">      
-    </section>    
+    <section id="filtered" style="display: none;">
+    </section>
 
     <details id="result">
-      <summary>Products</summary>
+      <summary>All Products</summary>
       <figure>
         <table role="grid" id="resultTable">
           <thead>
@@ -44,7 +44,7 @@
               <th scope="col">Link</th>
             </tr>
           </thead>
-          <tbody>            
+          <tbody>
           </tbody>
         </table>
       </figure>
@@ -54,16 +54,23 @@
 
   <footer class="container">
     <small>
-      <p>Built by Sumiya | <a href="https://github.com/psumiya/amazon-or-aws">GitHub</a></p>
-    </small>      
-      <details>
-        <summary><small>Disclaimer: Not affiliated with either Amazon or AWS.</small></summary>
+      <p>Built by Sumiya |
+        <a href="https://github.com/psumiya/amazon-or-aws">GitHub</a>
+      </p>
+    </small>
+    <details>
+      <summary>
+        <small>Disclaimer: Not affiliated with either Amazon or AWS.</small>
+      </summary>
+      <small>
         <p>
-          Data for this page has been scraped from AWS Cloud Products Website.
-          | <a href="https://aws.amazon.com/products/?aws-products-all.sort-by=item.additionalFields.launchDate&aws-products-all.sort-order=asc&awsf.re%3AInvent=event-year%23aws-reinvent-2021&awsf.Free%20Tier%20Type=*all&awsf.tech-category=*all">AWS Cloud Products</a>
-          | <a href="https://aws.amazon.com/api/dirs/items/search?item.directoryId=aws-products&sort_by=item.additionalFields.launchDate&sort_order=asc&size=500&item.locale=en_US&tags.id=aws-products%23type%23service&tags.id=!aws-products%23type%23variant">Data Source</a>
+          Data for this page has been scraped from AWS Cloud Products Website. |
+          <a href="https://aws.amazon.com/products/?aws-products-all.sort-by=item.additionalFields.launchDate&aws-products-all.sort-order=asc&awsf.re%3AInvent=event-year%23aws-reinvent-2021&awsf.Free%20Tier%20Type=*all&awsf.tech-category=*all">AWS Cloud Products</a>
+          |
+          <a href="https://aws.amazon.com/api/dirs/items/search?item.directoryId=aws-products&sort_by=item.additionalFields.launchDate&sort_order=asc&size=500&item.locale=en_US&tags.id=aws-products%23type%23service&tags.id=!aws-products%23type%23variant">Data Source</a>
         </p>
-      </details>    
+      </small>
+    </details>
   </footer>
 
   <script src="amazon-or-aws.js"></script>
