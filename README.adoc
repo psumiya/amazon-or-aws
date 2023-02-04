@@ -7,3 +7,7 @@ Go to site: https://amazonoraws.com[amazonoraws.com]
 This repository hosts the source code for the above site.
 
 image::amazon-or-aws.png[amazonoraws.com]
+
+video::amazon-or-aws.gif[amazonoraws.com]
+
+video::amazon-or-aws.mov[amazonoraws.com]
