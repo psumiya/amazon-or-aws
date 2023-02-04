@@ -6,6 +6,4 @@ Go to site: https://amazonoraws.com[amazonoraws.com]
 
 This repository hosts the source code for the above site.
 
-image::amazon-or-aws.png[amazonoraws.com]
-
-![amazonoraws.com](amazon-or-aws.gif)
+image:amazon-or-aws.gif[amazonoraws.com]
