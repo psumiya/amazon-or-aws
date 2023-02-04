@@ -2,8 +2,10 @@
 
 Comprehensive list of Amazon Web Service Products, with an ability to quickly lookup if a service name begins with Amazon or AWS.
 
+== Preview
+
+image:amazon-or-aws.gif[amazonoraws.com]
+
 Go to site: https://amazonoraws.com[amazonoraws.com]
 
 This repository hosts the source code for the above site.
-
-image:amazon-or-aws.gif[amazonoraws.com]
