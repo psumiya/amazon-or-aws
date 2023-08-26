@@ -57,9 +57,12 @@ function onload() {
 
 const results = onload();
 
+var mutated = false;
+
 function filter() {
   const filterExpr = document.getElementById('search').value.trim();
   if (filterExpr && filterExpr.length >= 2 && results) {
+    mutated = true;
     const resultContainer = document.getElementById('filtered');
     resultContainer.innerHTML = "";
     setDisplay('filtered', 'none');
@@ -67,5 +70,9 @@ function filter() {
       .reduce((acc, item) => acc + buildCard(item), '');    
     resultContainer.innerHTML = display;
     setDisplay('filtered', 'block');
+  } else if (mutated === true) {
+    const resultContainer = document.getElementById('filtered');
+    resultContainer.innerHTML = "";
+    setDisplay('filtered', 'none');
   }
 }
