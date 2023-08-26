@@ -27,14 +27,17 @@
     </section>
 
     <section id="input">
-      <input type="search" id="search" name="search" placeholder="Service Name" onkeyup="filter()">
+      <input type="search" id="search" name="search" placeholder="Enter a Service Name, for example, SQS" onkeyup="filter()">
     </section>
 
     <section id="filtered" style="display: none;">
     </section>
 
+    <section>
+      <canvas id="launches"></canvas>
+    </section>
     <details id="result">
-      <summary>All Products</summary>
+      <summary>View All Products</summary>
       <figure>
         <table role="grid" id="resultTable">
           <thead>
@@ -58,6 +61,7 @@
     <small>
       <p>Built by <a href="https://github.com/psumiya">Sumiya</a>
         | Styled with <a href="https://picocss.com">picocss</a>
+        | Charting with <a href="https://www.chartjs.org/">chartjs</a>
         | <a href="https://github.com/psumiya/amazon-or-aws">GitHub</a>
         | Last Updated: August-25-2023
       </p>
@@ -77,6 +81,7 @@
     </details>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="amazon-or-aws.js" defer></script>
 
 </body>

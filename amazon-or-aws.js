@@ -37,6 +37,44 @@ function setDisplay(id, value) {
   }
 }
 
+function groupByYear(products) {
+    const years = new Map();
+    products.forEach(item => {
+        if (item.additionalFields.launchDate) {
+            const year = Number(item.additionalFields.launchDate.substring(0, 4));
+            if (years.has(year)) {
+                var count = years.get(year);
+                var newCount = count + 1;
+                years.set(year, newCount);
+            } else {
+                years.set(year, 0);
+            }
+        }
+    });
+
+    return Array.from(years, ([name, value]) => ({ "year": name, "count": value }));
+}
+
+function drawLaunchCountByYear(products) {
+  const launchesByYear = groupByYear(results);
+
+  new Chart(
+      document.getElementById('launches'),
+      {
+        type: 'bar',
+        data: {
+          labels: launchesByYear.map(row => row.year),
+          datasets: [
+            {
+              label: 'Launch Count by Year',
+              data: launchesByYear.map(row => row.count)
+            }
+          ]
+        }
+      }
+  );
+}
+
 function onload() {
   const results = [];
   fetch('service-list.json')
@@ -51,6 +89,7 @@ function onload() {
           newRow.innerHTML = buildRow(item, index + 1);
         }
       });
+      drawLaunchCountByYear(results);
     });
   return results;
 }
