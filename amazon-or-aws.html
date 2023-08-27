@@ -33,27 +33,62 @@
     <section id="filtered" style="display: none;">
     </section>
 
-    <section>
-      <canvas id="launches"></canvas>
+    <section id="charts">
+      <article id="launchChart">
+        <hgroup>
+          <h2>Product Launch Count By Year</h2>
+          <h3>Count of products launched every year since inception</h3>
+        </hgroup>
+        <canvas id="launches"></canvas>
+      </article>
+      <article id="categoriesChart">
+        <hgroup>
+          <h2>Product Categories Count</h2>
+          <h3>Count of products by category</h3>
+        </hgroup>
+        <canvas id="productCategories"></canvas>
+        <footer>
+          <h4>View Products By Category</h4>
+          <details id="categoryDetails">
+            <summary>Click to Expand</summary>
+            <figure>
+              <table role="grid" id="categoriesTable">
+                <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Category</th>
+                  <th scope="col">Products</th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+            </figure>
+          </details>
+        </footer>
+      </article>
     </section>
-    <details id="result">
-      <summary>View All Products</summary>
-      <figure>
-        <table role="grid" id="resultTable">
-          <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">Name</th>
-              <th scope="col">Description</th>
-              <th scope="col">Launch Date</th>
-              <th scope="col">Link</th>
-            </tr>
-          </thead>
-          <tbody>
-          </tbody>
-        </table>
-      </figure>
-    </details>
+    <article>
+      <h3>View All Products</h3>
+      <details id="result">
+        <summary>Click to Expand</summary>
+        <figure>
+          <table role="grid" id="resultTable">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th>
+                <th scope="col">Launch Date</th>
+                <th scope="col">Link</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </figure>
+      </details>
+    </article>
 
   </main>
 
