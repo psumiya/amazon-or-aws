@@ -47,12 +47,65 @@ function groupByYear(products) {
                 var newCount = count + 1;
                 years.set(year, newCount);
             } else {
-                years.set(year, 0);
+                years.set(year, 1);
             }
         }
     });
 
     return Array.from(years, ([name, value]) => ({ "year": name, "count": value }));
+}
+
+function groupByCategory(products) {
+    var categories = new Map();
+    products.forEach(item => {
+        if (item.additionalFields.productCategory) {
+            const category = item.additionalFields.productCategory.trim();
+            if (categories.has(category)) {
+                var count = categories.get(category);
+                var newCount = count + 1;
+                categories.set(category, newCount);
+            } else {
+                categories.set(category, 1);
+            }
+        }
+    });
+    categories = new Map([...categories.entries()].sort());
+    return Array.from(categories, ([name, value]) => ({ "category": name, "count": value }));
+}
+
+function getProductsByCategoryMap(products) {
+    const productCategories = new Map();
+    products.forEach(item => {
+        if (item.additionalFields.productCategory) {
+            const category = item.additionalFields.productCategory.trim();
+            if (productCategories.has(category)) {
+                const productList = productCategories.get(category);
+                productList.push(item.additionalFields.productName);
+                productCategories.set(category, productList);
+            } else {
+                const productList = [];
+                productList.push(item.additionalFields.productName);
+                productCategories.set(category, productList);
+            }
+        }
+    });
+    return productCategories;
+}
+
+function buildCategoryDisplayObject(key, value, i) {
+  return {
+    index: i,
+    productNames: value,
+    productCategory: key
+  }
+}
+
+function buildCategoryRow(key, value, i) {
+  const display = buildCategoryDisplayObject(key, value, i);
+  const indexCell = '<th scope="row">' + display.index + '</th>';
+  const productCategory = '<td>' + display.productCategory + '</td>';
+  const productNames = '<td>' + display.productNames + '</td>';
+  return indexCell + productCategory + productNames;
 }
 
 function drawLaunchCountByYear(products) {
@@ -61,13 +114,44 @@ function drawLaunchCountByYear(products) {
   new Chart(
       document.getElementById('launches'),
       {
-        type: 'bar',
+        type: 'line',
         data: {
           labels: launchesByYear.map(row => row.year),
           datasets: [
             {
               label: 'Launch Count by Year',
               data: launchesByYear.map(row => row.count)
+            }
+          ]
+        }
+      }
+  );
+}
+
+function drawProductCountByCategory(products) {
+  const countByCategory = groupByCategory(results);
+
+  var productsInCategory = getProductsByCategoryMap(results);
+  productsInCategory = new Map([...productsInCategory.entries()].sort());
+  var i = 0;
+  productsInCategory.forEach((value, key, map) => {
+    i++;
+    console.log(`m[${key}] = ${value}`);
+    const tbodyRef = document.getElementById('categoriesTable').getElementsByTagName('tbody')[0];
+    const newRow = tbodyRef.insertRow(tbodyRef.rows.length);
+    newRow.innerHTML = buildCategoryRow(key, value, i);
+  });
+
+  new Chart(
+      document.getElementById('productCategories'),
+      {
+        type: 'polarArea',
+        data: {
+          labels: countByCategory.map(row => row.category),
+          datasets: [
+            {
+              label: 'Products',
+              data: countByCategory.map(row => row.count)
             }
           ]
         }
@@ -90,6 +174,7 @@ function onload() {
         }
       });
       drawLaunchCountByYear(results);
+      drawProductCountByCategory(results);
     });
   return results;
 }

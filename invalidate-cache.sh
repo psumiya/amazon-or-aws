@@ -8,14 +8,10 @@ echo ""
 
 aws cloudfront create-invalidation \
 --distribution-id $DISTRIBUTION_ID \
---paths '/amazon-or-aws.*'
+--paths '/amazon-or-aws.*' '/service-list.json'
 
 echo ""
-echo "To view status of invalidation, export id from response above as INVALIDATION_ID."
+echo "To view status of invalidation, use id from response above and replace at <ID>, then run below command."
 echo ""
-echo "For example: export INVALIDATION_ID=I6OGGTXC3RBWFN1DZNXQQH8F6Y"
-echo ""
-echo "Then run the following command:"
-echo ""
-echo "aws cloudfront get-invalidation --id $INVALIDATION_ID --distribution-id $DISTRIBUTION_ID"
+echo "aws cloudfront get-invalidation  --distribution-id $DISTRIBUTION_ID --id <ID>"
 echo ""
