@@ -93,9 +93,10 @@ function getProductsByCategoryMap(products) {
 }
 
 function buildCategoryDisplayObject(key, value, i) {
+  const productNames = value.join(', ');
   return {
     index: i,
-    productNames: value,
+    productNames: productNames,
     productCategory: key
   }
 }
