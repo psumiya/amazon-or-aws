@@ -5,7 +5,8 @@ aws s3 sync . s3://$S3_BUCKET --dryrun \
 --include 'amazon-or-aws.html' \
 --include 'service-list.json' \
 --include 'amazon-or-aws.js' \
---include 'amazon-or-aws.css'
+--include 'amazon-or-aws.css' \
+--include 'archive-*'
 
 read -p "Continue with deployment? " -n 1 -r
 echo
@@ -18,5 +19,6 @@ then
   --include 'amazon-or-aws.html' \
   --include 'service-list.json' \
   --include 'amazon-or-aws.js' \
-  --include 'amazon-or-aws.css'
+  --include 'amazon-or-aws.css' \
+  --include 'archive-*'
 fi
