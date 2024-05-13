@@ -1,4 +1,5 @@
 function buildDisplayObject(item, i) {
+  const launchDate = (item.additionalFields.launchDate) ? item.additionalFields.launchDate : "Unknown";
   return {
     index: i,
     productName: item.additionalFields.productName,
