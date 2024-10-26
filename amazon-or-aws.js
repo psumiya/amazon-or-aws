@@ -192,8 +192,19 @@ function filter() {
     const resultContainer = document.getElementById('filtered');
     resultContainer.innerHTML = "";
     setDisplay('filtered', 'none');
-    const display = results.filter(item => item.additionalFields.productName.toLowerCase().includes(filterExpr.toLowerCase()))
-      .reduce((acc, item) => acc + buildCard(item), '');    
+    const displayArr = [];
+    for (const item of results) {
+        const productName = item.additionalFields.productName;
+        const productCategory = item.additionalFields.productCategory;
+        const launchDate = item.additionalFields.launchDate;
+        if (productName && productName.toLowerCase().includes(filterExpr.toLowerCase())
+            || (productCategory && productCategory.toLowerCase().includes(filterExpr.toLowerCase()))
+            || (launchDate && launchDate.toLowerCase().includes(filterExpr.toLowerCase()))
+        ) {
+            displayArr.push(item);
+        }
+    }
+    const display = displayArr.reduce((acc, item) => acc + buildCard(item), '');
     resultContainer.innerHTML = display;
     setDisplay('filtered', 'block');
   } else if (mutated === true) {
