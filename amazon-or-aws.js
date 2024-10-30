@@ -138,7 +138,6 @@ function drawProductCountByCategory(products) {
   var i = 0;
   productsInCategory.forEach((value, key, map) => {
     i++;
-    console.log(`m[${key}] = ${value}`);
     const tbodyRef = document.getElementById('categoriesTable').getElementsByTagName('tbody')[0];
     const newRow = tbodyRef.insertRow(tbodyRef.rows.length);
     newRow.innerHTML = buildCategoryRow(key, value, i);

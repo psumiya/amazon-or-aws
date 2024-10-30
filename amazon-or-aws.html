@@ -12,12 +12,12 @@
   <link rel="icon" type="image/png" sizes="32x32" href="https://sumiya.page/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="https://sumiya.page/favicon-16x16.png">
   <link rel="manifest" href="site.webmanifest">
-  <link rel="stylesheet" href="https://sumiya.page/assets/css/picocss/pico.min.css">
+  <link rel="stylesheet" href="https://sumiya.page/assets/css/picocss/pico.sand.min.css">
 </head>
 
-<body>
+<body class="container">
 
-  <main class="container">
+  <main>
     <section id="heading">
       <hgroup>
         <h1>Amazon or AWS?</h1>
@@ -93,6 +93,30 @@
 
   </main>
 
+  <hr />
+  <main>
+    <header>
+      <hgroup>
+        <h1>Recent Posts about AWS</h1>
+        <p>Aggregated Feed about AWS from across the Web.</p>
+      </hgroup>
+    </header>
+    <div class="grid">
+      <div>
+          <h3><a href="https://aws.amazon.com/blogs/aws/">AWS News (sourced from official AWS Blog)</a></h3>
+        <section id="aws_feed"></section>
+      </div>
+      <div>
+        <h3><a href="https://www.lastweekinaws.com/">Last Week In AWS (sourced from Last Week in AWS)</a></h3>
+        <section id="last_week_in_aws_feed"></section>
+      </div>
+      <div>
+        <h3><a href="https://aws.amazon.com/blogs/architecture/">AWS Architecture (sourced from official AWS Architecture Blog)</a></h3>
+        <section id="aws_architecture_feed"></section>
+      </div>
+    </div>
+  </main>
+
   <footer class="container">
     <small>
       <p>Built by <a href="https://github.com/psumiya">Sumiya</a>
@@ -119,6 +143,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="amazon-or-aws.js" defer></script>
+  <script src="aws-rss-reader.js" defer></script>
 
 </body>
 
