@@ -162,7 +162,7 @@ function drawProductCountByCategory(products) {
 
 function onload() {
   const results = [];
-  fetch('service-list.json')
+  fetch('service-list-latest.json')
     .then((response) => response.json())
     .then((data) => {          
       const tbodyRef = document.getElementById('resultTable').getElementsByTagName('tbody')[0];
