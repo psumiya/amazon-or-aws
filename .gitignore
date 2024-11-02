@@ -3,6 +3,4 @@
 deploy.sh
 invalidate-cache.sh
 /service-list-latest.json
-/aws-architecture-feed-latest.rss
-/aws-feed-latest.rss
-/last-week-in-aws-latest.rss
+/*.rss

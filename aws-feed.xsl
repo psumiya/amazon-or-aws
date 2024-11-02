@@ -10,22 +10,25 @@
     <xsl:template match="item">
         <article id="article">
             <xsl:if test="title">
-                <h4>
+                <b>
                     <xsl:value-of select="title"/>
-                </h4>
-            </xsl:if>
-            <xsl:if test="link">
-                <a class="item-link">
-                    <xsl:attribute name="href">
-                        <xsl:value-of select="link"/>
-                    </xsl:attribute>
-                    Read more
-                </a>
+                </b>
             </xsl:if>
 
             <xsl:if test="description">
                 <div>
                     <xsl:value-of select="description" disable-output-escaping="yes"/>
+                </div>
+            </xsl:if>
+
+            <xsl:if test="link">
+                <div>
+                    <a class="item-link">
+                        <xsl:attribute name="href">
+                            <xsl:value-of select="link"/>
+                        </xsl:attribute>
+                        Read more
+                    </a>
                 </div>
             </xsl:if>
 
