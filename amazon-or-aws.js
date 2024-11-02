@@ -1,3 +1,6 @@
+// Globals
+const parser = new window.DOMParser();
+
 function buildDisplayObject(item, i) {
   const launchDate = (item.additionalFields.launchDate) ? item.additionalFields.launchDate : "Unknown";
   return {
@@ -212,3 +215,65 @@ function filter() {
     setDisplay('filtered', 'none');
   }
 }
+
+const fetchTextResponse = (response) => {
+    if (!response.ok) {
+        throw new Error(`Failed to fetch: ${response.status} ${response.statusText}`);
+    }
+    return response.text();
+}
+
+const getXmlResponse = async (url) => {
+    const response = await fetchTextResponse(await fetch(url));
+    return parser.parseFromString(response, "text/xml");
+}
+
+const getXsltProcessor = async () => {
+    const xsl = await getXmlResponse("aws-feed.xsl");
+    const xsltProcessor = new XSLTProcessor();
+    xsltProcessor.importStylesheet(xsl);
+    return xsltProcessor;
+}
+
+const loadFeed = async (resultDocument, htmlId) => {
+    if (resultDocument) {
+        const container = document.getElementById(htmlId);
+        if (container) {
+            container.appendChild(resultDocument);
+        } else {
+            console.error(`Container element with id "${htmlId}" not found`);
+        }
+    } else {
+        console.error('XSLT transformation failed to produce a result.');
+    }
+}
+
+const feedSourceMap = new Map();
+feedSourceMap.set("aws_feed", "aws-feed-latest.rss");
+feedSourceMap.set("last_week_in_aws_feed", "last-week-in-aws-latest.rss");
+feedSourceMap.set("aws_architecture_feed", "aws-architecture-feed-latest.rss");
+
+async function loadAllRssFeeds() {
+    try {
+        // Parallel Fetch All Feeds
+        const xsltProcessor = await getXsltProcessor();
+        const requests = [];
+        const [awsBlogFeed, lastWeekInAwsFeed, awsArchitectureFeed] = await Promise.all([
+            getXmlResponse(feedSourceMap.get("aws_feed")),
+            getXmlResponse(feedSourceMap.get("last_week_in_aws_feed")),
+            getXmlResponse(feedSourceMap.get("aws_architecture_feed"))
+        ]);
+        // Render Feeds
+        const feedDestinationMap = new Map();
+        feedDestinationMap.set("aws_feed", awsBlogFeed);
+        feedDestinationMap.set("last_week_in_aws_feed", lastWeekInAwsFeed);
+        feedDestinationMap.set("aws_architecture_feed", awsArchitectureFeed);
+        for (const [destination, content] of feedDestinationMap) {
+            loadFeed(xsltProcessor.transformToFragment(content, document), destination);
+        }
+    } catch (error) {
+        console.error('Error processing RSS feed:', error);
+    }
+}
+
+loadAllRssFeeds();
