@@ -228,8 +228,15 @@ const getXmlResponse = async (url) => {
     return parser.parseFromString(response, "text/xml");
 }
 
-const getXsltProcessor = async () => {
-    const xsl = await getXmlResponse("aws-feed.xsl");
+const getRssProcessor = async () => {
+    const xsl = await getXmlResponse("rss-feed.xsl");
+    const xsltProcessor = new XSLTProcessor();
+    xsltProcessor.importStylesheet(xsl);
+    return xsltProcessor;
+}
+
+const getAtomProcessor = async () => {
+    const xsl = await getXmlResponse("atom-feed.xsl");
     const xsltProcessor = new XSLTProcessor();
     xsltProcessor.importStylesheet(xsl);
     return xsltProcessor;
@@ -248,35 +255,52 @@ const loadFeed = async (resultDocument, htmlId) => {
     }
 }
 
-const feedSourceMap = new Map();
-feedSourceMap.set("aws_feed", "aws-feed-latest.rss");
-feedSourceMap.set("last_week_in_aws_feed", "last-week-in-aws-latest.rss");
-feedSourceMap.set("aws_architecture_feed", "aws-architecture-feed-latest.rss");
-feedSourceMap.set("aws_community_feed", "aws-community-latest.rss");
+const AWS_FEED_HTML_ID = "aws_feed";
+const LAST_WEEK_IN_AWS_HTML_ID = "last_week_in_aws_feed";
+const AWS_ARCHITECTURE_HTML_ID = "aws_architecture_feed";
+const AWS_COMMUNITY_HTML_ID = "aws_community_feed";
 
-async function loadAllRssFeeds() {
+const feedSourceMap = new Map();
+feedSourceMap.set(AWS_FEED_HTML_ID, "aws-feed-latest.rss");
+feedSourceMap.set(LAST_WEEK_IN_AWS_HTML_ID, "last-week-in-aws-latest.rss");
+feedSourceMap.set(AWS_ARCHITECTURE_HTML_ID, "aws-architecture-feed-latest.rss");
+feedSourceMap.set(AWS_COMMUNITY_HTML_ID, "aws-community-latest.rss");
+
+class Feed {
+  constructor(htmlId, content, processor) {
+    this.htmlId = htmlId;
+    this.content = content;
+    this.processor = processor;
+  }
+}
+
+async function loadAllFeeds() {
     try {
+        // Parallel Fetch All Processors
+        const [rssProcessor, atomProcessor] = await Promise.all([
+            getRssProcessor(),
+            getAtomProcessor()
+        ]);
         // Parallel Fetch All Feeds
-        const xsltProcessor = await getXsltProcessor();
-        const requests = [];
         const [awsBlogFeed, lastWeekInAwsFeed, awsArchitectureFeed, awsCommunityFeed] = await Promise.all([
-            getXmlResponse(feedSourceMap.get("aws_feed")),
-            getXmlResponse(feedSourceMap.get("last_week_in_aws_feed")),
-            getXmlResponse(feedSourceMap.get("aws_architecture_feed")),
-            getXmlResponse(feedSourceMap.get("aws_community_feed"))
+            getXmlResponse(feedSourceMap.get(AWS_FEED_HTML_ID)),
+            getXmlResponse(feedSourceMap.get(LAST_WEEK_IN_AWS_HTML_ID)),
+            getXmlResponse(feedSourceMap.get(AWS_ARCHITECTURE_HTML_ID)),
+            getXmlResponse(feedSourceMap.get(AWS_COMMUNITY_HTML_ID))
         ]);
         // Render Feeds
-        const feedDestinationMap = new Map();
-        feedDestinationMap.set("aws_feed", awsBlogFeed);
-        feedDestinationMap.set("last_week_in_aws_feed", lastWeekInAwsFeed);
-        feedDestinationMap.set("aws_architecture_feed", awsArchitectureFeed);
-        feedDestinationMap.set("aws_community_feed", awsCommunityFeed);
-        for (const [destination, content] of feedDestinationMap) {
-            loadFeed(xsltProcessor.transformToFragment(content, document), destination);
+        const feedDestinationSet = new Set([
+            new Feed(AWS_FEED_HTML_ID, awsBlogFeed, rssProcessor),
+            new Feed(LAST_WEEK_IN_AWS_HTML_ID, lastWeekInAwsFeed, rssProcessor),
+            new Feed(AWS_ARCHITECTURE_HTML_ID, awsArchitectureFeed, rssProcessor),
+            new Feed(AWS_COMMUNITY_HTML_ID, awsCommunityFeed, atomProcessor)
+        ]);
+        for (const feed of feedDestinationSet) {
+            loadFeed(feed.processor.transformToFragment(feed.content, document), feed.htmlId);
         }
     } catch (error) {
         console.error('Error processing RSS feed:', error);
     }
 }
 
-loadAllRssFeeds();
+loadAllFeeds();

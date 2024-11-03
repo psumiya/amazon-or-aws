@@ -23,7 +23,7 @@
 
             <xsl:if test="link">
                 <div>
-                    <a class="item-link">
+                    <a>
                         <xsl:attribute name="href">
                             <xsl:value-of select="link"/>
                         </xsl:attribute>
