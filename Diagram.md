@@ -54,8 +54,8 @@ flowchart
             DIV[HTML DIV Container]
         end
 
-        Browser -->|1. Fetch Feed Data| S3
-        S3[(AWS S3 Bucket)] -->|2. Feed Data| Browser
+        Browser -->|1. Fetch Feed Data| S3[(AWS S3 Bucket)]
+        S3 -->|2. Feed Data| Browser
         Browser -->|3. Transform| XSLT
         XSLT -->|4. Rendered HTML| DIV
     end
