@@ -28,52 +28,55 @@
     </section>
 
     <section id="input">
-      <input type="search" id="search" name="search" placeholder="Enter a Service Name, for example, SQS" onkeyup="filter()">
+      <input type="search" id="search" name="search" placeholder="Lookup a Service Name, for example, SQS" onkeyup="filter()">
     </section>
 
     <section id="filtered" style="display: none;">
     </section>
 
     <section id="charts">
-      <article id="launchChart">
-        <hgroup>
-          <h2>Product Launch Count By Year</h2>
-          <h3>Count of products launched every year since inception</h3>
-        </hgroup>
-        <canvas id="launches"></canvas>
-      </article>
-      <article id="categoriesChart">
-        <hgroup>
-          <h2>Product Categories Count</h2>
-          <h3>Count of products by category</h3>
-        </hgroup>
-        <canvas id="productCategories"></canvas>
-        <footer>
-          <h4>View Products By Category</h4>
-          <details id="categoryDetails">
-            <summary>Click to Expand/Collapse</summary>
-            <figure>
-              <table role="grid" id="categoriesTable">
-                <thead>
-                <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">Category</th>
-                  <th scope="col">Products</th>
-                </tr>
-                </thead>
-                <tbody>
-                </tbody>
-              </table>
-            </figure>
-          </details>
-        </footer>
-      </article>
+      <div class="grid">
+        <article id="launchChart">
+          <hgroup>
+            <h2>Product Launch Count By Year</h2>
+            <h3>Count of products launched every year since inception</h3>
+          </hgroup>
+          <canvas id="launches"></canvas>
+        </article>
+        <article id="categoriesChart">
+          <hgroup>
+            <h2>Product Categories Count</h2>
+            <h3>Count of products by category</h3>
+          </hgroup>
+          <canvas id="productCategories"></canvas>
+          <footer>
+            <h4>View Products By Category</h4>
+            <details id="categoryDetails">
+              <summary>Click to Expand/Collapse</summary>
+              <figure>
+                <table role="grid" id="categoriesTable">
+                  <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Category</th>
+                    <th scope="col">Products</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  </tbody>
+                </table>
+              </figure>
+            </details>
+          </footer>
+        </article>
+      </div>
     </section>
+
     <article>
       <h3>View All Products</h3>
       <details id="result">
         <summary>Click to Expand/Collapse</summary>
-        <figure>
+        <figure class="overflow-auto">
           <table role="grid" id="resultTable">
             <thead>
               <tr>
@@ -111,14 +114,14 @@
     <div class="grid">
       <article>
         <h4><a href="https://www.lastweekinaws.com/">Last Week In AWS</a></h4>
-        <details>
+        <details open>
           <summary>Click to Expand/Collapse</summary>
           <section id="last_week_in_aws_feed"></section>
         </details>
       </article>
       <article>
         <h4><a href="https://community.aws/">AWS Community</a></h4>
-        <details>
+        <details open>
           <summary>Click to Expand/Collapse</summary>
           <section id="aws_community_feed"></section>
         </details>
@@ -126,7 +129,7 @@
     </div>
     <article>
       <h4><a href="https://aws.amazon.com/blogs/architecture/">AWS Architecture</a></h4>
-      <details>
+      <details open>
         <summary>Click to Expand/Collapse</summary>
         <section id="aws_architecture_feed"></section>
       </details>
