@@ -28,7 +28,7 @@
     </section>
 
     <section id="input">
-      <input type="search" id="search" name="search" placeholder="Lookup a Service Name, for example, SQS" onkeyup="filter()">
+      <label for="search"></label><input type="search" id="search" name="search" placeholder="Lookup a Service Name, for example, SQS" onkeyup="filter()">
     </section>
 
     <section id="filtered" style="display: none;">
@@ -104,43 +104,50 @@
         <p>Aggregated Feed about AWS from across the Web.</p>
       </hgroup>
     </header>
-    <article>
-      <h4><a href="https://aws.amazon.com/new/">What's New with AWS?</a></h4>
-      <details open>
-        <summary>Click to Expand/Collapse</summary>
-        <section id="aws_whats_new"></section>
-      </details>
-    </article>
-    <article>
-      <h4><a href="https://aws.amazon.com/blogs/aws/">AWS Blog</a></h4>
-      <details open>
-        <summary>Click to Expand/Collapse</summary>
-        <section id="aws_feed"></section>
-      </details>
-    </article>
-    <div class="grid">
-      <article>
-        <h4><a href="https://www.lastweekinaws.com/">Last Week In AWS</a></h4>
-        <details open>
-          <summary>Click to Expand/Collapse</summary>
-          <section id="last_week_in_aws_feed"></section>
-        </details>
-      </article>
-      <article>
-        <h4><a href="https://community.aws/">AWS Community</a></h4>
-        <details open>
-          <summary>Click to Expand/Collapse</summary>
-          <section id="aws_community_feed"></section>
-        </details>
-      </article>
+    <div role="group">
+      <button class="contrast" id="feed-view-by-timeline" onclick="showTimelineView();">Timeline View</button>
+      <button id="feed-view-by-source" onclick="showSourceView();">Feed Source View</button>
     </div>
-    <article>
-      <h4><a href="https://aws.amazon.com/blogs/architecture/">AWS Architecture</a></h4>
-      <details open>
-        <summary>Click to Expand/Collapse</summary>
-        <section id="aws_architecture_feed"></section>
-      </details>
-    </article>
+    <section id="timelineView" style="display: block;"></section>
+    <section id="sourceView" style="display: none;">
+      <article>
+        <h4><a href="https://aws.amazon.com/new/">What's New with AWS?</a></h4>
+        <details open>
+          <summary>Click to Expand/Collapse</summary>
+          <section id="aws_whats_new"></section>
+        </details>
+      </article>
+      <article>
+        <h4><a href="https://aws.amazon.com/blogs/aws/">AWS Blog</a></h4>
+        <details open>
+          <summary>Click to Expand/Collapse</summary>
+          <section id="aws_feed"></section>
+        </details>
+      </article>
+      <div class="grid">
+        <article>
+          <h4><a href="https://www.lastweekinaws.com/">Last Week In AWS</a></h4>
+          <details open>
+            <summary>Click to Expand/Collapse</summary>
+            <section id="last_week_in_aws_feed"></section>
+          </details>
+        </article>
+        <article>
+          <h4><a href="https://community.aws/">AWS Community</a></h4>
+          <details open>
+            <summary>Click to Expand/Collapse</summary>
+            <section id="aws_community_feed"></section>
+          </details>
+        </article>
+      </div>
+      <article>
+        <h4><a href="https://aws.amazon.com/blogs/architecture/">AWS Architecture</a></h4>
+        <details open>
+          <summary>Click to Expand/Collapse</summary>
+          <section id="aws_architecture_feed"></section>
+        </details>
+      </article>
+    </section>
   </main>
 
   <footer class="container">
