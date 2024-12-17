@@ -464,6 +464,10 @@ const renderGroupedFeeds = (groupedItems) => {
             if (item.description) {
                 const descriptionDiv = document.createElement('div');
                 descriptionDiv.innerHTML = item.description;
+                const tables = descriptionDiv.getElementsByTagName('table');
+                while (tables[0]) {
+                    tables[0].parentNode.removeChild(tables[0]);
+                }
                 itemArticle.appendChild(descriptionDiv);
             }
 
