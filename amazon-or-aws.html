@@ -13,6 +13,8 @@
   <link rel="icon" type="image/png" sizes="16x16" href="https://sumiya.page/favicon-16x16.png">
   <link rel="manifest" href="site.webmanifest">
   <link rel="stylesheet" href="https://sumiya.page/assets/css/picocss/pico.sand.min.css">
+  <link rel="stylesheet" href="fonts/fontawesome-free-6.7.2-web/css/all.css">
+  <link rel="stylesheet" href="fonts/fontawesome-free-6.7.2-web/css/brands.css">
 </head>
 
 <body class="container">
@@ -104,6 +106,15 @@
         <p>Aggregated Feed about AWS from across the Web.</p>
       </hgroup>
     </header>
+    <div>
+      <small>
+        Share: <a href="recent-aws-posts.html" title="Open Permalink">Permalink</a>
+        |
+        <a id="bluesky-share-button" rel="nofollow" href="#" target="_blank" title="Share on Bluesky">
+          <i class="fa-brands fa-bluesky" style="color: #3a88fe;"></i>
+        </a>
+      </small>
+    </div>
     <div role="group">
       <button class="contrast" id="feed-view-by-timeline" onclick="showTimelineView();">Timeline View</button>
       <button id="feed-view-by-source" onclick="showSourceView();">Feed Source View</button>
@@ -152,28 +163,25 @@
 
   <footer class="container">
     <small>
-      <p>Built by <a href="https://github.com/psumiya">Sumiya</a>
+      Built by <a href="https://github.com/psumiya">Sumiya</a>
         | Styled with <a href="https://picocss.com">Pico CSS</a>
         | Charting with <a href="https://www.chartjs.org/">chartjs</a>
         | <a href="https://github.com/psumiya/amazon-or-aws">GitHub</a>
         | Data refreshed daily.
-      </p>
     </small>
     <details>
       <summary>
         <small>Disclaimer: Not affiliated with either Amazon or AWS.</small>
       </summary>
       <small>
-        <p>
           Data for this page has been scraped from AWS Cloud Products Website. |
           <a href="https://aws.amazon.com/products/?aws-products-all.sort-by=item.additionalFields.launchDate&aws-products-all.sort-order=asc&awsf.re%3AInvent=event-year%23aws-reinvent-2021&awsf.Free%20Tier%20Type=*all&awsf.tech-category=*all">AWS Cloud Products</a>
           |
           <a href="https://aws.amazon.com/api/dirs/items/search?item.directoryId=aws-products&sort_by=item.additionalFields.launchDate&sort_order=asc&size=500&item.locale=en_US&tags.id=aws-products%23type%23service&tags.id=!aws-products%23type%23variant">Data Source</a>
-        </p>
       </small>
     </details>
   </footer>
-
+  <script src="feeds.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="amazon-or-aws.js" defer></script>
 
