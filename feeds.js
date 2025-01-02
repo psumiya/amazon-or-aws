@@ -1,10 +1,17 @@
 // Globals
 const parser = new window.DOMParser();
 
-const postText = encodeURIComponent("View Aggregated Recent Posts about AWS:");
-const link = encodeURIComponent(window.location.href);
-const blueskyUrl = `https://bsky.app/intent/compose?text=${postText}%20${link}`;
-document.getElementById('bluesky-share-button').href = blueskyUrl;
+function setBlueskyShareUrl(postText, link, hrefId) {
+    const elem = document.getElementById(hrefId);
+    if (elem) {
+        const encodedText = encodeURIComponent(postText);
+        const encodedLink = encodeURIComponent(link);
+        const blueskyUrl = `https://bsky.app/intent/compose?text=${encodedText}%20${encodedLink}`;
+        elem.href = blueskyUrl;
+    }
+}
+
+setBlueskyShareUrl("View Aggregated Recent Posts about AWS:", window.location.href, "bluesky-share-button");
 
 function setDisplay(id, value) {
   const loading = document.getElementById(id);
