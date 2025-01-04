@@ -9,91 +9,22 @@
 
     <xsl:template match="/">
         <style>
-            .video-list {
-                margin: 0 auto;
-            }
-
-            .video-item {
-                margin-bottom: 5px;
-                padding: 15px;
-                display: grid;
-                grid-template-columns: 200px 1fr;
-                gap: 15px;
-            }
-
-            .video-thumbnail {
-                width: 200px;
-                height: 112px;
-                object-fit: cover;
-                border-radius: 4px;
-            }
-
-            .video-content {
-                display: flex;
-                flex-direction: column;
-            }
-
-            .video-title {
-                font-size: 18px;
-                margin: 0 0 10px 0;
-                color: #1a1a1a;
-            }
-
-            .video-metadata {
-                font-size: 14px;
-                color: #666;
-                margin-bottom: 10px;
-            }
-
             .video-description {
-                color: #666;
-                margin-bottom: 15px;
-                font-size: 14px;
                 display: -webkit-box;
                 -webkit-line-clamp: 3;
                 -webkit-box-orient: vertical;
                 overflow: hidden;
             }
-
-            .video-embed {
-                grid-column: 1 / -1;
-                margin-top: 15px;
-                display: none;
-            }
-
-            .video-embed.active {
-                display: block;
-            }
-
-            .video-embed iframe {
-                width: 100%;
-                aspect-ratio: 16/9;
-                border: none;
-            }
-
-            @media (max-width: 600px) {
-                .video-item {
-                    grid-template-columns: 1fr;
-                }
-
-                .video-thumbnail {
-                    width: auto;
-                    height: auto;
-                }
-            }
         </style>
-
-        <div id="video-list" class="video-list">
-            <xsl:apply-templates select="//atom:entry"/>
-        </div>
+        <xsl:apply-templates select="//atom:entry"/>
     </xsl:template>
 
     <xsl:template match="atom:entry">
-        <div class="video-item">
+        <article>
+            <b><xsl:value-of select="atom:title"/></b>
             <xsl:variable name="videoId" select="yt:videoId"/>
-
             <div>
-                <iframe class="video-thumbnail">
+                <iframe>
                     <xsl:attribute name="src">
                         https://www.youtube.com/embed/<xsl:value-of select="$videoId"/>
                     </xsl:attribute>
@@ -103,27 +34,19 @@
                     <xsl:attribute name="allowfullscreen">true</xsl:attribute>
                 </iframe>
             </div>
-            <div class="video-content">
-                <h5>
-                    <xsl:value-of select="atom:title"/>
-                </h5>
-
-                <div class="video-metadata">
-                    <xsl:value-of select="media:group/media:community/media:statistics/@views"/> views •
-                    <xsl:value-of select="substring(atom:published, 1, 10)"/> •
-                    <a target="_blank">
-                        <xsl:attribute name="href">
-                            <xsl:value-of select="atom:link[@rel='alternate']/@href"/>
-                        </xsl:attribute>
-                        Watch on YouTube
-                    </a>
-                </div>
-
+            <small>
+                <xsl:value-of select="media:group/media:community/media:statistics/@views"/> views •
+                <xsl:value-of select="substring(atom:published, 1, 10)"/> •
+                <a target="_blank">
+                    <xsl:attribute name="href">
+                        <xsl:value-of select="atom:link[@rel='alternate']/@href"/>
+                    </xsl:attribute>
+                    Watch on YouTube
+                </a>
                 <p class="video-description">
                     <xsl:value-of select="media:group/media:description"/>
                 </p>
-
-            </div>
-        </div>
+            </small>
+        </article>
     </xsl:template>
 </xsl:stylesheet>
