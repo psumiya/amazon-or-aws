@@ -65,6 +65,13 @@ const getAtomProcessor = async () => {
     return xsltProcessor;
 }
 
+const getYoutubeProcessor = async () => {
+    const xsl = await getXmlResponse("youtube-feed.xsl");
+    const xsltProcessor = new XSLTProcessor();
+    xsltProcessor.importStylesheet(xsl);
+    return xsltProcessor;
+}
+
 const loadFeed = async (resultDocument, htmlId) => {
     if (resultDocument) {
         const container = document.getElementById(htmlId);
@@ -83,6 +90,7 @@ const LAST_WEEK_IN_AWS_HTML_ID = "last_week_in_aws_feed";
 const AWS_ARCHITECTURE_HTML_ID = "aws_architecture_feed";
 const AWS_COMMUNITY_HTML_ID = "aws_community_feed";
 const AWS_WHATS_NEW_HTML_ID = "aws_whats_new";
+const YOUTUBE_FEED_HTML_ID = "youtube_feed";
 
 const feedSourceMap = new Map();
 feedSourceMap.set(AWS_FEED_HTML_ID, "aws-feed-latest.rss");
@@ -90,6 +98,7 @@ feedSourceMap.set(LAST_WEEK_IN_AWS_HTML_ID, "last-week-in-aws-latest.rss");
 feedSourceMap.set(AWS_ARCHITECTURE_HTML_ID, "aws-architecture-feed-latest.rss");
 feedSourceMap.set(AWS_COMMUNITY_HTML_ID, "aws-community-latest.rss");
 feedSourceMap.set(AWS_WHATS_NEW_HTML_ID, "aws-whats-new-feed-latest.rss");
+feedSourceMap.set(YOUTUBE_FEED_HTML_ID, "aws-youtube-latest.rss");
 
 class Feed {
   constructor(htmlId, content, processor) {
@@ -102,17 +111,19 @@ class Feed {
 async function loadAllFeeds() {
     try {
         // Parallel Fetch All Processors
-        const [rssProcessor, atomProcessor] = await Promise.all([
+        const [rssProcessor, atomProcessor, youtubeProcessor] = await Promise.all([
             getRssProcessor(),
-            getAtomProcessor()
+            getAtomProcessor(),
+            getYoutubeProcessor()
         ]);
         // Parallel Fetch All Feeds
-        const [awsBlogFeed, lastWeekInAwsFeed, awsArchitectureFeed, awsCommunityFeed, whatsNewFeed] = await Promise.all([
+        const [awsBlogFeed, lastWeekInAwsFeed, awsArchitectureFeed, awsCommunityFeed, whatsNewFeed, youtubeFeed] = await Promise.all([
             getXmlResponse(feedSourceMap.get(AWS_FEED_HTML_ID)),
             getXmlResponse(feedSourceMap.get(LAST_WEEK_IN_AWS_HTML_ID)),
             getXmlResponse(feedSourceMap.get(AWS_ARCHITECTURE_HTML_ID)),
             getXmlResponse(feedSourceMap.get(AWS_COMMUNITY_HTML_ID)),
-            getXmlResponse(feedSourceMap.get(AWS_WHATS_NEW_HTML_ID))
+            getXmlResponse(feedSourceMap.get(AWS_WHATS_NEW_HTML_ID)),
+            getXmlResponse(feedSourceMap.get(YOUTUBE_FEED_HTML_ID))
         ]);
         // Render Feeds
         const feedDestinationSet = new Set([
@@ -120,7 +131,8 @@ async function loadAllFeeds() {
             new Feed(LAST_WEEK_IN_AWS_HTML_ID, lastWeekInAwsFeed, rssProcessor),
             new Feed(AWS_ARCHITECTURE_HTML_ID, awsArchitectureFeed, rssProcessor),
             new Feed(AWS_COMMUNITY_HTML_ID, awsCommunityFeed, atomProcessor),
-            new Feed(AWS_WHATS_NEW_HTML_ID, whatsNewFeed, rssProcessor)
+            new Feed(AWS_WHATS_NEW_HTML_ID, whatsNewFeed, rssProcessor),
+            new Feed(YOUTUBE_FEED_HTML_ID, youtubeFeed, youtubeProcessor)
         ]);
         for (const feed of feedDestinationSet) {
             loadFeed(feed.processor.transformToFragment(feed.content, document), feed.htmlId);
