@@ -17,7 +17,19 @@
 
             <xsl:if test="description">
                 <div>
-                    <xsl:value-of select="description" disable-output-escaping="yes"/>
+                    <xsl:choose>
+                        <!-- If description contains HTML-escaped content -->
+                        <xsl:when test="contains(description, '&lt;table')">
+                            <xsl:variable name="before-table" select="substring-before(description, '&lt;table')" />
+                            <xsl:variable name="after-table" select="substring-after(description, '&lt;/table&gt;')" />
+                            <xsl:value-of select="$before-table" disable-output-escaping="yes"/>
+                            <xsl:value-of select="$after-table" disable-output-escaping="yes"/>
+                        </xsl:when>
+                        <!-- If no table is found, output the entire description -->
+                        <xsl:otherwise>
+                            <xsl:value-of select="description" disable-output-escaping="yes"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
                 </div>
             </xsl:if>
 
