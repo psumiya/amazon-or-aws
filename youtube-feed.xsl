@@ -37,11 +37,17 @@
             <small>
                 <xsl:value-of select="media:group/media:community/media:statistics/@views"/> views •
                 <xsl:value-of select="substring(atom:published, 1, 10)"/> •
-                <a target="_blank">
+                <a target="_blank" title="Watch on YouTube ">
                     <xsl:attribute name="href">
                         <xsl:value-of select="atom:link[@rel='alternate']/@href"/>
                     </xsl:attribute>
-                    Watch on YouTube
+                    <i class="fa-brands fa-youtube" style="color: #f40636;" />
+                </a> •
+                <a id="feed-bluesky-share-button" rel="nofollow" href="#" target="_blank" title="Share on Bluesky">
+                    <xsl:attribute name="href">
+                        https://bsky.app/intent/compose?text=<xsl:value-of select="atom:link[@rel='alternate']/@href"/>
+                    </xsl:attribute>
+                    <i class="fa-brands fa-bluesky" style="color: #3a88fe;" />
                 </a>
                 <p class="video-description">
                     <xsl:value-of select="media:group/media:description"/>
