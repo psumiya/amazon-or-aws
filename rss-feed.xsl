@@ -40,6 +40,12 @@
                             <xsl:value-of select="link"/>
                         </xsl:attribute>
                         Read more
+                    </a> •
+                    <a id="text-feed-bluesky-share-button" rel="nofollow" href="#" target="_blank" title="Share on Bluesky">
+                        <xsl:attribute name="href">
+                            https://bsky.app/intent/compose?text=<xsl:value-of select="link"/>
+                        </xsl:attribute>
+                        <i class="fa-brands fa-bluesky" style="color: #3a88fe;" />
                     </a>
                 </div>
             </xsl:if>
