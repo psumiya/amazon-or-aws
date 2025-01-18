@@ -20,6 +20,12 @@
     </xsl:template>
 
     <xsl:template match="atom:entry">
+        <xsl:variable name="shareUrl">
+            <xsl:text>https://bsky.app/intent/compose?text=</xsl:text>
+            <xsl:value-of select="atom:title"/>
+            <xsl:text> </xsl:text>
+            <xsl:value-of select="atom:link[@rel='alternate']/@href"/>
+        </xsl:variable>
         <article>
             <b><xsl:value-of select="atom:title"/></b>
             <xsl:variable name="videoId" select="yt:videoId"/>
@@ -45,7 +51,7 @@
                 </a> •
                 <a id="feed-bluesky-share-button" rel="nofollow" href="#" target="_blank" title="Share on Bluesky">
                     <xsl:attribute name="href">
-                        https://bsky.app/intent/compose?text=<xsl:value-of select="atom:link[@rel='alternate']/@href"/>
+                        <xsl:value-of select="$shareUrl"/>
                     </xsl:attribute>
                     <i class="fa-brands fa-bluesky" style="color: #3a88fe;" />
                 </a>
