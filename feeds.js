@@ -269,10 +269,21 @@ const renderGroupedFeeds = (groupedItems) => {
             titleLink.textContent = item.title;
             titleElement.appendChild(titleLink);
 
+            const bskyLink = document.createElement('a');
+            bskyLink.href = 'https://bsky.app/intent/compose?text=' + item.title + ' ' + item.link;
+            bskyLink.target = '_blank';
+            const bskyIcon = document.createElement('i');
+            bskyIcon.classList.add('fa-brands');
+            bskyIcon.classList.add('fa-bluesky');
+            bskyIcon.style.color = '#3a88fe';
+            bskyLink.appendChild(bskyIcon);
+
             // Source in parentheses
             const sourceSpan = document.createElement('span');
-            sourceSpan.textContent = ` (${item.source})`;
+            sourceSpan.textContent = ` (${item.source})` + ' • ';
             titleElement.appendChild(sourceSpan);
+
+            titleElement.appendChild(bskyLink);
 
             itemArticle.appendChild(titleElement);
 
