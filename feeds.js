@@ -20,23 +20,12 @@ function setDisplay(id, value) {
   }
 }
 
-function toggleCss() {
-    document.getElementById("feed-view-by-timeline").classList.remove("contrast");
-    document.getElementById("feed-view-by-source").classList.remove("contrast");
-}
-
 function showTimelineView() {
-    setDisplay('timelineView', 'block');
-    setDisplay('sourceView', 'none');
-    toggleCss();
-    document.getElementById("feed-view-by-timeline").classList.add("contrast");
+    // Legacy mapping left for compatibility if needed, but no longer used
 }
 
 function showSourceView() {
-    setDisplay('timelineView', 'none');
-    setDisplay('sourceView', 'block');
-    toggleCss();
-    document.getElementById("feed-view-by-source").classList.add("contrast");
+    // Legacy mapping left for compatibility if needed, but no longer used
 }
 
 const fetchTextResponse = (response) => {
@@ -125,28 +114,22 @@ async function loadAllFeeds() {
             getXmlResponse(feedSourceMap.get(AWS_WHATS_NEW_HTML_ID)),
             getXmlResponse(feedSourceMap.get(YOUTUBE_FEED_HTML_ID))
         ]);
-        // Render Feeds
-        const feedDestinationSet = new Set([
-            new Feed(AWS_FEED_HTML_ID, awsBlogFeed, rssProcessor),
-            new Feed(LAST_WEEK_IN_AWS_HTML_ID, lastWeekInAwsFeed, rssProcessor),
-            new Feed(AWS_ARCHITECTURE_HTML_ID, awsArchitectureFeed, rssProcessor),
-            new Feed(AWS_COMMUNITY_HTML_ID, awsCommunityFeed, atomProcessor),
-            new Feed(AWS_WHATS_NEW_HTML_ID, whatsNewFeed, rssProcessor),
-            new Feed(YOUTUBE_FEED_HTML_ID, youtubeFeed, youtubeProcessor)
-        ]);
-        for (const feed of feedDestinationSet) {
-            loadFeed(feed.processor.transformToFragment(feed.content, document), feed.htmlId);
-        }
+        // Render Feeds - Only YouTube needs the direct XSLT parsing now
+        const youtubeProcessed = youtubeProcessor.transformToFragment(youtubeFeed, document);
+        loadFeed(youtubeProcessed, YOUTUBE_FEED_HTML_ID);
 
-        const allItems = [
+        // Extract Blog Items
+        const blogItems = [
             ...extractFeedItems(awsBlogFeed, "AWS Blog"),
             ...extractFeedItems(lastWeekInAwsFeed, "Last Week in AWS"),
             ...extractFeedItems(awsArchitectureFeed, "AWS Architecture"),
-            ...extractFeedItems(awsCommunityFeed, "AWS Community"),
-            ...extractFeedItems(whatsNewFeed, "What's New with AWS?")
+            ...extractFeedItems(awsCommunityFeed, "AWS Community")
         ];
-        const groupedItems = groupAndSortItems(allItems);
-        renderGroupedFeeds(groupedItems);
+        
+        // Extract Real-Time News (What's New)
+        const newsItems = extractFeedItems(whatsNewFeed, "What's New");
+
+        renderEditorialLayout(blogItems, newsItems);
     } catch (error) {
         console.error('Error processing RSS feed:', error);
     }
@@ -203,108 +186,91 @@ const extractFeedItems = (xmlDoc, sourceName) => {
     return articles;
 }
 
-const groupAndSortItems = (items) => {
-    // Deduplicate items based on link
-    const uniqueItems = Array.from(
-        new Map(items.map(item => [item.link, item])).values()
-    );
+const renderEditorialLayout = (blogItems, newsItems) => {
+    // 1. Sort all by date
+    const uniqueBlogs = Array.from(new Map(blogItems.map(item => [item.link, item])).values());
+    uniqueBlogs.sort((a, b) => b.pubDate - a.pubDate);
+    
+    const uniqueNews = Array.from(new Map(newsItems.map(item => [item.link, item])).values());
+    uniqueNews.sort((a, b) => b.pubDate - a.pubDate);
 
-    // Sort items by date (newest first)
-    uniqueItems.sort((a, b) => b.pubDate - a.pubDate);
+    // 2. Render Featured Story (First Blog Item)
+    const featuredItem = uniqueBlogs.length > 0 ? uniqueBlogs[0] : null;
+    if (featuredItem) {
+        const featuredContainer = document.getElementById('featured_feed');
+        featuredContainer.innerHTML = '';
+        const article = document.createElement('article');
+        article.className = 'featured-story';
+        article.innerHTML = `
+            <h3><a href="${featuredItem.link}" style="color: white; text-decoration: none;" target="_blank">${featuredItem.title}</a></h3>
+            <p style="margin-top: 1rem; margin-bottom: 2rem;">${featuredItem.description ? stripHtml(featuredItem.description).substring(0, 150) + '...' : ''}</p>
+            <div class="card-meta">
+                <span>By ${featuredItem.source}</span> &bull; <span>${featuredItem.pubDate.toLocaleDateString()}</span>
+            </div>
+        `;
+        featuredContainer.appendChild(article);
+    }
 
-    // Group items by date
-    const groupedItems = uniqueItems.reduce((groups, item) => {
+    // 3. Render Timeline Grid (Rest of Blogs)
+    const timelineContainer = document.getElementById('timelineView');
+    timelineContainer.innerHTML = '';
+    const timelineItems = uniqueBlogs.slice(1);
+    
+    // Group timeline items by date
+    const groupedItems = timelineItems.reduce((groups, item) => {
         const dateKey = item.pubDate.toISOString().split('T')[0];
-        if (!groups[dateKey]) {
-            groups[dateKey] = [];
-        }
+        if (!groups[dateKey]) groups[dateKey] = [];
         groups[dateKey].push(item);
         return groups;
     }, {});
+    
+    const sortedDates = Object.keys(groupedItems).sort((a, b) => new Date(b) - new Date(a));
+    sortedDates.forEach(date => {
+        const dateHeader = document.createElement('h5');
+        dateHeader.style.marginTop = '2rem';
+        dateHeader.style.marginBottom = '1rem';
+        dateHeader.style.borderBottom = '1px solid var(--border-color)';
+        dateHeader.style.paddingBottom = '0.5rem';
+        dateHeader.textContent = new Date(date).toLocaleDateString('en-US', {
+            weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
+        });
+        timelineContainer.appendChild(dateHeader);
 
-    return groupedItems;
+        groupedItems[date].forEach(item => {
+            const article = document.createElement('article');
+            article.className = 'card mb-2';
+            article.innerHTML = `
+                <h4 class="card-title"><a href="${item.link}" target="_blank" style="color: var(--text-primary);">${item.title}</a></h4>
+                <div class="card-meta">
+                    <span class="text-accent font-bold">${item.source}</span>
+                    <a href="https://bsky.app/intent/compose?text=${encodeURIComponent(item.title)}%20${encodeURIComponent(item.link)}" target="_blank" title="Share">
+                        <i class="fa-brands fa-bluesky" style="color: #3a88fe;"></i>
+                    </a>
+                </div>
+            `;
+            timelineContainer.appendChild(article);
+        });
+    });
+
+    // 4. Render Sidebar "Real-Time Updates" (What's New)
+    const sidebarContainer = document.getElementById('sidebar_feed');
+    sidebarContainer.innerHTML = '';
+    const topNews = uniqueNews.slice(0, 15);
+    topNews.forEach(item => {
+        const div = document.createElement('div');
+        div.className = 'sidebar-item';
+        div.innerHTML = `
+            <div class="sidebar-item-title"><a href="${item.link}" target="_blank" style="color: var(--text-primary);">${item.title}</a></div>
+            <div class="sidebar-item-meta">${item.pubDate.toLocaleDateString()}</div>
+        `;
+        sidebarContainer.appendChild(div);
+    });
 }
 
-const renderGroupedFeeds = (groupedItems) => {
-    const container = document.getElementById('timelineView');
-    container.innerHTML = ''; // Clear existing content
-
-    // Sort dates in descending order
-    const sortedDates = Object.keys(groupedItems).sort((a, b) => new Date(b) - new Date(a));
-
-    sortedDates.forEach(date => {
-        // Create date article
-        const dateArticle = document.createElement('article');
-
-        // Create date header
-        const dateHeader = document.createElement('h4');
-        dateHeader.textContent = new Date(date).toLocaleDateString('en-US', {
-            weekday: 'long',
-            year: 'numeric',
-            month: 'long',
-            day: 'numeric'
-        });
-        dateArticle.appendChild(dateHeader);
-
-        // Create details element
-        const details = document.createElement('details');
-        details.open = true;
-
-        // Create summary
-        const summary = document.createElement('summary');
-        summary.textContent = 'Click to Expand/Collapse';
-        details.appendChild(summary);
-
-        // Create section for items
-        const section = document.createElement('section');
-
-        // Add items to section
-        groupedItems[date].forEach(item => {
-            const itemArticle = document.createElement('article');
-
-            const titleElement = document.createElement('h4');
-            const titleLink = document.createElement('a');
-            titleLink.href = item.link;
-            titleLink.target = '_blank';
-            titleLink.textContent = item.title;
-            titleElement.appendChild(titleLink);
-
-            const bskyLink = document.createElement('a');
-            bskyLink.href = 'https://bsky.app/intent/compose?text=' + item.title + ' ' + item.link;
-            bskyLink.target = '_blank';
-            const bskyIcon = document.createElement('i');
-            bskyIcon.classList.add('fa-brands');
-            bskyIcon.classList.add('fa-bluesky');
-            bskyIcon.style.color = '#3a88fe';
-            bskyLink.appendChild(bskyIcon);
-
-            // Source in parentheses
-            const sourceSpan = document.createElement('span');
-            sourceSpan.textContent = ` (${item.source})` + ' • ';
-            titleElement.appendChild(sourceSpan);
-
-            titleElement.appendChild(bskyLink);
-
-            itemArticle.appendChild(titleElement);
-
-            // Description
-            if (item.description) {
-                const descriptionDiv = document.createElement('div');
-                descriptionDiv.innerHTML = item.description;
-                const tables = descriptionDiv.getElementsByTagName('table');
-                while (tables[0]) {
-                    tables[0].parentNode.removeChild(tables[0]);
-                }
-                itemArticle.appendChild(descriptionDiv);
-            }
-
-            section.appendChild(itemArticle);
-        });
-
-        details.appendChild(section);
-        dateArticle.appendChild(details);
-        container.appendChild(dateArticle);
-    });
+function stripHtml(html) {
+    let tmp = document.createElement("DIV");
+    tmp.innerHTML = html;
+    return tmp.textContent || tmp.innerText || "";
 }
 
 loadAllFeeds();

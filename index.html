@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" property="og:description" content="Aggregated posts from Internet about AWS." />
+    <meta name="author" content="Sumiya" />
+    <title>Recent Posts about AWS</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://sumiya.page/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://sumiya.page/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://sumiya.page/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="amazon-or-aws.css">
+    <link rel="stylesheet" href="fonts/fontawesome-free-6.7.2-web/css/all.css">
+    <link rel="stylesheet" href="fonts/fontawesome-free-6.7.2-web/css/brands.css">
+</head>
+
+<body class="bg-primary">
+
+<header class="site-header">
+  <div class="container">
+    <h1 class="brand-title">Amazon <span class="accent">or</span> AWS</h1>
+    <p class="brand-subtitle">An Independent Cloud News Aggregator</p>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">News</a></li>
+        <li><a href="amazon-or-aws.html">Products Database</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+    <div class="news-layout">
+        <div class="news-main">
+            <section id="featured-stories">
+                <h2 class="section-title">Featured Story</h2>
+                <div id="featured_feed"></div>
+            </section>
+
+            <section id="blogs-grid">
+                <h2 class="section-title">The Cloud Watch</h2>
+                <div id="timelineView"></div>
+            </section>
+        </div>
+
+        <aside class="news-sidebar">
+            <section id="real-time-feed">
+                <h3 class="section-title">Real-Time Updates</h3>
+                <div id="sidebar_feed"></div>
+            </section>
+
+            <section id="videos-feed">
+                <h3 class="section-title">Featured Videos</h3>
+                <div id="youtube_feed" class="video-list"></div>
+            </section>
+        </aside>
+    </div>
+</main>
+
+<footer class="container">
+    <small>
+        Built by <a href="https://github.com/psumiya">Sumiya</a>
+            | Styled with <a href="https://picocss.com">Pico CSS</a>
+            | Charting with <a href="https://www.chartjs.org/">chartjs</a>
+            | <a href="https://github.com/psumiya/amazon-or-aws">GitHub</a>
+            | Data refreshed daily.
+    </small>
+    <details>
+        <summary>
+            <small>Disclaimer: Not affiliated with either Amazon or AWS.</small>
+        </summary>
+        <small>
+                Data for this page has been scraped from AWS Cloud Products Website. |
+                <a href="https://aws.amazon.com/products/?aws-products-all.sort-by=item.additionalFields.launchDate&aws-products-all.sort-order=asc&awsf.re%3AInvent=event-year%23aws-reinvent-2021&awsf.Free%20Tier%20Type=*all&awsf.tech-category=*all">AWS Cloud Products</a>
+                |
+                <a href="https://aws.amazon.com/api/dirs/items/search?item.directoryId=aws-products&sort_by=item.additionalFields.launchDate&sort_order=asc&size=500&item.locale=en_US&tags.id=aws-products%23type%23service&tags.id=!aws-products%23type%23variant">Data Source</a>
+        </small>
+    </details>
+</footer>
+
+<script src="feeds.js" defer></script>
+
+</body>
+
+</html>

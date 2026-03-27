@@ -1,7 +1,10 @@
 function buildDisplayObject(item, i) {
   const launchDate = (item.additionalFields.launchDate) ? item.additionalFields.launchDate : "Unknown";
+  // Generate a safe ID for the checkbox since product names might have spaces or special characters
+  const serviceId = item.additionalFields.productName.replace(/[^a-zA-Z0-9]/g, '');
   return {
     index: i,
+    serviceId: serviceId,
     productName: item.additionalFields.productName,
     productSummary: item.additionalFields.productSummary,
     launchDate: item.additionalFields.launchDate,
@@ -11,24 +14,21 @@ function buildDisplayObject(item, i) {
   }
 }
 
-function buildRow(item, i) {
-  const display = buildDisplayObject(item, i);
-  const indexCell = '<th scope="row">' + display.index + '</th>';
-  const name = '<td>' + display.productName + '</td>';
-  const desc = '<td>' + display.productSummary + '</td>';
-  const launchDate = '<td>' + display.launchDate + '</td>';
-  const link = '<td><a href="' + display.productUrl + '">View</a></td>';
-  return indexCell + name + desc + launchDate + link;
-}
-
-function buildCard(item) {
+function buildProductCard(item) {
   const display = buildDisplayObject(item, 0);
-  const link = '<a href="' + display.productUrl + '">View Details</a>';
-  return '<article><h3>' + display.productName + '</h3>' 
-    + '<p>' + display.productSummary + '</p>' 
-    + '<p>Category: ' + display.productCategory + '</p>' 
-    + '<p>Launch Date: ' + display.launchDate + '</p>' 
-    + '<footer><small>' + link + '</small></footer></article>';
+  return `
+    <article class="card">
+      <h4 class="card-title">${display.productName}</h4>
+      <div class="card-meta text-accent mb-2">${display.productCategory}</div>
+      <p style="font-size: 0.9rem; line-height: 1.4; flex-grow: 1;">${display.productSummary}</p>
+      <div style="font-size: 0.8rem; color: var(--text-tertiary); margin-top: 1rem;">
+        Launched: ${display.launchDate}
+      </div>
+      <footer style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border-color);">
+        <a href="${display.productUrl}" target="_blank" style="font-family: var(--font-sans); font-weight: 500; font-size: 0.9rem;">View Service &rarr;</a>
+      </footer>
+    </article>
+  `;
 }
 
 function setDisplay(id, value) {
@@ -165,15 +165,16 @@ function onload() {
   fetch('service-list-latest.json')
     .then((response) => response.json())
     .then((data) => {          
-      const tbodyRef = document.getElementById('resultTable').getElementsByTagName('tbody')[0];
+      const gridRef = document.getElementById('productsGrid');
+      let html = '';
       data.items.forEach(function (entry, index) {
         const item = entry.item;
         if (item && item.additionalFields) {
           results.push(item);            
-          const newRow = tbodyRef.insertRow(tbodyRef.rows.length);
-          newRow.innerHTML = buildRow(item, index + 1);
+          html += buildProductCard(item);
         }
       });
+      gridRef.innerHTML = html;
       drawLaunchCountByYear(results);
       drawProductCountByCategory(results);
     });
@@ -203,12 +204,14 @@ function filter() {
             displayArr.push(item);
         }
     }
-    const display = displayArr.reduce((acc, item) => acc + buildCard(item), '');
+    const display = displayArr.reduce((acc, item) => acc + buildProductCard(item), '');
     resultContainer.innerHTML = display;
-    setDisplay('filtered', 'block');
+    setDisplay('filtered', 'grid');
+    setDisplay('productsGrid', 'none');
   } else if (mutated === true) {
     const resultContainer = document.getElementById('filtered');
     resultContainer.innerHTML = "";
     setDisplay('filtered', 'none');
+    setDisplay('productsGrid', 'grid');
   }
 }

@@ -11,29 +11,46 @@
   <link rel="apple-touch-icon" sizes="180x180" href="https://sumiya.page/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="https://sumiya.page/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="https://sumiya.page/favicon-16x16.png">
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="stylesheet" href="https://sumiya.page/assets/css/picocss/pico.sand.min.css">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="amazon-or-aws.css">
   <link rel="stylesheet" href="fonts/fontawesome-free-6.7.2-web/css/all.css">
   <link rel="stylesheet" href="fonts/fontawesome-free-6.7.2-web/css/brands.css">
 </head>
 
-<body class="container">
+<body class="bg-primary">
 
-  <main>
-    <section id="heading">
-      <hgroup>
-        <h1>Amazon or AWS?</h1>
+<header class="site-header">
+  <div class="container">
+    <h1 class="brand-title">Amazon <span class="accent">or</span> AWS</h1>
+    <p class="brand-subtitle">An Independent Cloud News Aggregator</p>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">News</a></li>
+        <li><a href="amazon-or-aws.html" class="active">Products Database</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+    <section class="mb-4">
+      <h2 class="section-title">Explore Cloud Services</h2>
+
         <h2>Find whether the name of a service offered by Amazon Web Services is prefixed with Amazon or AWS. <br/>
           This page includes a comprehensive list of all products offered by Amazon Web Services.
         </h2>
       </hgroup>
     </section>
 
-    <section id="input">
-      <label for="search"></label><input type="search" id="search" name="search" placeholder="Lookup a Service Name, for example, SQS" onkeyup="filter()">
+    <section id="input" class="search-section mb-4">
+      <div class="search-wrapper">
+        <i class="fa-solid fa-search search-icon"></i>
+        <input type="search" id="search" name="search" class="premium-search" placeholder="Search for a cloud service (e.g. S3, Lambda, EC2)..." onkeyup="filter()">
+      </div>
     </section>
 
-    <section id="filtered" style="display: none;">
+    <!-- Results will either be displayed here if searching, or hide this if empty -->
+    <section id="filtered" style="display: none;" class="product-grid mb-4">
     </section>
 
     <section id="charts">
@@ -74,98 +91,15 @@
       </div>
     </section>
 
-    <article>
-      <h3>View All Products</h3>
-      <details id="result">
-        <summary>Click to Expand/Collapse</summary>
-        <figure class="overflow-auto">
-          <table role="grid" id="resultTable">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">Name</th>
-                <th scope="col">Description</th>
-                <th scope="col">Launch Date</th>
-                <th scope="col">Link</th>
-              </tr>
-            </thead>
-            <tbody>
-            </tbody>
-          </table>
-        </figure>
-      </details>
+    <article class="mt-4">
+      <h3 class="section-title">All Products</h3>
+      <div id="productsGrid" class="product-grid">
+      </div>
     </article>
 
   </main>
 
-  <hr />
-  <main>
-    <header>
-      <hgroup>
-        <h1>Recent Posts about AWS</h1>
-        <p>Aggregated Feed about AWS from across the Web.</p>
-      </hgroup>
-    </header>
-    <div>
-      <p>
-        Share: <a href="recent-aws-posts.html" title="Open Permalink">Permalink</a>
-        |
-        <a id="bluesky-share-button" rel="nofollow" href="#" target="_blank" title="Share on Bluesky">
-          <i class="fa-brands fa-bluesky" style="color: #3a88fe;"></i>
-        </a>
-      </p>
-    </div>
-    <hr />
-    <h6>Youtube Feed</h6>
-    <div id="youtube_feed" class="video-list">
-    </div>
-    <hr />
-    <h6>Blogs</h6>
-    <div role="group">
-      <button class="contrast" id="feed-view-by-timeline" onclick="showTimelineView();">Timeline View</button>
-      <button id="feed-view-by-source" onclick="showSourceView();">Feed Source View</button>
-    </div>
-    <section id="timelineView" style="display: block;"></section>
-    <section id="sourceView" style="display: none;">
-      <article>
-        <h4><a href="https://aws.amazon.com/new/">What's New with AWS?</a></h4>
-        <details open>
-          <summary>Click to Expand/Collapse</summary>
-          <section id="aws_whats_new"></section>
-        </details>
-      </article>
-      <article>
-        <h4><a href="https://aws.amazon.com/blogs/aws/">AWS Blog</a></h4>
-        <details open>
-          <summary>Click to Expand/Collapse</summary>
-          <section id="aws_feed"></section>
-        </details>
-      </article>
-      <div class="grid">
-        <article>
-          <h4><a href="https://www.lastweekinaws.com/">Last Week In AWS</a></h4>
-          <details open>
-            <summary>Click to Expand/Collapse</summary>
-            <section id="last_week_in_aws_feed"></section>
-          </details>
-        </article>
-        <article>
-          <h4><a href="https://community.aws/">AWS Community</a></h4>
-          <details open>
-            <summary>Click to Expand/Collapse</summary>
-            <section id="aws_community_feed"></section>
-          </details>
-        </article>
-      </div>
-      <article>
-        <h4><a href="https://aws.amazon.com/blogs/architecture/">AWS Architecture</a></h4>
-        <details open>
-          <summary>Click to Expand/Collapse</summary>
-          <section id="aws_architecture_feed"></section>
-        </details>
-      </article>
-    </section>
-  </main>
+
 
   <footer class="container">
     <small>
@@ -187,10 +121,8 @@
       </small>
     </details>
   </footer>
-  <script src="feeds.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="amazon-or-aws.js" defer></script>
-
 </body>
 
 </html>
