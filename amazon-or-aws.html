@@ -97,35 +97,6 @@
       </div>
     </article>
 
-    <!-- Floating Action Bar for AI Selection -->
-    <div id="aiSelectionBar" class="ai-selection-bar hidden">
-      <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
-        <div class="selection-count">
-          <span id="selectedCount">0</span> Services Selected
-        </div>
-        <button onclick="generateArchitecture()" class="btn-premium">
-          <i class="fa-solid fa-wand-magic-sparkles"></i> Conceptualize Architecture
-        </button>
-      </div>
-    </div>
-
-    <!-- AI Architecture Modal -->
-    <dialog id="aiModal">
-      <article class="ai-modal-content">
-        <header>
-          <button aria-label="Close" rel="prev" title="Close" onclick="closeAiModal()"></button>
-          <h3><i class="fa-solid fa-wand-magic-sparkles text-accent"></i> AI Architecture Concept</h3>
-        </header>
-        <div id="aiLoadingStatus" class="ai-loading">
-          <i class="fa-solid fa-circle-notch fa-spin"></i>
-          <p>Consulting Amazon Bedrock for architecture patterns...</p>
-        </div>
-        <div id="aiResult" class="hidden">
-          <!-- Mock result will be injected here -->
-        </div>
-      </article>
-    </dialog>
-
   </main>
 
 

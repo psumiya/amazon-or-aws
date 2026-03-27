@@ -16,16 +16,9 @@ function buildDisplayObject(item, i) {
 
 function buildProductCard(item) {
   const display = buildDisplayObject(item, 0);
-  const isSelected = selectedServices.has(display.productName);
-  
   return `
-    <article class="card ${isSelected ? 'selected' : ''}">
-      <div style="display: flex; justify-content: space-between; align-items: flex-start;">
-        <h4 class="card-title">${display.productName}</h4>
-        <div class="selection-toggle">
-            <input type="checkbox" id="chk_${display.serviceId}" onchange="toggleService('${display.productName}')" ${isSelected ? 'checked' : ''}>
-        </div>
-      </div>
+    <article class="card">
+      <h4 class="card-title">${display.productName}</h4>
       <div class="card-meta text-accent mb-2">${display.productCategory}</div>
       <p style="font-size: 0.9rem; line-height: 1.4; flex-grow: 1;">${display.productSummary}</p>
       <div style="font-size: 0.8rem; color: var(--text-tertiary); margin-top: 1rem;">
@@ -220,101 +213,5 @@ function filter() {
     resultContainer.innerHTML = "";
     setDisplay('filtered', 'none');
     setDisplay('productsGrid', 'grid');
-  }
-}
-
-// AI Architecture Selection State
-const selectedServices = new Set();
-
-function toggleService(productName) {
-  if (selectedServices.has(productName)) {
-    selectedServices.delete(productName);
-  } else {
-    selectedServices.add(productName);
-  }
-  updateActionBar();
-  
-  // Re-render filtering to update card styling if we are currently searching
-  const filterExpr = document.getElementById('search').value.trim();
-  if (filterExpr && filterExpr.length >= 2) {
-      filter();
-  } else {
-      // Re-render all products grid to update styling
-      const gridRef = document.getElementById('productsGrid');
-      let html = '';
-      results.forEach(function (item) {
-          html += buildProductCard(item);
-      });
-      gridRef.innerHTML = html;
-  }
-}
-
-function updateActionBar() {
-  const bar = document.getElementById('aiSelectionBar');
-  const countSpan = document.getElementById('selectedCount');
-  
-  countSpan.textContent = selectedServices.size;
-  
-  if (selectedServices.size > 0) {
-    bar.classList.remove('hidden');
-    bar.style.display = 'block';
-  } else {
-    bar.classList.add('hidden');
-    bar.style.display = 'none';
-  }
-}
-
-function generateArchitecture() {
-  const modal = document.getElementById('aiModal');
-  const loading = document.getElementById('aiLoadingStatus');
-  const result = document.getElementById('aiResult');
-  
-  // Reset modal state
-  modal.showModal();
-  loading.style.display = 'flex';
-  result.classList.add('hidden');
-  result.style.display = 'none';
-
-  // Mock Amazon Bedrock API Call Delay
-  setTimeout(() => {
-    loading.style.display = 'none';
-    const servicesList = Array.from(selectedServices).join(', ');
-    
-    result.innerHTML = `
-      <div style="background: var(--bg-tertiary); padding: 1.5rem; border-radius: 8px; border: 1px solid var(--border-color); margin-bottom: 2rem;">
-        <h4 style="margin-bottom: 1rem;">Architecture Proposal</h4>
-        <p>Combining <strong>${servicesList}</strong>, here is a resilient architecture pattern:</p>
-        <ul style="margin-top: 1rem; padding-left: 1.5rem;">
-          <li>Use <strong>Event-Driven Patterns</strong> to decouple the selected microservices.</li>
-          <li>Implement an <strong>API Gateway</strong> as the front door to secure your endpoints.</li>
-          <li>Leverage managed infrastructure for high availability and automated scaling.</li>
-        </ul>
-        <p style="margin-top: 1rem; color: var(--text-tertiary); font-style: italic; font-size: 0.85rem;">* Note: This is an AI-generated conceptual recommendation.</p>
-      </div>
-    `;
-    result.classList.remove('hidden');
-    result.style.display = 'block';
-  }, 2500);
-}
-
-function closeAiModal() {
-  const modal = document.getElementById('aiModal');
-  modal.close();
-  
-  // Clear selection after consulting
-  selectedServices.clear();
-  updateActionBar();
-  
-  // Re-render all to sync UI
-  const filterExpr = document.getElementById('search').value.trim();
-  if (filterExpr && filterExpr.length >= 2) {
-      filter();
-  } else {
-      const gridRef = document.getElementById('productsGrid');
-      let html = '';
-      results.forEach(function (item) {
-          html += buildProductCard(item);
-      });
-      gridRef.innerHTML = html;
   }
 }
