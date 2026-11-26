@@ -1,0 +1,91 @@
+{
+ "id": "last-week-in-aws",
+ "name": "Last Week in AWS",
+ "role": "river",
+ "items": [
+  {
+   "title": "Infinidash: AWS’s New Observability Play Has Great Bones and a Terrible Bedside Manner",
+   "url": "https://www.lastweekinaws.com/blog/cloudwatch-omni-infinidash-review/",
+   "published": "2026-09-24T18:08:42+00:00",
+   "summary": "Infinidash: AWS’s New Observability Play Has Great Bones and a Terrible Bedside Manner AWS has just released something fascinating in the form of CloudWatch Omni. I want to be upfront before I dive further: “CloudWatch Omni” is a wretched name that I will not be using, so for…",
+   "thumbnail": null
+  },
+  {
+   "title": "Reading Observability Tools? That’s a Robot’s Job",
+   "url": "https://www.lastweekinaws.com/blog/reading-observability-tools-thats-a-robots-job/",
+   "published": "2026-05-28T14:15:00+00:00",
+   "summary": "Last Thursday Honeycomb was kind enough to hand me the closing keynote slot at O11yCon, a conference whose entire premise is that observability matters and the people in the room are the ones who would know. I used that slot to argue that the primary reader of your telemetry is…",
+   "thumbnail": null
+  },
+  {
+   "title": "S3 Is Not a Filesystem (But Now There’s One In Front of It)",
+   "url": "https://www.lastweekinaws.com/blog/s3-is-not-a-filesystem-but-now-theres-one-in-front-of-it/",
+   "published": "2026-04-07T19:38:51+00:00",
+   "summary": "I’ve been saying “S3 is not a filesystem” for over a decade. I’ve said it on stages, in newsletters, on podcasts, and directly to the faces of large company employees who were too polite to tell me to shut up before they went back to their FUSE monstrosities. It was one of those…",
+   "thumbnail": null
+  },
+  {
+   "title": "2 Ways to Correct the Financial Times at AWS (So Far)",
+   "url": "https://www.lastweekinaws.com/blog/2-ways-to-correct-the-financial-times-at-aws-so-far/",
+   "published": "2026-03-18T14:15:00+00:00",
+   "summary": "2 Ways to Correct the Financial Times at AWS (So Far) Amazon's Fastest-Shipping Product Is Now Blog Posts Correcting the Financial Times I've been watching AWS long enough to develop a feel for when a company's communications shift from \"informing\" to \"coping.\" We crossed that…",
+   "thumbnail": null
+  },
+  {
+   "title": "Chris Hemsworth Is an L9 at Amazon, and I Have Questions",
+   "url": "https://www.lastweekinaws.com/blog/chris-hemsworth-is-an-l9-at-amazon-and-i-have-questions/",
+   "published": "2026-02-05T20:35:37+00:00",
+   "summary": "Chris Hemsworth Is an L9 at Amazon, and I Have Questions",
+   "thumbnail": null
+  },
+  {
+   "title": "I Hope This Email Finds You Before I Do",
+   "url": "https://www.lastweekinaws.com/blog/i-hope-this-email-finds-you-before-i-do/",
+   "published": "2026-01-14T15:15:00+00:00",
+   "summary": "I Hope This Email Finds You Before I Do",
+   "thumbnail": null
+  },
+  {
+   "title": "AWS in 2026: The Year of Proving They Still Know How to Operate",
+   "url": "https://www.lastweekinaws.com/blog/aws-in-2026-the-year-of-proving-they-still-know-how-to-operate/",
+   "published": "2026-01-08T20:43:36+00:00",
+   "summary": "[Last Week in AWS] AWS in 2026: The Year of Proving They Still Know How to Operate",
+   "thumbnail": null
+  },
+  {
+   "title": "AWS Finally Lets You Find Your Idle NAT Gateways",
+   "url": "https://www.lastweekinaws.com/blog/aws-finally-lets-you-find-your-idle-nat-gateways/",
+   "published": "2025-11-27T02:30:18+00:00",
+   "summary": "After years of complaints, AWS Compute Optimizer can identify idle NAT Gateways. At $35/month each plus data processing fees, finding unused gateways just got dramatically easier.",
+   "thumbnail": null
+  },
+  {
+   "title": "AWS Deprecates Two Dozen Services (Most of Which You’ve Never Heard Of)",
+   "url": "https://www.lastweekinaws.com/blog/aws-deprecates-two-dozen-services-most-of-which-youve-never-heard-of/",
+   "published": "2025-10-14T14:00:00+00:00",
+   "summary": "AWS has done its quarterly housecleaning / \"Googling\" of its services, and deprecated what appears at first glance to be a startlingly long list. However, going through them put my mind at ease, and I'm hoping this post can do the same for you.",
+   "thumbnail": null
+  },
+  {
+   "title": "AWS in 2025: The Stuff You Think You Know That’s Now Wrong",
+   "url": "https://www.lastweekinaws.com/blog/aws-in-2025-the-stuff-you-think-you-know-thats-now-wrong/",
+   "published": "2025-08-20T14:00:00+00:00",
+   "summary": "One of the neat things about AWS is that it's almost twenty years old. One of the unfortunate things about AWS is... that it's almost twenty years old",
+   "thumbnail": null
+  },
+  {
+   "title": "Amazon Promotes Malphas to Senior Vice President of Bad Decisions, Unveils 17th Leadership Principle",
+   "url": "https://www.lastweekinaws.com/blog/amazon-promotes-malphas-to-senior-vice-president-of-bad-decisions-unveils-17th-leadership-principle/",
+   "published": "2025-07-30T19:07:08+00:00",
+   "summary": "Amazon Web Services (AWS) today announced the promotion of Malphas to Senior Vice President of Bad Decisions, effective immediately. In this expanded role, Malphas will oversee the company’s strategic initiatives in byzantine pricing models, confusing product nomenclature, and…",
+   "thumbnail": null
+  },
+  {
+   "title": "Amazon Q: Now with Helpful AI-Powered Self-Destruct Capabilities",
+   "url": "https://www.lastweekinaws.com/blog/amazon-q-now-with-helpful-ai-powered-self-destruct-capabilities/",
+   "published": "2025-07-23T17:35:00+00:00",
+   "summary": "Today 404Media released a truly stunning report that almost beggars belief.",
+   "thumbnail": null
+  }
+ ]
+}

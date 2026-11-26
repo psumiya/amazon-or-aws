@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{% block title %}{% endblock %}</title>
+<meta name="description" content="{% block description %}{% endblock %}">
+<meta name="author" content="Sumiya">
+<meta name="theme-color" content="#f3f5f7">
+<link rel="apple-touch-icon" sizes="180x180" href="https://sumiya.page/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://sumiya.page/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://sumiya.page/favicon-16x16.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+{{ css|safe }}
+</style>
+</head>
+<body data-page="{{ page }}">
+<header class="masthead">
+  <div class="wrap masthead-row">
+    <a class="wordmark" href="index.html" aria-label="Amazon or AWS, home"><span class="p-amazon">Amazon</span> or <span class="p-aws">AWS</span></a>
+    <nav class="nav" aria-label="Sections">
+      <a href="index.html"{% if page == "news" %} aria-current="page"{% endif %}>News</a>
+      <a href="amazon-or-aws.html"{% if page == "services" %} aria-current="page"{% endif %}>Services</a>
+    </nav>
+  </div>
+</header>
+{% block main %}{% endblock %}
+<footer class="colophon">
+  <div class="wrap">
+    <p>An independent site by <a href="https://sumiya.page">Sumiya</a>. Not affiliated with Amazon or AWS.{% if updated %} Newest item <time datetime="{{ updated_iso }}">{{ updated }}</time>.{% endif %} <a href="https://github.com/psumiya/amazon-or-aws">Source on GitHub</a>.</p>
+  </div>
+</footer>
+<script>
+{{ js|safe }}
+</script>
+</body>
+</html>

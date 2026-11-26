@@ -1,0 +1,217 @@
+{
+ "id": "whats-new",
+ "name": "What's New with AWS",
+ "role": "launches",
+ "items": [
+  {
+   "title": "Amazon RDS for PostgreSQL supports minor versions 18.7, 17.12, 16.16, 15.20, and 14.25",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-rds-postgresql-18-7-17-12-16-16-15-20-14-25/",
+   "published": "2026-11-26T17:00:00+00:00",
+   "summary": "Amazon Relational Database Service (RDS) for PostgreSQL now supports the latest minor versions 18.7, 17.12, 16.16, 15.20, and 14.25. We recommend that you upgrade to the latest minor versions to address Common Vulnerabilities and Exposures (CVEs) in prior versions of PostgreSQL…",
+   "thumbnail": null
+  },
+  {
+   "title": "AWS Lambda now supports orchestrating MicroVMs with Lambda durable functions",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/lambda-durable-microvm/",
+   "published": "2026-11-25T20:00:00+00:00",
+   "summary": "Today, AWS announces a developer preview of a new extension for orchestrating Lambda MicroVMs with Lambda durable functions . The extension adds durable operations for running work on MicroVMs and managing their lifecycle. You can use the new operations to build software…",
+   "thumbnail": null
+  },
+  {
+   "title": "Amazon CloudWatch Omni now integrates with PagerDuty",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-cloudwatch-omni-pagerduty/",
+   "published": "2026-11-25T20:00:00+00:00",
+   "summary": "Amazon CloudWatch Omni alerts can now automatically create PagerDuty incidents, so notifications flow directly into your existing incident management workflows. This reduces mean time to resolution (MTTR) by eliminating manual notification steps and ensuring consistent incident…",
+   "thumbnail": null
+  },
+  {
+   "title": "Amazon EC2 M8g instances are now available in Israel (Tel Aviv)",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-ec2-m8g-instances-telaviv-region/",
+   "published": "2026-11-25T17:15:00+00:00",
+   "summary": "Starting today, Amazon Elastic Compute Cloud (Amazon EC2) M8g instances are available in the Israel (Tel Aviv) region. These instances are powered by AWS Graviton4 processors and deliver up to 30% better performance compared to AWS Graviton3-based instances. Amazon EC2 M8g…",
+   "thumbnail": null
+  },
+  {
+   "title": "Amazon EC2 M9gd instances are now available in Asia Pacific (Seoul)",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-ec2-m9gd-asiapacific-seoul/",
+   "published": "2026-11-25T17:10:00+00:00",
+   "summary": "Starting today, Amazon Elastic Compute Cloud (Amazon EC2) M9gd instances are available in the Asia Pacific (Seoul) region. These instances are powered by AWS Graviton5 processors, the fifth generation of custom-designed CPUs, which deliver the best price performance for a broad…",
+   "thumbnail": null
+  },
+  {
+   "title": "Amazon EC2 C9gd instances now available in additional regions",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-ec2-c9gd-instances-additional-regions/",
+   "published": "2026-11-25T16:49:00+00:00",
+   "summary": "Starting today, Amazon Elastic Compute Cloud (Amazon EC2) C9gd instances are available in the Europe (Ireland, Spain) regions. These instances are powered by AWS Graviton5 processors, the fifth generation of custom-designed CPUs, which deliver the best price performance for a…",
+   "thumbnail": null
+  },
+  {
+   "title": "Amazon EC2 C9g instances are now available in additional regions",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-ec2-c9g-instances-additional-regions/",
+   "published": "2026-11-25T16:17:00+00:00",
+   "summary": "Starting today, Amazon Elastic Compute Cloud (Amazon EC2) C9g instances are available in the Asia Pacific (Sydney), Europe (Ireland, Spain), and South America (São Paulo) regions. These instances are powered by AWS Graviton5 processors, the fifth generation of custom-designed…",
+   "thumbnail": null
+  },
+  {
+   "title": "Amazon EC2 M9g instances now available in additional regions",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-ec2-m9g-instances-additional-regions/",
+   "published": "2026-11-25T16:06:00+00:00",
+   "summary": "Starting today, Amazon Elastic Compute Cloud (Amazon EC2) M9g instances, powered by AWS Graviton5 processors, are available in US West (N. California), Canada (Central), South America (São Paulo), and Asia Pacific (Seoul) regions. AWS Graviton5 processors are the fifth…",
+   "thumbnail": null
+  },
+  {
+   "title": "Elastic Load Balancing for Envoy is now generally available",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/elastic-load-balancing-for-envoy-generally-available",
+   "published": "2026-11-25T16:00:00+00:00",
+   "summary": "Today, AWS announces the general availability of ELB for Envoy, a new load balancer type in Elastic Load Balancing (ELB) that runs open-source Envoy proxies. Platform teams that run Envoy themselves own upgrades, security patching, and capacity across Availability Zones (AZs)…",
+   "thumbnail": null
+  },
+  {
+   "title": "Amazon Transcribe Turbo: more accurate transcripts and natural turn-taking for voice agents, now in public preview",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/transcribe-turbo-preview/",
+   "published": "2026-11-25T08:00:00+00:00",
+   "summary": "Amazon Transcribe Turbo, our next-generation speech-to-text model, is now in public preview in US East (Ohio) for batch and streaming. Turbo improves accuracy, supports custom vocabulary, and formats numbers, dates, currency, phone numbers and addresses following each locale's…",
+   "thumbnail": null
+  },
+  {
+   "title": "AWS IoT Core now uses dedicated IPv6 address ranges for the HTTP rule action",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-iot-core-dedicated-ipv6-ranges/",
+   "published": "2026-11-25T08:00:00+00:00",
+   "summary": "AWS IoT Core can now send traffic to HTTPS endpoints within a dedicated, published IPv6 address range. This launch enables you to configure your HTTPS endpoints to accept requests only from AWS IoT Core and block all other traffic, thereby reducing your endpoint's exposure to…",
+   "thumbnail": null
+  },
+  {
+   "title": "AWS IoT Core quotas and usage are now visible in AWS Service Quotas console",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-iot-core-quota-usage-monitoring/",
+   "published": "2026-11-25T08:00:00+00:00",
+   "summary": "AWS IoT Core now publishes its most used service quotas and your current usage against the quotas in AWS Service Quotas console , improving observability and monitoring of API limits and quotas. This launch enables you to monitor your service quota usage, set alarms before you…",
+   "thumbnail": null
+  },
+  {
+   "title": "AWS Device Farm now supports Android emulators and iOS simulators",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/device-farm-virtual-devices/",
+   "published": "2026-11-25T08:00:00+00:00",
+   "summary": "AWS Device Farm , a service for testing mobile and web apps, now supports Android emulators and iOS simulators alongside real devices for automated and manual testing, enabling faster testing at scale early in your development pipeline. With virtual devices, you can shift…",
+   "thumbnail": null
+  },
+  {
+   "title": "AWS IAM extends trusted identity propagation to IAM federation and IAM Roles Anywhere, and simplifies it in IAM Identity Center",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-iam/",
+   "published": "2026-11-25T06:00:00+00:00",
+   "summary": "Trusted identity propagation (TIP) carries the identity of a human user or workload with requests to supported AWS Services. Customers can use that identity in IAM policy conditions for access control and to identify the originating human user or workload in AWS CloudTrail. AWS…",
+   "thumbnail": null
+  },
+  {
+   "title": "Amazon Bedrock adds bedrock-runtime endpoint support for OpenAI Daybreak Red in AWS GovCloud (US)",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/gpt-daybreak-red-runtime-govcloud/",
+   "published": "2026-11-24T21:27:00+00:00",
+   "summary": "Eligible customers can now access OpenAI’s specialized cybersecurity models Daybreak Red: GPT-5.6 Cyber through the bedrock-runtime endpoint on Amazon Bedrock in AWS GovCloud (US). Daybreak Red is designed for advanced, authorized tasks such as vulnerability research, exploit…",
+   "thumbnail": null
+  },
+  {
+   "title": "Amazon OpenSearch Serverless is now available in the Africa (Cape Town) Region",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-opensearch-serverless-available-cape-town-region/",
+   "published": "2026-11-24T20:22:00+00:00",
+   "summary": "Starting today, the next generation of Amazon OpenSearch Serverless is available in the AWS Africa (Cape Town) Region. Customers can now use a fully managed search, vector and analytics engine that provisions resources in seconds, auto scales instantly to meet changing demand…",
+   "thumbnail": null
+  },
+  {
+   "title": "AWS CloudFormation makes resource coverage comprehensive with 206 new types",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/cloudformation-coverage-expansion/",
+   "published": "2026-11-24T20:00:00+00:00",
+   "summary": "AWS CloudFormation now supports 206 additional resource types across 88 services, including Amazon SageMaker Hub, Amazon Bedrock AgentCore PolicyEngine, and Amazon EC2 Snapshot. This closes key gaps in CloudFormation coverage and helps customers to standardize on safe and…",
+   "thumbnail": null
+  },
+  {
+   "title": "Amazon Connect Customer dashboards now support grouping historical metrics by time interval",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-connect-time-interval/",
+   "published": "2026-11-24T17:00:00+00:00",
+   "summary": "Amazon Connect Customer analytics dashboards now support grouping historical metrics by time interval on trailing widgets, giving contact center managers granular control over how performance data is visualized over time. Trailing widgets now display data grouped by 15-minute…",
+   "thumbnail": null
+  },
+  {
+   "title": "Amazon OpenSearch Service new engine now joins logs, traces, and metadata",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-opensearch-service-distributed-joins",
+   "published": "2026-11-24T17:00:00+00:00",
+   "summary": "Amazon OpenSearch Service now supports distributed joins, high-cardinality aggregations, and OpenSearch query DSL on the new engine. Observability data often spans logs, traces, service metadata, deployment records, and tenant data. Engineers and their AI agents must connect…",
+   "thumbnail": null
+  },
+  {
+   "title": "Amazon RDS for SQL Server now supports up to 500 databases per instance",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/rds-sqlserver-supports-500-databases-per-instance",
+   "published": "2026-11-24T08:00:00+00:00",
+   "summary": "Amazon Relational Database Service (Amazon RDS) for SQL Server now supports up to 500 databases per DB instance, up from the previous limit of 100. This higher density helps software as a service (SaaS) providers, multi-tenant applications, and other customers who run many…",
+   "thumbnail": null
+  },
+  {
+   "title": "Amazon EC2 X8i instances are now available in the Asia Pacific (New Zealand) Region",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-ec2-x8i-new-zealand/",
+   "published": "2026-11-23T23:21:00+00:00",
+   "summary": "Starting today, Amazon Elastic Compute Cloud (Amazon EC2) X8i instances are available in the Asia Pacific (New Zealand) Region. These instances are powered by custom Intel Xeon 6 processors available only on AWS. X8i instances are SAP-certified and deliver the highest…",
+   "thumbnail": null
+  },
+  {
+   "title": "AWS Sign-In introduces configurable Sign-in duration of up to 90 days",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/configurable-aws-sign-in-duration/",
+   "published": "2026-11-23T23:14:00+00:00",
+   "summary": "AWS Sign-In now enables developers and AI agents to stay authenticated for up to 90 days without frequent sign-ins or consent prompts. With this launch, administrators can configure Sign-in duration , which controls how long an OAuth Sign-in session remains active, for…",
+   "thumbnail": null
+  },
+  {
+   "title": "Amazon SageMaker HyperPod now supports managed observability and user management extensions for Slurm clusters",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/sagemaker-hyperpod-extensions/",
+   "published": "2026-11-23T20:00:00+00:00",
+   "summary": "Amazon SageMaker HyperPod now supports managed cluster extensions for Slurm clusters. You can install, configure, update, and remove managed features through the SageMaker AI console or API. The first two extensions cover observability and user management. Earlier, every…",
+   "thumbnail": null
+  },
+  {
+   "title": "Amazon API Gateway announces API Portal",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-api-gateway-announces-api-portal/",
+   "published": "2026-11-23T20:00:00+00:00",
+   "summary": "Today, Amazon API Gateway announces API Portal , a new feature that discovers, governs, and documents the APIs and AI endpoints behind Amazon API Gateway, Application Load Balancer, and Amazon CloudFront across your AWS organization. Many organizations can't see which APIs are…",
+   "thumbnail": null
+  },
+  {
+   "title": "Amazon OpenSearch Service now supports OpenSearch version 3.9",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-opensearch-opensearch-3-9",
+   "published": "2026-11-23T19:30:00+00:00",
+   "summary": "You can now run OpenSearch version 3.9 on Amazon OpenSearch Service. OpenSearch 3.9 helps you reduce vector memory and storage, evaluate search quality with more large language model (LLM) providers, build more responsive AI agents, and control access to shared resources. This…",
+   "thumbnail": null
+  },
+  {
+   "title": "AWS WAF introduces simplified pricing",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-waf-introduces-simplified-pricing/",
+   "published": "2026-11-23T18:51:00+00:00",
+   "summary": "AWS WAF now offers simplified pricing that follows what you protect instead of how you configure it. Previously, you paid separate charges for each web ACL, rule, rule group subscription, and capacity tier, making every security decision a billing calculation. Now, your bill…",
+   "thumbnail": null
+  },
+  {
+   "title": "AWS WAF announces automated discovery and protection for LLM, MCP, and A2A endpoints using Amazon Bedrock Guardrails",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/waf-ai-endpoint-discovery-protection/",
+   "published": "2026-11-23T18:47:00+00:00",
+   "summary": "Automated AI endpoint discovery and protection are now generally available, enabling you to discover language model (LLM), Model Context Protocol (MCP), and Agent2Agent (A2A) endpoints behind Amazon API Gateway, Application Load Balancers, and Amazon CloudFront across your AWS…",
+   "thumbnail": null
+  },
+  {
+   "title": "Amazon Connect Customer launches the ability to force logout agents directly from the analytics dashboard",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-connect-force-logout/",
+   "published": "2026-11-23T18:35:00+00:00",
+   "summary": "Amazon Connect Customer now allows supervisors to force logout agents directly from the real-time analytics dashboard, eliminating the need to manually contact agents to end their sessions. Force logout ends all active agent sessions and records the logout event in the…",
+   "thumbnail": null
+  },
+  {
+   "title": "Amazon Connect Customer now lets you test AI model version upgrades for automated evaluations",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-connect-customer-test-ai-model-version-upgrades-automated-evaluations",
+   "published": "2026-11-23T18:00:00+00:00",
+   "summary": "Amazon Connect Customer now enables managers to test new AI model versions for automated evaluations before switching, so evaluation scores remain consistent through model upgrades. When a new version becomes available, managers can test how it would score the same contacts…",
+   "thumbnail": null
+  },
+  {
+   "title": "Amazon Connect Customer expands automated performance evaluations to 45 new languages",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-connect-customer-expands-automated-performance-evaluations-new-languages/",
+   "published": "2026-11-23T18:00:00+00:00",
+   "summary": "Amazon Connect Customer now uses generative AI to automate evaluations of human and AI agent performance in 45 additional languages, such as Arabic, Dutch, Indonesian, and Polish. Managers define custom evaluation criteria in natural language and receive AI-generated evaluations…",
+   "thumbnail": null
+  }
+ ]
+}

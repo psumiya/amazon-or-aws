@@ -1,6 +1,6 @@
 .idea/
 .DS_Store
-deploy.sh
-invalidate-cache.sh
-/service-list-latest.json
-/*.rss
+.venv/
+__pycache__/
+dist/
+.claude/

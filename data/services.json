@@ -1,0 +1,2270 @@
+[
+ {
+  "name": "Alexa for Business",
+  "prefix": "Other",
+  "summary": "Empower your organization with Alexa",
+  "category": "Business Applications",
+  "launched": "2017-11-30",
+  "url": "https://aws.amazon.com/alexaforbusiness/",
+  "free_tier": null
+ },
+ {
+  "name": "Amazon API Gateway",
+  "prefix": "Amazon",
+  "summary": "Build, deploy, and manage APIs",
+  "category": "Front-End Web & Mobile",
+  "launched": "2015-07-09",
+  "url": "https://aws.amazon.com/api-gateway/",
+  "free_tier": "Free Trial"
+ },
+ {
+  "name": "Amazon AppFlow",
+  "prefix": "Amazon",
+  "summary": "No-code integration for SaaS apps & AWS services",
+  "category": "Application Integration",
+  "launched": "2020-04-22",
+  "url": "https://aws.amazon.com/appflow/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "Amazon AppStream 2.0",
+  "prefix": "Amazon",
+  "summary": "Stream desktop applications securely to a browser",
+  "category": "End User Computing",
+  "launched": "2016-12-01",
+  "url": "https://aws.amazon.com/appstream2/",
+  "free_tier": "Free Trial"
+ },
+ {
+  "name": "Amazon Athena",
+  "prefix": "Amazon",
+  "summary": "Query data in S3 using SQL",
+  "category": "Analytics",
+  "launched": "2016-11-30",
+  "url": "https://aws.amazon.com/athena/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "Amazon Augmented AI",
+  "prefix": "Amazon",
+  "summary": "Easily implement human review of ML predictions",
+  "category": "Machine Learning",
+  "launched": "2020-04-24",
+  "url": "https://aws.amazon.com/augmented-ai/",
+  "free_tier": "Free Trial"
+ },
+ {
+  "name": "Amazon Aurora",
+  "prefix": "Amazon",
+  "summary": "High performance managed relational database",
+  "category": "Databases",
+  "launched": "2014-11-12",
+  "url": "https://aws.amazon.com/rds/aurora/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "Amazon Bedrock",
+  "prefix": "Amazon",
+  "summary": "Build with foundation models",
+  "category": "Machine Learning",
+  "launched": null,
+  "url": "https://aws.amazon.com/bedrock/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "Amazon Braket",
+  "prefix": "Amazon",
+  "summary": "Accelerate quantum computing research",
+  "category": "Quantum Technologies",
+  "launched": "2020-08-13",
+  "url": "https://aws.amazon.com/braket/",
+  "free_tier": "Free Trial"
+ },
+ {
+  "name": "Amazon Chime",
+  "prefix": "Amazon",
+  "summary": "Frustration-free meetings, video calls, and chat",
+  "category": "Business Applications",
+  "launched": "2017-02-13",
+  "url": "https://aws.amazon.com/chime/",
+  "free_tier": null
+ },
+ {
+  "name": "Amazon Chime SDK",
+  "prefix": "Amazon",
+  "summary": "Real-time messaging, audio, video, and screen sharing",
+  "category": "Business Applications",
+  "launched": "2019-11-21",
+  "url": "https://aws.amazon.com/chime/chime-sdk/",
+  "free_tier": null
+ },
+ {
+  "name": "Amazon CloudFront",
+  "prefix": "Amazon",
+  "summary": "Global content delivery network",
+  "category": "Networking & Content Delivery",
+  "launched": "2008-11-18",
+  "url": "https://aws.amazon.com/cloudfront/",
+  "free_tier": "12 Months Free"
+ },
+ {
+  "name": "Amazon CloudSearch",
+  "prefix": "Amazon",
+  "summary": "Managed search service",
+  "category": "Analytics",
+  "launched": "2012-04-11",
+  "url": "https://aws.amazon.com/cloudsearch/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "Amazon CloudWatch",
+  "prefix": "Amazon",
+  "summary": "Monitor resources and applications",
+  "category": "Management & Governance",
+  "launched": "2009-05-18",
+  "url": "https://aws.amazon.com/cloudwatch/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "Amazon CodeCatalyst",
+  "prefix": "Amazon",
+  "summary": "Unified software development service for faster development and delivery on AWS",
+  "category": "Developer Tools",
+  "launched": "2022-12-01",
+  "url": "https://aws.amazon.com/codecatalyst/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "Amazon CodeGuru",
+  "prefix": "Amazon",
+  "summary": "Find your most expensive lines of code",
+  "category": "Machine Learning",
+  "launched": "2019-12-03",
+  "url": "https://aws.amazon.com/codeguru/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "Amazon CodeWhisperer",
+  "prefix": "Amazon",
+  "summary": "Build apps faster with ML-powered coding companion",
+  "category": "Machine Learning",
+  "launched": "2023-04-13",
+  "url": "https://aws.amazon.com/codewhisperer/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "Amazon Cognito",
+  "prefix": "Amazon",
+  "summary": "Identity management for your apps",
+  "category": "Security, Identity, & Compliance",
+  "launched": "2014-07-10",
+  "url": "https://aws.amazon.com/cognito/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "Amazon Comprehend",
+  "prefix": "Amazon",
+  "summary": "Discover insights and relationships in text",
+  "category": "Machine Learning",
+  "launched": "2017-11-29",
+  "url": "https://aws.amazon.com/comprehend/",
+  "free_tier": "12 Months Free"
+ },
+ {
+  "name": "Amazon Connect",
+  "prefix": "Amazon",
+  "summary": "Omnichannel cloud contact center",
+  "category": "Business Applications",
+  "launched": "2017-03-28",
+  "url": "https://aws.amazon.com/connect/",
+  "free_tier": null
+ },
+ {
+  "name": "Amazon Corretto",
+  "prefix": "Amazon",
+  "summary": "Production-ready distribution of OpenJDK",
+  "category": "Developer Tools",
+  "launched": "2019-01-31",
+  "url": "https://aws.amazon.com/corretto/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "Amazon Dash Cart",
+  "prefix": "Amazon",
+  "summary": "Empower consumers to shop with efficiency and ease",
+  "category": "Business Applications",
+  "launched": "2023-09-19",
+  "url": "https://aws.amazon.com/dash-cart/",
+  "free_tier": null
+ },
+ {
+  "name": "Amazon DataZone",
+  "prefix": "Amazon",
+  "summary": "Unlock data across organizational boundaries with built-in governance",
+  "category": "Analytics",
+  "launched": "2022-11-29",
+  "url": "https://aws.amazon.com/datazone/",
+  "free_tier": null
+ },
+ {
+  "name": "Amazon Detective",
+  "prefix": "Amazon",
+  "summary": "Investigate potential security issues",
+  "category": "Security, Identity, & Compliance",
+  "launched": "2019-12-03",
+  "url": "https://aws.amazon.com/detective/",
+  "free_tier": "Free Trial"
+ },
+ {
+  "name": "Amazon DevOps Guru",
+  "prefix": "Amazon",
+  "summary": "ML-powered cloud operations service to improve application availability",
+  "category": "Machine Learning",
+  "launched": "2021-05-04",
+  "url": "https://aws.amazon.com/devops-guru/",
+  "free_tier": "Free Trial"
+ },
+ {
+  "name": "Amazon DocumentDB",
+  "prefix": "Amazon",
+  "summary": "Fully managed document database",
+  "category": "Databases",
+  "launched": "2019-01-08",
+  "url": "https://aws.amazon.com/documentdb/",
+  "free_tier": "<p>Free Trial</p>\r\n"
+ },
+ {
+  "name": "Amazon DynamoDB",
+  "prefix": "Amazon",
+  "summary": "Managed NoSQL database",
+  "category": "Databases",
+  "launched": "2012-01-18",
+  "url": "https://aws.amazon.com/dynamodb/",
+  "free_tier": "Free Trial"
+ },
+ {
+  "name": "Amazon EC2",
+  "prefix": "Amazon",
+  "summary": "Virtual servers in the cloud",
+  "category": "Compute",
+  "launched": "2008-10-23",
+  "url": "https://aws.amazon.com/ec2/",
+  "free_tier": "Free Trial"
+ },
+ {
+  "name": "Amazon EC2 Auto Scaling",
+  "prefix": "Amazon",
+  "summary": "Scale compute capacity to meet demand",
+  "category": "Compute",
+  "launched": "2009-05-17",
+  "url": "https://aws.amazon.com/ec2/autoscaling/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "Amazon EC2 Spot Instances",
+  "prefix": "Amazon",
+  "summary": "Run workloads for up to 90% off",
+  "category": "Compute",
+  "launched": "2009-12-14",
+  "url": "https://aws.amazon.com/ec2/spot/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "Amazon Elastic Block Store (EBS)",
+  "prefix": "Amazon",
+  "summary": "EC2 block storage volumes",
+  "category": "Storage",
+  "launched": "2008-08-20",
+  "url": "https://aws.amazon.com/ebs/",
+  "free_tier": "12 Months Free"
+ },
+ {
+  "name": "Amazon Elastic Container Registry (ECR)",
+  "prefix": "Amazon",
+  "summary": "Easily store, manage, and deploy container images",
+  "category": "Containers",
+  "launched": "2015-12-21",
+  "url": "https://aws.amazon.com/ecr/",
+  "free_tier": "Free Trial"
+ },
+ {
+  "name": "Amazon Elastic Container Service (ECS)",
+  "prefix": "Amazon",
+  "summary": "Highly secure, reliable, and scalable way to run containers",
+  "category": "Containers",
+  "launched": "2014-11-13",
+  "url": "https://aws.amazon.com/ecs/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "Amazon Elastic File System (EFS)",
+  "prefix": "Amazon",
+  "summary": "Fully managed file system for EC2",
+  "category": "Storage",
+  "launched": "2015-04-09",
+  "url": "https://aws.amazon.com/efs/",
+  "free_tier": "12 Months Free"
+ },
+ {
+  "name": "Amazon Elastic Inference",
+  "prefix": "Amazon",
+  "summary": "Deep learning inference acceleration",
+  "category": "Machine Learning",
+  "launched": "2018-11-28",
+  "url": "https://aws.amazon.com/machine-learning/elastic-inference/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "Amazon Elastic Kubernetes Service (EKS)",
+  "prefix": "Amazon",
+  "summary": "The most trusted way to run Kubernetes",
+  "category": "Containers",
+  "launched": "2018-06-05",
+  "url": "https://aws.amazon.com/eks/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "Amazon Elastic Transcoder",
+  "prefix": "Amazon",
+  "summary": "Easy-to-use scalable media transcoding",
+  "category": "Media Services",
+  "launched": "2013-01-28",
+  "url": "https://aws.amazon.com/elastictranscoder/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "Amazon ElastiCache",
+  "prefix": "Amazon",
+  "summary": "In-memory caching service",
+  "category": "Databases",
+  "launched": "2011-08-22",
+  "url": "https://aws.amazon.com/elasticache/",
+  "free_tier": "Free Trial"
+ },
+ {
+  "name": "Amazon EMR",
+  "prefix": "Amazon",
+  "summary": "Hosted Hadoop framework",
+  "category": "Analytics",
+  "launched": "2009-04-02",
+  "url": "https://aws.amazon.com/emr/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "Amazon EventBridge",
+  "prefix": "Amazon",
+  "summary": "Serverless event bus for SaaS apps & AWS services",
+  "category": "Application Integration",
+  "launched": "2019-07-11",
+  "url": "https://aws.amazon.com/eventbridge/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "Amazon FinSpace",
+  "prefix": "Amazon",
+  "summary": "Store, catalog, prepare, and analyze financial industry data in minutes",
+  "category": "Analytics",
+  "launched": "2021-05-03",
+  "url": "https://aws.amazon.com/finspace/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "Amazon Forecast",
+  "prefix": "Amazon",
+  "summary": "Increase forecast accuracy using machine learning",
+  "category": "Machine Learning",
+  "launched": "2019-08-22",
+  "url": "https://aws.amazon.com/forecast/",
+  "free_tier": "Free Trial"
+ },
+ {
+  "name": "Amazon Fraud Detector",
+  "prefix": "Amazon",
+  "summary": "Detect more online fraud faster",
+  "category": "Machine Learning",
+  "launched": "2020-07-28",
+  "url": "https://aws.amazon.com/fraud-detector/",
+  "free_tier": "Free Trial"
+ },
+ {
+  "name": "Amazon FSx",
+  "prefix": "Amazon",
+  "summary": "Launch, run, and scale feature-rich and highly-performant file systems with just a few clicks",
+  "category": "Storage",
+  "launched": "2018-11-28",
+  "url": "https://aws.amazon.com/fsx/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "Amazon GameLift",
+  "prefix": "Amazon",
+  "summary": "Simple, fast, cost-effective dedicated game server hosting",
+  "category": "Game Tech",
+  "launched": "2016-02-09",
+  "url": "https://aws.amazon.com/gamelift/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "Amazon GuardDuty",
+  "prefix": "Amazon",
+  "summary": "Managed threat detection service",
+  "category": "Security, Identity, & Compliance",
+  "launched": "2017-11-28",
+  "url": "https://aws.amazon.com/guardduty/",
+  "free_tier": "Free Trial"
+ },
+ {
+  "name": "Amazon HealthLake",
+  "prefix": "Amazon",
+  "summary": "Securely store, transform, query, and analyze health data in minutes",
+  "category": "Machine Learning",
+  "launched": "2020-12-08",
+  "url": "https://aws.amazon.com/healthlake/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "Amazon Honeycode",
+  "prefix": "Amazon",
+  "summary": "Build mobile & web apps without programming",
+  "category": "Business Applications",
+  "launched": "2020-06-24",
+  "url": "https://aws.amazon.com/honeycode/",
+  "free_tier": null
+ },
+ {
+  "name": "Amazon Inspector",
+  "prefix": "Amazon",
+  "summary": "Automated and continual vulnerability management for Amazon EC2 and Amazon ECR",
+  "category": "Security, Identity, & Compliance",
+  "launched": "2021-11-29",
+  "url": "https://aws.amazon.com/inspector/",
+  "free_tier": "Free Trial"
+ },
+ {
+  "name": "Amazon Interactive Video Service",
+  "prefix": "Amazon",
+  "summary": "Build engaging live stream experiences",
+  "category": "Media Services",
+  "launched": "2020-07-15",
+  "url": "https://aws.amazon.com/ivs/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "Amazon Kendra",
+  "prefix": "Amazon",
+  "summary": "Reinvent enterprise search with ML",
+  "category": "Machine Learning",
+  "launched": "2020-05-11",
+  "url": "https://aws.amazon.com/kendra/",
+  "free_tier": "Free Trial"
+ },
+ {
+  "name": "Amazon Keyspaces (for Apache Cassandra)",
+  "prefix": "Amazon",
+  "summary": "Managed Cassandra-compatible database",
+  "category": "Databases",
+  "launched": "2020-04-23",
+  "url": "https://aws.amazon.com/keyspaces/",
+  "free_tier": "Free Trial"
+ },
+ {
+  "name": "Amazon Kinesis",
+  "prefix": "Amazon",
+  "summary": "Analyze real-time video and data streams",
+  "category": "Analytics",
+  "launched": "2013-12-16",
+  "url": "https://aws.amazon.com/kinesis/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "Amazon Kinesis Video Streams",
+  "prefix": "Amazon",
+  "summary": "Process and analyze video streams",
+  "category": "Media Services",
+  "launched": "2017-11-29",
+  "url": "https://aws.amazon.com/kinesis/video-streams/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "Amazon Lex",
+  "prefix": "Amazon",
+  "summary": "Build voice and text chatbots",
+  "category": "Machine Learning",
+  "launched": "2017-04-19",
+  "url": "https://aws.amazon.com/lex/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "Amazon Lightsail",
+  "prefix": "Amazon",
+  "summary": "Launch and manage virtual private servers",
+  "category": "Compute",
+  "launched": "2016-11-30",
+  "url": "https://aws.amazon.com/lightsail/",
+  "free_tier": "Free Trial"
+ },
+ {
+  "name": "Amazon Location Service",
+  "prefix": "Amazon",
+  "summary": "Securely and easily add location data to applications",
+  "category": "Front-End Web & Mobile",
+  "launched": "2021-06-01",
+  "url": "https://aws.amazon.com/location/",
+  "free_tier": "Free Trial"
+ },
+ {
+  "name": "Amazon Lookout for Equipment",
+  "prefix": "Amazon",
+  "summary": "Detect abnormal equipment behavior by analyzing sensor data",
+  "category": "Machine Learning",
+  "launched": "2021-04-08",
+  "url": "https://aws.amazon.com/lookout-for-equipment/",
+  "free_tier": "Free Trial"
+ },
+ {
+  "name": "Amazon Lookout for Metrics",
+  "prefix": "Amazon",
+  "summary": "Automatically detect anomalies in metrics and identify their root cause",
+  "category": "Machine Learning",
+  "launched": "2020-12-01",
+  "url": "https://aws.amazon.com/lookout-for-metrics/",
+  "free_tier": "Free Trial"
+ },
+ {
+  "name": "Amazon Lookout for Vision",
+  "prefix": "Amazon",
+  "summary": "Spot product defects using computer vision to automate quality inspection",
+  "category": "Machine Learning",
+  "launched": "2021-02-24",
+  "url": "https://aws.amazon.com/lookout-for-vision/",
+  "free_tier": "Free Trial"
+ },
+ {
+  "name": "Amazon Lumberyard",
+  "prefix": "Amazon",
+  "summary": "A free cross-platform 3D game engine, with Full Source, integrated with AWS and Twitch",
+  "category": "Game Tech",
+  "launched": "2016-03-16",
+  "url": "https://aws.amazon.com/lumberyard/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "Amazon Macie",
+  "prefix": "Amazon",
+  "summary": "Discover and protect your sensitive data at scale",
+  "category": "Security, Identity, & Compliance",
+  "launched": "2017-08-14",
+  "url": "https://aws.amazon.com/macie/",
+  "free_tier": "Free Trial"
+ },
+ {
+  "name": "Amazon Managed Blockchain",
+  "prefix": "Amazon",
+  "summary": "Create and manage scalable blockchain networks",
+  "category": "Blockchain",
+  "launched": "2018-11-28",
+  "url": "https://aws.amazon.com/managed-blockchain/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "Amazon Managed Grafana",
+  "prefix": "Amazon",
+  "summary": "Scalable, secure, and highly available data visualization for your operational metrics, logs, and traces",
+  "category": "Management & Governance",
+  "launched": "2021-08-31",
+  "url": "https://aws.amazon.com/grafana/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "Amazon Managed Service for Prometheus",
+  "prefix": "Amazon",
+  "summary": "Highly available, secure, and managed monitoring for your containers",
+  "category": "Management & Governance",
+  "launched": "2021-09-29",
+  "url": "https://aws.amazon.com/prometheus/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "Amazon Managed Streaming for Apache Kafka (MSK)",
+  "prefix": "Amazon",
+  "summary": "Fully managed Apache Kafka service",
+  "category": "Analytics",
+  "launched": "2019-05-30",
+  "url": "https://aws.amazon.com/msk/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "Amazon Managed Workflows for Apache Airflow (MWAA)",
+  "prefix": "Amazon",
+  "summary": "Highly available, secure, and managed workflow orchestration for Apache Airflow",
+  "category": "Application Integration",
+  "launched": "2020-11-24",
+  "url": "https://aws.amazon.com/managed-workflows-for-apache-airflow/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "Amazon MemoryDB for Redis",
+  "prefix": "Amazon",
+  "summary": "Redis-compatible, durable, in-memory database service for ultra-fast performance",
+  "category": "Databases",
+  "launched": "2021-08-19",
+  "url": "https://aws.amazon.com/memorydb/",
+  "free_tier": "<p>Free Trial</p>\r\n"
+ },
+ {
+  "name": "Amazon Monitron",
+  "prefix": "Amazon",
+  "summary": "Reduce unplanned equipment downtime with predictive maintenance and machine learning",
+  "category": "Machine Learning",
+  "launched": "2020-12-01",
+  "url": "https://aws.amazon.com/monitron/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "Amazon MQ",
+  "prefix": "Amazon",
+  "summary": "Managed message broker service",
+  "category": "Application Integration",
+  "launched": "2017-11-28",
+  "url": "https://aws.amazon.com/amazon-mq/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "Amazon Neptune",
+  "prefix": "Amazon",
+  "summary": "Fully managed graph database service",
+  "category": "Databases",
+  "launched": "2018-05-30",
+  "url": "https://aws.amazon.com/neptune/",
+  "free_tier": "<p>Free Trial</p>\r\n"
+ },
+ {
+  "name": "Amazon Nimble Studio",
+  "prefix": "Amazon",
+  "summary": "Accelerate content creation in the cloud",
+  "category": "Media Services",
+  "launched": "2021-04-08",
+  "url": "https://aws.amazon.com/nimble-studio/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "Amazon Nova",
+  "prefix": "Amazon",
+  "summary": "Price performant multimodal and content generation models with frontier intelligence",
+  "category": "Generative AI",
+  "launched": "2024-12-01",
+  "url": "https://aws.amazon.com/nova/",
+  "free_tier": null
+ },
+ {
+  "name": "Amazon OpenSearch Service",
+  "prefix": "Amazon",
+  "summary": "Search, visualize, and analyze up to petabytes of text and unstructured data",
+  "category": "Analytics",
+  "launched": "2015-10-01",
+  "url": "https://aws.amazon.com/opensearch-service/",
+  "free_tier": "Free Trial"
+ },
+ {
+  "name": "Amazon Personalize",
+  "prefix": "Amazon",
+  "summary": "Build real-time recommendations into your applications",
+  "category": "Machine Learning",
+  "launched": "2019-06-10",
+  "url": "https://aws.amazon.com/personalize/",
+  "free_tier": "Free Trial"
+ },
+ {
+  "name": "Amazon Pinpoint",
+  "prefix": "Amazon",
+  "summary": "Multichannel marketing communications",
+  "category": "Front-End Web & Mobile",
+  "launched": "2016-12-01",
+  "url": "https://aws.amazon.com/pinpoint/",
+  "free_tier": null
+ },
+ {
+  "name": "Amazon Polly",
+  "prefix": "Amazon",
+  "summary": "Turn text into life-like speech",
+  "category": "Machine Learning",
+  "launched": "2016-11-30",
+  "url": "https://aws.amazon.com/polly/",
+  "free_tier": "12 Months Free"
+ },
+ {
+  "name": "Amazon Q",
+  "prefix": "Amazon",
+  "summary": "Generative AI-powered assistant, with security and privacy to meet the most stringent enterprise needs",
+  "category": "Generative AI",
+  "launched": "2023-11-28",
+  "url": "https://aws.amazon.com/q/",
+  "free_tier": null
+ },
+ {
+  "name": "Amazon Quantum Ledger Database (QLDB)",
+  "prefix": "Amazon",
+  "summary": "Fully managed ledger database",
+  "category": "Blockchain",
+  "launched": "2018-11-28",
+  "url": "https://aws.amazon.com/qldb/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "Amazon QuickSight",
+  "prefix": "Amazon",
+  "summary": "Fast business analytics service",
+  "category": "Analytics",
+  "launched": "2016-11-15",
+  "url": "https://aws.amazon.com/quicksight/",
+  "free_tier": "Free Trial"
+ },
+ {
+  "name": "Amazon RDS",
+  "prefix": "Amazon",
+  "summary": "Managed relational database service for MySQL, PostgreSQL, Oracle, SQL Server, and MariaDB",
+  "category": "Databases",
+  "launched": "2009-10-27",
+  "url": "https://aws.amazon.com/rds/",
+  "free_tier": "Free Trial"
+ },
+ {
+  "name": "Amazon Redshift",
+  "prefix": "Amazon",
+  "summary": "Fast, simple, cost-effective data warehousing",
+  "category": "Databases",
+  "launched": "2013-02-14",
+  "url": "https://aws.amazon.com/redshift/",
+  "free_tier": "Free Trial"
+ },
+ {
+  "name": "Amazon Rekognition",
+  "prefix": "Amazon",
+  "summary": "Analyze image and video",
+  "category": "Machine Learning",
+  "launched": "2016-11-30",
+  "url": "https://aws.amazon.com/rekognition/",
+  "free_tier": "12 Months Free"
+ },
+ {
+  "name": "Amazon Route 53",
+  "prefix": "Amazon",
+  "summary": "53 Scalable domain name system (DNS)",
+  "category": "Networking & Content Delivery",
+  "launched": "2010-12-06",
+  "url": "https://aws.amazon.com/route53/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "Amazon S3 Glacier",
+  "prefix": "Amazon",
+  "summary": "Low-cost archive storage in the cloud",
+  "category": "Storage",
+  "launched": "2012-08-20",
+  "url": "https://aws.amazon.com/glacier/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "Amazon SageMaker",
+  "prefix": "Amazon",
+  "summary": "The next generation of Amazon SageMaker is the center for all your data, analytics, and AI",
+  "category": "Machine Learning",
+  "launched": "2017-11-29",
+  "url": "https://aws.amazon.com/sagemaker/",
+  "free_tier": "Free Trial"
+ },
+ {
+  "name": "Amazon SageMaker AI",
+  "prefix": "Amazon",
+  "summary": "Build, train, and deploy machine learning models at scale",
+  "category": "Machine Learning",
+  "launched": "2017-11-29",
+  "url": "https://aws.amazon.com/sagemaker/",
+  "free_tier": null
+ },
+ {
+  "name": "Amazon SageMaker Ground Truth",
+  "prefix": "Amazon",
+  "summary": "Build accurate ML training datasets",
+  "category": "Machine Learning",
+  "launched": "2018-11-27",
+  "url": "https://aws.amazon.com/sagemaker/groundtruth/",
+  "free_tier": "Free Trial"
+ },
+ {
+  "name": "Amazon Security Lake",
+  "prefix": "Amazon",
+  "summary": "Automatically centralize your security data with a few clicks",
+  "category": "Security, Identity, & Compliance",
+  "launched": "2022-11-29",
+  "url": "https://aws.amazon.com/security-lake/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "Amazon Simple Email Service (SES)",
+  "prefix": "Amazon",
+  "summary": "High-scale inbound and outbound email",
+  "category": "Front-End Web & Mobile",
+  "launched": "2011-01-25",
+  "url": "https://aws.amazon.com/ses/",
+  "free_tier": null
+ },
+ {
+  "name": "Amazon Simple Notification Service (SNS)",
+  "prefix": "Amazon",
+  "summary": "Pub/sub, SMS, email, and mobile push notifications",
+  "category": "Application Integration",
+  "launched": "2010-04-07",
+  "url": "https://aws.amazon.com/sns/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "Amazon Simple Queue Service (SQS)",
+  "prefix": "Amazon",
+  "summary": "Managed message queues",
+  "category": "Application Integration",
+  "launched": "2006-07-13",
+  "url": "https://aws.amazon.com/sqs/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "Amazon Simple Storage Service (S3)",
+  "prefix": "Amazon",
+  "summary": "Object storage built to retrieve any amount of data from anywhere",
+  "category": "Storage",
+  "launched": "2006-03-14",
+  "url": "https://aws.amazon.com/s3/",
+  "free_tier": "Free Trial"
+ },
+ {
+  "name": "Amazon Textract",
+  "prefix": "Amazon",
+  "summary": "Extract text and data from documents",
+  "category": "Machine Learning",
+  "launched": "2019-05-29",
+  "url": "https://aws.amazon.com/textract/",
+  "free_tier": "Free Trial"
+ },
+ {
+  "name": "Amazon Timestream",
+  "prefix": "Amazon",
+  "summary": "Fully managed time series database",
+  "category": "Databases",
+  "launched": "2020-09-30",
+  "url": "https://aws.amazon.com/timestream/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "Amazon Transcribe",
+  "prefix": "Amazon",
+  "summary": "Automatic speech recognition",
+  "category": "Machine Learning",
+  "launched": "2018-04-04",
+  "url": "https://aws.amazon.com/transcribe/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "Amazon Translate",
+  "prefix": "Amazon",
+  "summary": "Natural and fluent language translation",
+  "category": "Machine Learning",
+  "launched": "2018-04-04",
+  "url": "https://aws.amazon.com/translate/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "Amazon Verified Permissions",
+  "prefix": "Amazon",
+  "summary": "Fine-grained permissions and authorization for your applications",
+  "category": "Security, Identity, & Compliance",
+  "launched": "2022-11-28",
+  "url": "https://aws.amazon.com/verified-permissions/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "Amazon VPC",
+  "prefix": "Amazon",
+  "summary": "Isolated cloud resources",
+  "category": "Networking & Content Delivery",
+  "launched": "2011-08-03",
+  "url": "https://aws.amazon.com/vpc/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "Amazon WorkDocs",
+  "prefix": "Amazon",
+  "summary": "Secure enterprise document storage and sharing",
+  "category": "Business Applications",
+  "launched": "2015-01-28",
+  "url": "https://aws.amazon.com/workdocs/",
+  "free_tier": "<p>Free Trial</p>\r\n"
+ },
+ {
+  "name": "Amazon WorkMail",
+  "prefix": "Amazon",
+  "summary": "Secure email and calendaring",
+  "category": "Business Applications",
+  "launched": "2016-01-04",
+  "url": "https://aws.amazon.com/workmail/",
+  "free_tier": null
+ },
+ {
+  "name": "Amazon WorkSpaces Family",
+  "prefix": "Amazon",
+  "summary": "Virtual desktop services for every use case",
+  "category": "End User Computing",
+  "launched": "2014-03-26",
+  "url": "https://aws.amazon.com/workspaces/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "Amazon WorkSpaces Thin Client",
+  "prefix": "Amazon",
+  "summary": "Amazon WorkSpaces Thin Client reduces costs, simplifies logistics, speeds time to deployment, and works with AWS virtual desktop services",
+  "category": "End User Computing",
+  "launched": "2023-11-26",
+  "url": "https://aws.amazon.com/workspaces/thin-client/",
+  "free_tier": null
+ },
+ {
+  "name": "Apache MXNet on AWS",
+  "prefix": "Other",
+  "summary": "Scalable, open-source deep learning framework",
+  "category": "Machine Learning",
+  "launched": "2017-06-06",
+  "url": "https://aws.amazon.com/mxnet/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Amplify",
+  "prefix": "AWS",
+  "summary": "Build, deploy, host, and manage scalable web and mobile apps",
+  "category": "Front-End Web & Mobile",
+  "launched": "2017-11-21",
+  "url": "https://aws.amazon.com/amplify/",
+  "free_tier": "<p>Free Trial</p>\r\n"
+ },
+ {
+  "name": "AWS App Mesh",
+  "prefix": "AWS",
+  "summary": "Monitor and control microservices",
+  "category": "Networking & Content Delivery",
+  "launched": "2019-03-27",
+  "url": "https://aws.amazon.com/app-mesh/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS App Runner",
+  "prefix": "AWS",
+  "summary": "Production web applications at scale made easy for developers",
+  "category": "Compute",
+  "launched": "2021-05-18",
+  "url": "https://aws.amazon.com/apprunner/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS App Studio",
+  "prefix": "AWS",
+  "summary": "The fastest and easiest way to build enterprise-grade applications",
+  "category": "Machine Learning",
+  "launched": "2024-07-10",
+  "url": "https://aws.amazon.com/appstudio/",
+  "free_tier": null
+ },
+ {
+  "name": "AWS App2Container",
+  "prefix": "AWS",
+  "summary": "Containerize and migrate existing applications",
+  "category": "Containers",
+  "launched": "2020-07-01",
+  "url": "https://aws.amazon.com/app2container/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS AppFabric",
+  "prefix": "AWS",
+  "summary": "AWS AppFabric quickly connect SaaS applications to work better together for enhanced security observability and increase employee productivity",
+  "category": "Business Applications",
+  "launched": null,
+  "url": "https://aws.amazon.com/appfabric/",
+  "free_tier": null
+ },
+ {
+  "name": "AWS Application Composer",
+  "prefix": "AWS",
+  "summary": "Visually design and build serverless applications quickly",
+  "category": "Serverless",
+  "launched": "2022-12-01",
+  "url": "https://aws.amazon.com/application-composer/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Application Discovery Service",
+  "prefix": "AWS",
+  "summary": "Discover on-premises applications to streamline migration",
+  "category": "Migration",
+  "launched": "2016-04-19",
+  "url": "https://aws.amazon.com/application-discovery/",
+  "free_tier": "Free Trial"
+ },
+ {
+  "name": "AWS Application Migration Service (MGN)",
+  "prefix": "AWS",
+  "summary": "Automate application migration and modernization",
+  "category": "Migration",
+  "launched": "2019-06-11",
+  "url": "https://aws.amazon.com/application-migration-service/",
+  "free_tier": "<p>Always Free</p>"
+ },
+ {
+  "name": "AWS AppSync",
+  "prefix": "AWS",
+  "summary": "Accelerate app development with fully-managed, scalable GraphQL APIs",
+  "category": "Front-End Web & Mobile",
+  "launched": "2017-11-28",
+  "url": "https://aws.amazon.com/appsync/",
+  "free_tier": "Free Trial"
+ },
+ {
+  "name": "AWS Artifact",
+  "prefix": "AWS",
+  "summary": "On-demand access to AWS’ compliance reports",
+  "category": "Security, Identity, & Compliance",
+  "launched": "2016-11-30",
+  "url": "https://aws.amazon.com/artifact/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Audit Manager",
+  "prefix": "AWS",
+  "summary": "Continuously audit your AWS usage to simplify how you assess risk and compliance",
+  "category": "Security, Identity, & Compliance",
+  "launched": "2020-12-08",
+  "url": "https://aws.amazon.com/audit-manager/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Auto Scaling",
+  "prefix": "AWS",
+  "summary": "Scale multiple resources to meet demand",
+  "category": "Compute",
+  "launched": "2018-01-16",
+  "url": "https://aws.amazon.com/autoscaling/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Backup",
+  "prefix": "AWS",
+  "summary": "Centralized backup across AWS services",
+  "category": "Storage",
+  "launched": "2019-01-15",
+  "url": "https://aws.amazon.com/backup/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Batch",
+  "prefix": "AWS",
+  "summary": "Run batch jobs at any scale",
+  "category": "Compute",
+  "launched": "2017-01-05",
+  "url": "https://aws.amazon.com/batch/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Budgets",
+  "prefix": "AWS",
+  "summary": "Set custom cost and usage budgets",
+  "category": "Cloud Financial Management",
+  "launched": "2015-06-29",
+  "url": "https://aws.amazon.com/aws-cost-management/aws-budgets/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Certificate Manager",
+  "prefix": "AWS",
+  "summary": "Manager Provision, manage, and deploy SSL/TLS certificates",
+  "category": "Security, Identity, & Compliance",
+  "launched": "2016-01-21",
+  "url": "https://aws.amazon.com/certificate-manager/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Chatbot",
+  "prefix": "AWS",
+  "summary": "ChatOps for AWS",
+  "category": "Management & Governance",
+  "launched": "2020-04-22",
+  "url": "https://aws.amazon.com/chatbot/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Clean Rooms",
+  "prefix": "AWS",
+  "summary": "Match, analyze, and collaborate on datasets–without sharing or revealing underlying data",
+  "category": "Analytics",
+  "launched": "2022-11-29",
+  "url": "https://aws.amazon.com/clean-rooms/",
+  "free_tier": null
+ },
+ {
+  "name": "AWS Cloud Control API",
+  "prefix": "AWS",
+  "summary": "Manage AWS and third-party cloud infrastructure with consistent APIs",
+  "category": "Developer Tools",
+  "launched": "2021-09-30",
+  "url": "https://aws.amazon.com/cloudcontrolapi/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Cloud Development Kit (CDK)",
+  "prefix": "AWS",
+  "summary": "Model cloud infrastructure using code",
+  "category": "Developer Tools",
+  "launched": "2019-07-11",
+  "url": "https://aws.amazon.com/cdk/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Cloud Map",
+  "prefix": "AWS",
+  "summary": "Service discovery for cloud resources",
+  "category": "Networking & Content Delivery",
+  "launched": "2018-11-28",
+  "url": "https://aws.amazon.com/cloud-map/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Cloud WAN",
+  "prefix": "AWS",
+  "summary": "Easily build, manage, and monitor global wide area networks",
+  "category": "Networking & Content Delivery",
+  "launched": "2022-07-12",
+  "url": "https://aws.amazon.com/cloud-wan/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Cloud9",
+  "prefix": "AWS",
+  "summary": "Write, run, and debug code on a cloud IDE",
+  "category": "Developer Tools",
+  "launched": "2017-11-30",
+  "url": "https://aws.amazon.com/cloud9/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS CloudFormation",
+  "prefix": "AWS",
+  "summary": "Create and manage resources with templates",
+  "category": "Management & Governance",
+  "launched": "2011-02-25",
+  "url": "https://aws.amazon.com/cloudformation/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS CloudHSM",
+  "prefix": "AWS",
+  "summary": "Hardware-based key storage for regulatory compliance",
+  "category": "Security, Identity, & Compliance",
+  "launched": "2013-03-26",
+  "url": "https://aws.amazon.com/cloudhsm/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS CloudShell",
+  "prefix": "AWS",
+  "summary": "Command line access to AWS resources and tools directly from a browser",
+  "category": "Developer Tools",
+  "launched": "2020-12-15",
+  "url": "https://aws.amazon.com/cloudshell/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS CloudTrail",
+  "prefix": "AWS",
+  "summary": "Track user activity and API usage",
+  "category": "Management & Governance",
+  "launched": "2013-11-13",
+  "url": "https://aws.amazon.com/cloudtrail/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS CodeArtifact",
+  "prefix": "AWS",
+  "summary": "Secure, scalable, and cost-effective artifact management for software development",
+  "category": "Developer Tools",
+  "launched": "2020-06-10",
+  "url": "https://aws.amazon.com/codeartifact/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS CodeBuild",
+  "prefix": "AWS",
+  "summary": "Build and test code",
+  "category": "Developer Tools",
+  "launched": "2016-12-01",
+  "url": "https://aws.amazon.com/codebuild/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS CodeCommit",
+  "prefix": "AWS",
+  "summary": "Store code in private Git repositories",
+  "category": "Developer Tools",
+  "launched": "2015-07-15",
+  "url": "https://aws.amazon.com/codecommit/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS CodeDeploy",
+  "prefix": "AWS",
+  "summary": "Automate code deployments",
+  "category": "Developer Tools",
+  "launched": "2014-11-12",
+  "url": "https://aws.amazon.com/codedeploy/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS CodePipeline",
+  "prefix": "AWS",
+  "summary": "Release software using continuous delivery",
+  "category": "Developer Tools",
+  "launched": "2015-07-15",
+  "url": "https://aws.amazon.com/codepipeline/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS CodeStar",
+  "prefix": "AWS",
+  "summary": "Develop and deploy AWS applications",
+  "category": "Developer Tools",
+  "launched": "2017-04-19",
+  "url": "https://aws.amazon.com/codestar/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Command Line Interface (CLI)",
+  "prefix": "AWS",
+  "summary": "Line Interface Unified tool to manage AWS services",
+  "category": "Developer Tools",
+  "launched": "2013-09-03",
+  "url": "https://aws.amazon.com/cli/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Compute Optimizer",
+  "prefix": "AWS",
+  "summary": "Identify optimal AWS Compute resources",
+  "category": "Compute",
+  "launched": "2019-12-03",
+  "url": "https://aws.amazon.com/compute-optimizer/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Config",
+  "prefix": "AWS",
+  "summary": "Track resources inventory and changes",
+  "category": "Management & Governance",
+  "launched": "2015-04-06",
+  "url": "https://aws.amazon.com/config/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Control Tower",
+  "prefix": "AWS",
+  "summary": "Set up and govern a secure, compliant multi-account environment",
+  "category": "Management & Governance",
+  "launched": "2019-06-24",
+  "url": "https://aws.amazon.com/controltower/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Copilot",
+  "prefix": "AWS",
+  "summary": "AWS Copilot is the easiest way to launch and manage your containerized application on AWS",
+  "category": "Containers",
+  "launched": "2020-11-23",
+  "url": "https://aws.amazon.com/containers/copilot/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Cost and Usage Report",
+  "prefix": "AWS",
+  "summary": "Access comprehensive cost and usage information",
+  "category": "Cloud Financial Management",
+  "launched": "2015-12-16",
+  "url": "https://aws.amazon.com/aws-cost-management/aws-cost-and-usage-reporting/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Cost Explorer",
+  "prefix": "AWS",
+  "summary": "Analyze your AWS cost and usage",
+  "category": "Cloud Financial Management",
+  "launched": "2014-04-08",
+  "url": "https://aws.amazon.com/aws-cost-management/aws-cost-explorer/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Data Exchange",
+  "prefix": "AWS",
+  "summary": "Find, subscribe to, and use third-party data in the cloud",
+  "category": "Analytics",
+  "launched": "2019-11-13",
+  "url": "https://aws.amazon.com/data-exchange/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Data Pipeline",
+  "prefix": "AWS",
+  "summary": "Orchestration service for periodic, data-driven workflows",
+  "category": "Analytics",
+  "launched": "2012-12-20",
+  "url": "https://aws.amazon.com/datapipeline/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Database Migration Service (DMS)",
+  "prefix": "AWS",
+  "summary": "Migrate databases with minimal downtime",
+  "category": "Migration",
+  "launched": "2016-03-15",
+  "url": "https://aws.amazon.com/dms/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS DataSync",
+  "prefix": "AWS",
+  "summary": "Simple, fast, online data transfer",
+  "category": "Migration",
+  "launched": "2018-11-25",
+  "url": "https://aws.amazon.com/datasync/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Deadline Cloud",
+  "prefix": "AWS",
+  "summary": "Cloud Render Management",
+  "category": "Media Services",
+  "launched": "2024-04-02",
+  "url": "https://aws.amazon.com/deadline-cloud/",
+  "free_tier": null
+ },
+ {
+  "name": "AWS Deep Learning AMIs",
+  "prefix": "AWS",
+  "summary": "Deep learning on Amazon EC2",
+  "category": "Machine Learning",
+  "launched": "2017-02-10",
+  "url": "https://aws.amazon.com/machine-learning/amis/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Deep Learning Containers",
+  "prefix": "AWS",
+  "summary": "Docker images for deep learning",
+  "category": "Machine Learning",
+  "launched": "2019-03-27",
+  "url": "https://aws.amazon.com/machine-learning/containers/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS DeepComposer",
+  "prefix": "AWS",
+  "summary": "ML enabled musical keyboard",
+  "category": "Machine Learning",
+  "launched": "2020-04-02",
+  "url": "https://aws.amazon.com/deepcomposer/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS DeepLens",
+  "prefix": "AWS",
+  "summary": "Deep learning enabled video camera",
+  "category": "Machine Learning",
+  "launched": "2017-11-29",
+  "url": "https://aws.amazon.com/deeplens/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS DeepRacer",
+  "prefix": "AWS",
+  "summary": "Autonomous 1/18th scale race car, driven by ML",
+  "category": "Machine Learning",
+  "launched": "2018-11-28",
+  "url": "https://aws.amazon.com/deepracer/",
+  "free_tier": "Free Trial"
+ },
+ {
+  "name": "AWS Device Farm",
+  "prefix": "AWS",
+  "summary": "Test Android, iOS, and web apps on real devices in the AWS cloud",
+  "category": "Front-End Web & Mobile",
+  "launched": "2015-07-09",
+  "url": "https://aws.amazon.com/device-farm/",
+  "free_tier": "Free Trial"
+ },
+ {
+  "name": "AWS Direct Connect",
+  "prefix": "AWS",
+  "summary": "Dedicated network connection to AWS",
+  "category": "Networking & Content Delivery",
+  "launched": "2011-08-30",
+  "url": "https://aws.amazon.com/directconnect/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Directory Service",
+  "prefix": "AWS",
+  "summary": "Host and manage active directory",
+  "category": "Security, Identity, & Compliance",
+  "launched": "2014-10-21",
+  "url": "https://aws.amazon.com/directoryservice/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Distro for OpenTelemetry",
+  "prefix": "AWS",
+  "summary": "Secure, production-ready open source distribution with predictable performance",
+  "category": "Management & Governance",
+  "launched": "2020-10-21",
+  "url": "https://aws.amazon.com/otel/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Elastic Beanstalk",
+  "prefix": "AWS",
+  "summary": "Run and manage web apps",
+  "category": "Compute",
+  "launched": "2020-04-09",
+  "url": "https://aws.amazon.com/elasticbeanstalk/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Elastic Disaster Recovery (DRS)",
+  "prefix": "AWS",
+  "summary": "Scalable, cost-effective application recovery to AWS",
+  "category": "Storage",
+  "launched": "2019-10-31",
+  "url": "https://aws.amazon.com/disaster-recovery/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Elemental Appliances & Software",
+  "prefix": "AWS",
+  "summary": "On-premises media solutions",
+  "category": "Media Services",
+  "launched": "2019-08-07",
+  "url": "https://aws.amazon.com/elemental-appliances-software/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Elemental MediaConnect",
+  "prefix": "AWS",
+  "summary": "Reliable and secure live video transport",
+  "category": "Media Services",
+  "launched": "2018-11-27",
+  "url": "https://aws.amazon.com/mediaconnect/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Elemental MediaConvert",
+  "prefix": "AWS",
+  "summary": "Convert file-based video content",
+  "category": "Media Services",
+  "launched": "2017-11-26",
+  "url": "https://aws.amazon.com/mediaconvert/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Elemental MediaLive",
+  "prefix": "AWS",
+  "summary": "Convert live video content",
+  "category": "Media Services",
+  "launched": "2017-11-26",
+  "url": "https://aws.amazon.com/medialive/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Elemental MediaPackage",
+  "prefix": "AWS",
+  "summary": "Video origination and packaging",
+  "category": "Media Services",
+  "launched": "2017-11-26",
+  "url": "https://aws.amazon.com/mediapackage/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Elemental MediaStore",
+  "prefix": "AWS",
+  "summary": "Media storage and simple http origin",
+  "category": "Media Services",
+  "launched": "2017-11-26",
+  "url": "https://aws.amazon.com/mediastore/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Elemental MediaTailor",
+  "prefix": "AWS",
+  "summary": "Video personalization and monetization",
+  "category": "Media Services",
+  "launched": "2017-11-26",
+  "url": "https://aws.amazon.com/mediatailor/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS End User Messaging",
+  "prefix": "AWS",
+  "summary": "Dependable, cost-effective messaging without compromising safety, security, or results",
+  "category": "Business Applications",
+  "launched": "2024-07-24",
+  "url": "https://aws.amazon.com/end-user-messaging/pricing/",
+  "free_tier": null
+ },
+ {
+  "name": "AWS Fargate",
+  "prefix": "AWS",
+  "summary": "Serverless compute for containers",
+  "category": "Containers",
+  "launched": "2017-11-29",
+  "url": "https://aws.amazon.com/fargate/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Fault Injection Service",
+  "prefix": "AWS",
+  "summary": "Improve resiliency and performance with controlled experiments",
+  "category": "Developer Tools",
+  "launched": "2021-03-16",
+  "url": "https://aws.amazon.com/fis/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Firewall Manager",
+  "prefix": "AWS",
+  "summary": "Central management of firewall rules",
+  "category": "Security, Identity, & Compliance",
+  "launched": "2018-04-04",
+  "url": "https://aws.amazon.com/firewall-manager/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Global Accelerator",
+  "prefix": "AWS",
+  "summary": "Improve global application availability and performance",
+  "category": "Networking & Content Delivery",
+  "launched": "2018-11-26",
+  "url": "https://aws.amazon.com/global-accelerator/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Glue",
+  "prefix": "AWS",
+  "summary": "Simple, scalable, and serverless data integration",
+  "category": "Analytics",
+  "launched": "2016-12-01",
+  "url": "https://aws.amazon.com/glue/",
+  "free_tier": "Free Trial"
+ },
+ {
+  "name": "AWS Ground Station",
+  "prefix": "AWS",
+  "summary": "Fully managed ground station as a service",
+  "category": "Satellite",
+  "launched": "2019-05-22",
+  "url": "https://aws.amazon.com/ground-station/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Health",
+  "prefix": "AWS",
+  "summary": "Data source for events and changes affecting your AWS cloud resources",
+  "category": "Management & Governance",
+  "launched": "2023-10-09",
+  "url": "https://aws.amazon.com/premiumsupport/technology/aws-health/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS HealthOmics",
+  "prefix": "AWS",
+  "summary": "Transform omics data into insights",
+  "category": "Machine Learning",
+  "launched": "2022-11-29",
+  "url": "https://aws.amazon.com/omics/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS IAM Identity Center",
+  "prefix": "AWS",
+  "summary": "Manage single sign-on access to AWS accounts and apps",
+  "category": "Security, Identity, & Compliance",
+  "launched": null,
+  "url": "https://aws.amazon.com/iam/identity-center/",
+  "free_tier": null
+ },
+ {
+  "name": "AWS Identity and Access Management",
+  "prefix": "AWS",
+  "summary": "Securely manage access to services and resources",
+  "category": "Security, Identity, & Compliance",
+  "launched": "2011-05-03",
+  "url": "https://aws.amazon.com/iam/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Inferentia",
+  "prefix": "AWS",
+  "summary": "Machine learning inference chip",
+  "category": "Machine Learning",
+  "launched": "2018-11-28",
+  "url": "https://aws.amazon.com/machine-learning/inferentia/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS IoT 1-Click",
+  "prefix": "AWS",
+  "summary": "One click creation of an AWS Lambda trigger",
+  "category": "Internet of Things",
+  "launched": "2018-05-16",
+  "url": "https://aws.amazon.com/iot-1-click/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS IoT Analytics",
+  "prefix": "AWS",
+  "summary": "Analytics for IoT devices",
+  "category": "Internet of Things",
+  "launched": "2017-11-29",
+  "url": "https://aws.amazon.com/iot-analytics/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS IoT Button",
+  "prefix": "AWS",
+  "summary": "Cloud programmable dash button",
+  "category": "Internet of Things",
+  "launched": "2015-10-08",
+  "url": "https://aws.amazon.com/iotbutton/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS IoT Core",
+  "prefix": "AWS",
+  "summary": "Connect devices to the cloud",
+  "category": "Internet of Things",
+  "launched": "2015-12-18",
+  "url": "https://aws.amazon.com/iot-core/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS IoT Device Defender",
+  "prefix": "AWS",
+  "summary": "Security management for IoT devices",
+  "category": "Internet of Things",
+  "launched": "2017-11-29",
+  "url": "https://aws.amazon.com/iot-device-defender/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS IoT Device Management",
+  "prefix": "AWS",
+  "summary": "Onboard, organize, and remotely manage IoT devices",
+  "category": "Internet of Things",
+  "launched": "2017-11-29",
+  "url": "https://aws.amazon.com/iot-device-management/",
+  "free_tier": "12 Months Free"
+ },
+ {
+  "name": "AWS IoT EduKit",
+  "prefix": "AWS",
+  "summary": "Learn how to build simple IoT applications with reference hardware and step-by-step tutorials",
+  "category": "Internet of Things",
+  "launched": "2020-12-15",
+  "url": "https://aws.amazon.com/iot/edukit/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS IoT Events",
+  "prefix": "AWS",
+  "summary": "IoT event detection and response",
+  "category": "Internet of Things",
+  "launched": "2019-05-30",
+  "url": "https://aws.amazon.com/iot-events/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS IoT FleetWise",
+  "prefix": "AWS",
+  "summary": "Easily collect, transform, and transfer vehicle data to the cloud in near-real time",
+  "category": "Internet of Things",
+  "launched": "2021-11-30",
+  "url": "https://aws.amazon.com/iot-fleetwise/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS IoT Greengrass",
+  "prefix": "AWS",
+  "summary": "Local compute, messaging, and sync for devices",
+  "category": "Internet of Things",
+  "launched": "2017-06-07",
+  "url": "https://aws.amazon.com/greengrass/",
+  "free_tier": "12 Months Free"
+ },
+ {
+  "name": "AWS IoT RoboRunner",
+  "prefix": "AWS",
+  "summary": "Build applications that help fleets of robots work together seamlessly",
+  "category": "Internet of Things",
+  "launched": "2022-11-23",
+  "url": "https://aws.amazon.com/roborunner",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS IoT SiteWise",
+  "prefix": "AWS",
+  "summary": "IoT data collector and interpreter",
+  "category": "Internet of Things",
+  "launched": "2020-07-09",
+  "url": "https://aws.amazon.com/iot-sitewise/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS IoT TwinMaker",
+  "prefix": "AWS",
+  "summary": "Optimize operations by easily creating digital twins of real-world systems",
+  "category": "Internet of Things",
+  "launched": "2021-11-30",
+  "url": "https://aws.amazon.com/iot-twinmaker/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Key Management Service (KMS)",
+  "prefix": "AWS",
+  "summary": "Managed creation and control of encryption keys",
+  "category": "Security, Identity, & Compliance",
+  "launched": "2014-11-12",
+  "url": "https://aws.amazon.com/kms/",
+  "free_tier": "Always Free"
+ },
+ {
+  "name": "AWS Lake Formation",
+  "prefix": "AWS",
+  "summary": "Build a secure data lake in days",
+  "category": "Analytics",
+  "launched": "2019-08-09",
+  "url": "https://aws.amazon.com/lake-formation/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Lambda",
+  "prefix": "AWS",
+  "summary": "Run code without thinking about servers",
+  "category": "Compute",
+  "launched": "2015-04-15",
+  "url": "https://aws.amazon.com/lambda/",
+  "free_tier": "Free Trial"
+ },
+ {
+  "name": "AWS Launch Wizard",
+  "prefix": "AWS",
+  "summary": "Easily size, configure, and deploy third party applications on AWS",
+  "category": "Management & Governance",
+  "launched": "2019-11-13",
+  "url": "https://aws.amazon.com/launchwizard/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS License Manager",
+  "prefix": "AWS",
+  "summary": "Track, manage, and control licenses",
+  "category": "Management & Governance",
+  "launched": "2018-11-28",
+  "url": "https://aws.amazon.com/license-manager/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Local Zones",
+  "prefix": "AWS",
+  "summary": "Run latency sensitive applications closer to end users",
+  "category": "Compute",
+  "launched": "2019-12-03",
+  "url": "https://aws.amazon.com/about-aws/global-infrastructure/localzones/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Mainframe Modernization",
+  "prefix": "AWS",
+  "summary": "Migrate, modernize, operate, and run mainframe workloads",
+  "category": "Migration",
+  "launched": "2021-11-30",
+  "url": "https://aws.amazon.com/mainframe-modernization/",
+  "free_tier": null
+ },
+ {
+  "name": "AWS Managed Services",
+  "prefix": "AWS",
+  "summary": "Infrastructure operations management for AWS",
+  "category": "Management & Governance",
+  "launched": "2016-12-12",
+  "url": "https://aws.amazon.com/managed-services/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Management Console",
+  "prefix": "AWS",
+  "summary": "Web-based user interface",
+  "category": "Management & Governance",
+  "launched": "2009-01-08",
+  "url": "https://aws.amazon.com/console/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Management Console Mobile Application",
+  "prefix": "AWS",
+  "summary": "Access resources on the go",
+  "category": "Management & Governance",
+  "launched": "2013-01-04",
+  "url": "https://aws.amazon.com/console/mobile/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Migration Hub",
+  "prefix": "AWS",
+  "summary": "Track migrations from a single place",
+  "category": "Migration",
+  "launched": "2017-08-14",
+  "url": "https://aws.amazon.com/migration-hub/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Network Firewall",
+  "prefix": "AWS",
+  "summary": "Deploy network security across your Amazon VPCs with just a few clicks",
+  "category": "Security, Identity, & Compliance",
+  "launched": "2020-11-19",
+  "url": "https://aws.amazon.com/network-firewall/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS OpsWorks",
+  "prefix": "AWS",
+  "summary": "Automate operations with Chef and Puppet",
+  "category": "Management & Governance",
+  "launched": "2013-02-18",
+  "url": "https://aws.amazon.com/opsworks/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Organizations",
+  "prefix": "AWS",
+  "summary": "Central governance and management across AWS accounts",
+  "category": "Management & Governance",
+  "launched": "2017-02-27",
+  "url": "https://aws.amazon.com/organizations/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Outposts",
+  "prefix": "AWS",
+  "summary": "Run AWS infrastructure on-premises",
+  "category": "Compute",
+  "launched": "2019-12-03",
+  "url": "https://aws.amazon.com/outposts/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Panorama",
+  "prefix": "AWS",
+  "summary": "Improve your operations with computer vision at the edge",
+  "category": "Machine Learning",
+  "launched": "2020-12-01",
+  "url": "https://aws.amazon.com/panorama/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Partner Device Catalog",
+  "prefix": "AWS",
+  "summary": "Curated catalog of AWS-compatible IoT hardware",
+  "category": "Internet of Things",
+  "launched": "2018-11-27",
+  "url": "https://devices.amazonaws.com/?did=ap_card&trk=ap_card",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Personal Health Dashboard",
+  "prefix": "AWS",
+  "summary": "Personalized view of AWS service health",
+  "category": "Management & Governance",
+  "launched": "2016-12-01",
+  "url": "https://aws.amazon.com/premiumsupport/technology/personal-health-dashboard/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Private 5G",
+  "prefix": "AWS",
+  "summary": "Easily deploy, manage, and scale a private cellular network",
+  "category": "Networking & Content Delivery",
+  "launched": "2021-11-30",
+  "url": "https://aws.amazon.com/private5g/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS PrivateLink",
+  "prefix": "AWS",
+  "summary": "Securely access services hosted on AWS",
+  "category": "Networking & Content Delivery",
+  "launched": "2017-11-08",
+  "url": "https://aws.amazon.com/privatelink/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Proton",
+  "prefix": "AWS",
+  "summary": "Automate management for container and serverless deployments",
+  "category": "Management & Governance",
+  "launched": "2021-06-09",
+  "url": "https://aws.amazon.com/proton/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Resilience Hub",
+  "prefix": "AWS",
+  "summary": "Prepare and protect your applications from disruptions",
+  "category": "Management & Governance",
+  "launched": "2021-11-10",
+  "url": "https://aws.amazon.com/resilience-hub/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Resource Access Manager",
+  "prefix": "AWS",
+  "summary": "Simple, secure service to share AWS resources",
+  "category": "Security, Identity, & Compliance",
+  "launched": "2018-12-06",
+  "url": "https://aws.amazon.com/ram/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS RoboMaker",
+  "prefix": "AWS",
+  "summary": "Develop, test, and deploy robotics applications",
+  "category": "Robotics",
+  "launched": "2018-11-26",
+  "url": "https://aws.amazon.com/robomaker/",
+  "free_tier": "Free Trial"
+ },
+ {
+  "name": "AWS Secrets Manager",
+  "prefix": "AWS",
+  "summary": "Rotate, manage, and retrieve secrets",
+  "category": "Security, Identity, & Compliance",
+  "launched": "2018-04-04",
+  "url": "https://aws.amazon.com/secrets-manager/",
+  "free_tier": "Free Trial"
+ },
+ {
+  "name": "AWS Security Hub",
+  "prefix": "AWS",
+  "summary": "Unified security and compliance center",
+  "category": "Security, Identity, & Compliance",
+  "launched": "2019-06-24",
+  "url": "https://aws.amazon.com/security-hub/",
+  "free_tier": "Free Trial"
+ },
+ {
+  "name": "AWS Serverless Application Repository",
+  "prefix": "AWS",
+  "summary": "Discover, deploy, and publish serverless applications",
+  "category": "Compute",
+  "launched": "2018-02-21",
+  "url": "https://aws.amazon.com/serverless/serverlessrepo/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Service Catalog",
+  "prefix": "AWS",
+  "summary": "Create and use standardized products",
+  "category": "Management & Governance",
+  "launched": "2015-07-09",
+  "url": "https://aws.amazon.com/servicecatalog/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Service Management Connector",
+  "prefix": "AWS",
+  "summary": "Provision, manage and operate AWS resources within Service Management Tools",
+  "category": "Management & Governance",
+  "launched": "2022-09-14",
+  "url": "https://aws.amazon.com/service-management-connector/",
+  "free_tier": null
+ },
+ {
+  "name": "AWS Shield",
+  "prefix": "AWS",
+  "summary": "DDoS protection",
+  "category": "Security, Identity, & Compliance",
+  "launched": "2016-12-01",
+  "url": "https://aws.amazon.com/shield/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS SimSpace Weaver",
+  "prefix": "AWS",
+  "summary": "Build dynamic, large-scale spatial simulations on AWS managed infrastructure",
+  "category": "Compute",
+  "launched": "2022-11-29",
+  "url": "https://aws.amazon.com/simspaceweaver/",
+  "free_tier": null
+ },
+ {
+  "name": "AWS Snow Family",
+  "prefix": "AWS",
+  "summary": "Physical edge computing and storage devices for rugged or disconnected environments",
+  "category": "Storage",
+  "launched": "2015-10-07",
+  "url": "https://aws.amazon.com/snow/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Step Functions",
+  "prefix": "AWS",
+  "summary": "Coordination for distributed applications",
+  "category": "Application Integration",
+  "launched": "2016-12-01",
+  "url": "https://aws.amazon.com/step-functions/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Storage Gateway",
+  "prefix": "AWS",
+  "summary": "Hybrid storage integration",
+  "category": "Storage",
+  "launched": "2012-01-24",
+  "url": "https://aws.amazon.com/storagegateway/",
+  "free_tier": "Always Free"
+ },
+ {
+  "name": "AWS Supply Chain",
+  "prefix": "AWS",
+  "summary": "Mitigate risks and lower costs with an ML-powered supply chain application",
+  "category": "Business Applications",
+  "launched": "2022-11-29",
+  "url": "https://aws.amazon.com/aws-supply-chain/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Systems Manager",
+  "prefix": "AWS",
+  "summary": "Gain operational insights and take action",
+  "category": "Management & Governance",
+  "launched": "2017-11-29",
+  "url": "https://aws.amazon.com/systems-manager/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Tools and SDKs",
+  "prefix": "AWS",
+  "summary": "Tools and SDKs for AWS",
+  "category": "Developer Tools",
+  "launched": "2009-11-11",
+  "url": "https://aws.amazon.com/getting-started/tools-sdks/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Transfer Family",
+  "prefix": "AWS",
+  "summary": "Fully managed SFTP, FTPS, and FTP service",
+  "category": "Migration",
+  "launched": "2018-11-25",
+  "url": "https://aws.amazon.com/aws-transfer-family/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Transit Gateway",
+  "prefix": "AWS",
+  "summary": "Easily scale VPC and account connections",
+  "category": "Networking & Content Delivery",
+  "launched": "2018-11-26",
+  "url": "https://aws.amazon.com/transit-gateway/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Trusted Advisor",
+  "prefix": "AWS",
+  "summary": "Optimize performance and security",
+  "category": "Management & Governance",
+  "launched": "2012-01-30",
+  "url": "https://aws.amazon.com/premiumsupport/technology/trusted-advisor/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS User Notifications",
+  "prefix": "AWS",
+  "summary": "Configure and view notifications from AWS services",
+  "category": "Management & Governance",
+  "launched": "2023-03-29",
+  "url": "https://aws.amazon.com/notifications/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Verified Access",
+  "prefix": "AWS",
+  "summary": "Provide secure access to corporate applications without a VPN",
+  "category": "Networking & Content Delivery",
+  "launched": "2022-11-29",
+  "url": "https://aws.amazon.com/verified-access/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS VPN",
+  "prefix": "AWS",
+  "summary": "Securely access your network resources",
+  "category": "Networking & Content Delivery",
+  "launched": "2018-12-18",
+  "url": "https://aws.amazon.com/vpn/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS WAF",
+  "prefix": "AWS",
+  "summary": "Filter malicious web traffic",
+  "category": "Security, Identity, & Compliance",
+  "launched": "2015-10-06",
+  "url": "https://aws.amazon.com/waf/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Wavelength",
+  "prefix": "AWS",
+  "summary": "Deliver ultra-low latency applications for 5G devices",
+  "category": "Compute",
+  "launched": "2019-12-03",
+  "url": "https://aws.amazon.com/wavelength/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Well-Architected Tool",
+  "prefix": "AWS",
+  "summary": "Review and improve your workloads",
+  "category": "Architecture Strategy",
+  "launched": "2018-11-29",
+  "url": "https://aws.amazon.com/well-architected-tool/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "AWS Wickr",
+  "prefix": "AWS",
+  "summary": "Protect enterprise communications with end-to-end encryption",
+  "category": "Business Applications",
+  "launched": "2022-11-28",
+  "url": "https://aws.amazon.com/wickr/",
+  "free_tier": "Free Trial"
+ },
+ {
+  "name": "AWS X-Ray",
+  "prefix": "AWS",
+  "summary": "Analyze and debug your applications",
+  "category": "Developer Tools",
+  "launched": "2017-04-19",
+  "url": "https://aws.amazon.com/xray/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "B2B Data Interchange",
+  "prefix": "Other",
+  "summary": "AWS B2B Data Interchange automates the transformation of EDI documents into common data representations such as JSON and XML at scale",
+  "category": "Application Integration",
+  "launched": "2023-11-27",
+  "url": "https://aws.amazon.com/b2b-data-interchange/",
+  "free_tier": null
+ },
+ {
+  "name": "EC2 Image Builder",
+  "prefix": "Other",
+  "summary": "Build and maintain secure Linux or Windows Server images",
+  "category": "Compute",
+  "launched": null,
+  "url": "https://aws.amazon.com/image-builder/",
+  "free_tier": null
+ },
+ {
+  "name": "Elastic Load Balancing (ELB)",
+  "prefix": "Other",
+  "summary": "Distribute incoming traffic across multiple targets",
+  "category": "Networking & Content Delivery",
+  "launched": "2009-05-17",
+  "url": "https://aws.amazon.com/elasticloadbalancing/",
+  "free_tier": "12 Months Free"
+ },
+ {
+  "name": "FreeRTOS",
+  "prefix": "Other",
+  "summary": "Real-time operating system for microcontrollers",
+  "category": "Internet of Things",
+  "launched": "2017-11-29",
+  "url": "https://aws.amazon.com/freertos/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "Migration Evaluator (formerly TSO Logic)",
+  "prefix": "Other",
+  "summary": "Create a business case for cloud migration",
+  "category": "Migration",
+  "launched": "2020-07-20",
+  "url": "https://aws.amazon.com/migration-evaluator/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "PyTorch on AWS",
+  "prefix": "Other",
+  "summary": "Flexible open-source machine learning framework",
+  "category": "Machine Learning",
+  "launched": "2018-06-20",
+  "url": "https://aws.amazon.com/pytorch/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "Red Hat OpenShift Service on AWS",
+  "prefix": "Other",
+  "summary": "Managed OpenShift in the cloud",
+  "category": "Containers",
+  "launched": "2021-03-24",
+  "url": "https://aws.amazon.com/rosa/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "Reserved Instance (RI) Reporting",
+  "prefix": "Other",
+  "summary": "Dive deeper into your reserved instances (RIs)",
+  "category": "Cloud Financial Management",
+  "launched": "2016-12-21",
+  "url": "https://aws.amazon.com/aws-cost-management/reserved-instance-reporting/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "Savings Plans",
+  "prefix": "Other",
+  "summary": "Save up to 72% on compute usage with flexible pricing",
+  "category": "Cloud Financial Management",
+  "launched": "2019-11-06",
+  "url": "https://aws.amazon.com/savingsplans/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "TensorFlow on AWS",
+  "prefix": "Other",
+  "summary": "Open-source machine intelligence library",
+  "category": "Machine Learning",
+  "launched": "2017-07-14",
+  "url": "https://aws.amazon.com/tensorflow/",
+  "free_tier": "<p> </p>"
+ },
+ {
+  "name": "VMware Cloud on AWS",
+  "prefix": "Other",
+  "summary": "Build a hybrid cloud without custom hardware",
+  "category": "Compute",
+  "launched": "2017-08-28",
+  "url": "https://aws.amazon.com/vmware/",
+  "free_tier": "<p> </p>"
+ }
+]

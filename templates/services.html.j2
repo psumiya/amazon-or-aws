@@ -1,0 +1,79 @@
+{% extends "base.html.j2" %}
+{% block title %}Is it Amazon or AWS? Every AWS service by name · Amazon or AWS{% endblock %}
+{% block description %}Find out whether an AWS service name starts with Amazon or AWS, across all {{ total }} services AWS lists.{% endblock %}
+{% block main %}
+<main class="wrap services">
+  <section class="verdict" aria-labelledby="verdict-h">
+    <h1 id="verdict-h">Is it Amazon or AWS?</h1>
+    <p class="verdict-lede">AWS lists {{ total }} services. {{ counts["AWS"] }} names start with AWS, {{ counts["Amazon"] }} start with Amazon{% if counts["Other"] %}, and {{ counts["Other"] }} start with neither{% endif %}.</p>
+    <div class="split" role="img" aria-label="{{ counts['AWS'] }} AWS, {{ counts['Amazon'] }} Amazon, {{ counts['Other'] }} other">
+      {% for s in split %}
+      <div class="split-part split-{{ s.prefix|lower }}" style="flex-basis: {{ s.pct }}%">
+        <strong>{{ s.n }}</strong><span>{{ s.prefix }}</span>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  {% if chart %}
+  <section class="chart" aria-labelledby="chart-h">
+    <h2 id="chart-h">Launches by year</h2>
+    <p class="chart-sub">Each bar counts the services that launched that year, split by how they're named. Select a bar to list that year's launches.</p>
+    <figure>
+      <svg viewBox="0 0 {{ chart.width }} {{ chart.height }}" aria-labelledby="chart-h">
+        {% for b in chart.bars %}
+        {% if b.total %}
+        <g class="year-bar" data-year="{{ b.year }}" role="button" tabindex="0" aria-pressed="false" aria-label="{{ b.title }}. Show these services.">
+          <title>{{ b.title }}</title>
+          <rect class="bar-hit" x="{{ b.x - 2 }}" y="0" width="{{ b.w + 4 }}" height="{{ chart.label_y + 6 }}"></rect>
+          {% for seg in b.segs %}
+          <rect class="bar-{{ seg.prefix|lower }}" x="{{ b.x }}" y="{{ seg.y }}" width="{{ b.w }}" height="{{ seg.h }}"></rect>
+          {% endfor %}
+          <text class="bar-total" x="{{ b.x + b.w / 2 }}" y="{{ b.top - 4 }}" text-anchor="middle">{{ b.total }}</text>
+          {% if b.label %}<text x="{{ b.x + b.w / 2 }}" y="{{ chart.label_y }}" text-anchor="middle">{{ b.year }}</text>{% endif %}
+        </g>
+        {% elif b.label %}
+        <text x="{{ b.x + b.w / 2 }}" y="{{ chart.label_y }}" text-anchor="middle">{{ b.year }}</text>
+        {% endif %}
+        {% endfor %}
+      </svg>
+      <figcaption class="legend"><span class="key key-amazon">Amazon</span><span class="key key-aws">AWS</span><span class="key key-other">Other</span></figcaption>
+    </figure>
+  </section>
+  {% endif %}
+
+  <section class="lookup" id="lookup" aria-labelledby="lookup-h">
+    <h2 id="lookup-h">Look up a service</h2>
+    <div class="controls">
+      <label class="search">
+        <span class="visually-hidden">Search services</span>
+        <input type="search" id="q" placeholder="Try Lambda, S3 or Bedrock" autocomplete="off">
+      </label>
+      <div class="prefix-filter" role="group" aria-label="Filter by name prefix">
+        <button type="button" class="chip" data-prefix="all" aria-pressed="true">All</button>
+        <button type="button" class="chip chip-amazon" data-prefix="Amazon" aria-pressed="false">Amazon</button>
+        <button type="button" class="chip chip-aws" data-prefix="AWS" aria-pressed="false">AWS</button>
+        {% if counts["Other"] %}<button type="button" class="chip" data-prefix="Other" aria-pressed="false">Other</button>{% endif %}
+      </div>
+      <label class="category">
+        <span class="visually-hidden">Category</span>
+        <select id="category">
+          <option value="">All categories</option>
+          {% for c in categories %}<option>{{ c }}</option>{% endfor %}
+        </select>
+      </label>
+    </div>
+    <p class="result-count" aria-live="polite"><span id="shown">{{ total }}</span> of {{ total }} services<span id="year-note" hidden>, launched in <strong id="year-value"></strong> <button type="button" id="year-clear" class="link-button">Show all years</button></span></p>
+    <ul class="service-list">
+      {% for s in services %}
+      <li class="service" data-prefix="{{ s.prefix }}" data-category="{{ s.category }}" data-year="{{ s.year }}" data-search="{{ (s.name ~ ' ' ~ s.category ~ ' ' ~ s.summary)|lower }}">
+        <h3 class="service-name"><a href="{{ s.url }}" target="_blank" rel="noopener">{% if s.head %}<span class="p-{{ s.prefix|lower }}">{{ s.head }}</span>{% endif %}{{ s.rest }}</a></h3>
+        <p class="service-summary">{{ s.summary }}</p>
+        <p class="service-meta">{{ s.category }}{% if s.year %}<span>Launched {{ s.year }}</span>{% endif %}</p>
+      </li>
+      {% endfor %}
+    </ul>
+    <p class="empty services-empty" hidden>No service matches. Check the spelling or clear the filters.</p>
+  </section>
+</main>
+{% endblock %}

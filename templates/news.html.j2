@@ -1,0 +1,66 @@
+{% extends "base.html.j2" %}
+{% block title %}AWS news, launches and videos · Amazon or AWS{% endblock %}
+{% block description %}The latest from the AWS blogs, Last Week in AWS, AWS launch announcements and AWS videos on one page.{% endblock %}
+{% block main %}
+<main class="wrap news">
+  <section class="river" aria-labelledby="river-h">
+    <div class="river-head">
+      <h1 id="river-h">Latest on AWS</h1>
+      <div class="source-filter" role="group" aria-label="Show posts from">
+        <button type="button" class="chip" data-source="all" aria-pressed="true">All sources</button>
+        {% for s in sources %}
+        <button type="button" class="chip" data-source="{{ s.id }}" aria-pressed="false">{{ s.name }}</button>
+        {% endfor %}
+      </div>
+    </div>
+    {% for day in days %}
+    <section class="day" data-day>
+      <h2 class="day-label"><time datetime="{{ day.date }}">{{ day.label }}</time></h2>
+      <ol class="posts">
+        {% for p in day["items"] %}
+        <li class="post" data-source="{{ p.source_id }}">
+          <p class="post-source">{{ p.source }}</p>
+          <h3 class="post-title"><a href="{{ p.url }}" target="_blank" rel="noopener">{{ p.title }}</a></h3>
+          {% if p.summary %}<p class="post-summary">{{ p.summary }}</p>{% endif %}
+        </li>
+        {% endfor %}
+      </ol>
+    </section>
+    {% else %}
+    <p class="empty">No posts yet. They appear after the next daily fetch.</p>
+    {% endfor %}
+    <p class="empty filter-empty" hidden>Nothing from this source in the last few weeks. Pick another source above.</p>
+  </section>
+
+  <aside class="rail">
+    {% if launches %}
+    <section class="launches" aria-labelledby="launches-h">
+      <h2 id="launches-h" class="rail-h">Just launched</h2>
+      <p class="rail-sub">From <a href="https://aws.amazon.com/about-aws/whats-new/" target="_blank" rel="noopener">What's New with AWS</a></p>
+      <ul class="launch-list">
+        {% for l in launches["items"] %}
+        <li><time datetime="{{ l.published or '' }}">{{ l.published|short_date }}</time><a href="{{ l.url }}" target="_blank" rel="noopener">{{ l.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% endif %}
+    {% if videos %}
+    <section class="videos" aria-labelledby="videos-h">
+      <h2 id="videos-h" class="rail-h">Watch</h2>
+      <p class="rail-sub">From the <a href="https://www.youtube.com/@amazonwebservices" target="_blank" rel="noopener">AWS YouTube channel</a></p>
+      <ul class="video-list">
+        {% for v in videos["items"][:8] %}
+        <li>
+          <a href="{{ v.url }}" target="_blank" rel="noopener">
+            {% if v.thumbnail %}<img src="{{ v.thumbnail }}" alt="" loading="lazy" width="480" height="360">{% endif %}
+            <span>{{ v.title }}</span>
+          </a>
+          <time datetime="{{ v.published or '' }}">{{ v.published|short_date }}</time>
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% endif %}
+  </aside>
+</main>
+{% endblock %}

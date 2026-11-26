@@ -1,13 +1,36 @@
 = Amazon or AWS?
 
-Comprehensive list of Amazon Web Service Products, with an ability to quickly lookup if a service name begins with Amazon or AWS.
+AWS news in one place, plus every AWS service with a quick way to check whether its name starts with Amazon or AWS.
 
-== Preview
+Site: https://amazonoraws.com[amazonoraws.com]
 
-image:amazon-or-aws.gif[amazonoraws.com]
+== How it works
 
-== Link
-Go to site: https://amazonoraws.com[amazonoraws.com]
+A GitHub Actions workflow (`.github/workflows/daily.yml`) runs daily, on every push to `main`, and on demand. It fetches every source pinned in `data/sources.yaml`, commits the normalized JSON under `data/`, renders the static pages into `dist/`, and publishes them to GitHub Pages. The `CNAME` file serves the site at amazonoraws.com.
 
-== About this repository
-This repository hosts the source code for the above site.
+The browser receives finished HTML. There is no client-side feed parsing.
+
+[cols="1,3"]
+|===
+|Path |What it is
+
+|`data/sources.yaml` |Pinned feed URLs and the AWS products API URL. Edit to add or remove sources.
+|`data/feeds/*.json` |Latest items per feed. Written by the fetch step.
+|`data/services.json` |Every AWS service with its prefix, category and launch date.
+|`site_builder/fetch.py` |Fetches and normalizes sources. A failing source keeps its previous file.
+|`site_builder/build.py` |Renders `templates/` into `dist/index.html` (News) and `dist/amazon-or-aws.html` (Services).
+|`templates/` |Page markup, CSS and the small script for filtering and search.
+|===
+
+== Run locally
+
+[source,bash]
+----
+python3 -m venv .venv
+.venv/bin/pip install -r requirements.txt
+.venv/bin/python -m site_builder.fetch
+.venv/bin/python -m site_builder.build
+python3 -m http.server 8000 --directory dist
+----
+
+Then open http://localhost:8000.
