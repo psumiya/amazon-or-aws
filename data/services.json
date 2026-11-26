@@ -1134,15 +1134,6 @@
   "free_tier": "<p> </p>"
  },
  {
-  "name": "AWS Cloud WAN",
-  "prefix": "AWS",
-  "summary": "Easily build, manage, and monitor global wide area networks",
-  "category": "Networking & Content Delivery",
-  "launched": "2022-07-12",
-  "url": "https://aws.amazon.com/cloud-wan/",
-  "free_tier": "<p> </p>"
- },
- {
   "name": "AWS Cloud9",
   "prefix": "AWS",
   "summary": "Write, run, and debug code on a cloud IDE",
