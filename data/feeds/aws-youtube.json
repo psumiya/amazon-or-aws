@@ -1,0 +1,112 @@
+{
+ "id": "aws-youtube",
+ "name": "AWS on YouTube",
+ "role": "videos",
+ "items": [
+  {
+   "title": "How Marsh put AI into production in weeks with AWS Forward Deployed Engineering",
+   "url": "https://www.youtube.com/watch?v=8B9cMyM3D-c",
+   "published": "2026-11-24T18:09:27+00:00",
+   "summary": "Marsh set out to change how its highest-volume operations work, end to end, inside its own environment. After evaluating a wide range of firms, Marsh chose AWS Forward Deployed Engineering (FDE). AWS FDE engineers worked inside Marsh’s teams, infrastructure and platform. They…",
+   "thumbnail": "https://i1.ytimg.com/vi/8B9cMyM3D-c/hqdefault.jpg"
+  },
+  {
+   "title": "How do you migrate on-premises SQL Server & Oracle databases to Amazon RDS? | Amazon Web Services",
+   "url": "https://www.youtube.com/watch?v=Yrg2CpqDgVo",
+   "published": "2026-11-23T19:54:32+00:00",
+   "summary": "You can move your SQL Server and Oracle databases to Amazon RDS with minimal to no code changes. AWS manages the infrastructure underneath, so your team no longer has to. AWS Migration Competency Partners lead every step of the migration. Partners assess your environment and…",
+   "thumbnail": "https://i2.ytimg.com/vi/Yrg2CpqDgVo/hqdefault.jpg"
+  },
+  {
+   "title": "AWS: AI Answered How to keep control of an AI agent when I give it real work? | Amazon Web Services",
+   "url": "https://www.youtube.com/shorts/AkXw1abJfrE",
+   "published": "2026-11-23T19:13:35+00:00",
+   "summary": "How do I keep control of an AI agent when I give it real work? When an AI agent can move money, change infrastructure, or ship code, the hard part is not getting it to act. It is trusting it to stay inside the lines while it does the work that matters most. The shift is to stop…",
+   "thumbnail": "https://i2.ytimg.com/vi/AkXw1abJfrE/hqdefault.jpg"
+  },
+  {
+   "title": "AWS: AI Answered How to keep control of an AI agent when I give it real work? | Amazon Web Services",
+   "url": "https://www.youtube.com/shorts/PRghzZPtLos",
+   "published": "2026-11-23T19:13:32+00:00",
+   "summary": "How do I keep control of an AI agent when I give it real work? When an AI agent can move money, change infrastructure, or ship code, the hard part is not getting it to act. It is trusting it to stay inside the lines while it does the work that matters most. The shift is to stop…",
+   "thumbnail": "https://i1.ytimg.com/vi/PRghzZPtLos/hqdefault.jpg"
+  },
+  {
+   "title": "AWS: AI Answered How to keep control of an AI agent when I give it real work? | Amazon Web Services",
+   "url": "https://www.youtube.com/watch?v=gsIDY5fch2Q",
+   "published": "2026-11-23T19:13:23+00:00",
+   "summary": "How do I keep control of an AI agent when I give it real work? When an AI agent can move money, change infrastructure, or ship code, the hard part is not getting it to act. It is trusting it to stay inside the lines while it does the work that matters most. The shift is to stop…",
+   "thumbnail": "https://i4.ytimg.com/vi/gsIDY5fch2Q/hqdefault.jpg"
+  },
+  {
+   "title": "Barracuda Builds a Data Foundation on AWS to Power AI Threat Protection | Amazon Web Services",
+   "url": "https://www.youtube.com/watch?v=snmVFrr3lkc",
+   "published": "2026-11-23T19:02:12+00:00",
+   "summary": "Learn how Barracuda uses OpenSearch Serverless to scale threat detection across billions of daily objects and protect nearly 200,000 businesses worldwide. Key highlights: Protects almost 200,000 businesses globally from threats to applications, networks, email, and identity…",
+   "thumbnail": "https://i4.ytimg.com/vi/snmVFrr3lkc/hqdefault.jpg"
+  },
+  {
+   "title": "How do I connect to my Amazon EC2 instance if I lose my SSH key pair?",
+   "url": "https://www.youtube.com/watch?v=18vAVPzVn6c",
+   "published": "2026-11-23T19:00:39+00:00",
+   "summary": "Lost the SSH key pair for your Amazon EC2 instance? Shiva Prasad walks through several ways to get back in: a new key pair with user data, Systems Manager, EC2 Instance Connect, the EC2 Serial Console, and a rescue instance. 0:00 Introduction 0:29 Create a new key pair 0:56 Get…",
+   "thumbnail": "https://i2.ytimg.com/vi/18vAVPzVn6c/hqdefault.jpg"
+  },
+  {
+   "title": "Halloween Theme Park Edition | GameDay Rapid Replay",
+   "url": "https://www.youtube.com/watch?v=fexlVhT7BKI",
+   "published": "2026-11-23T18:09:14+00:00",
+   "summary": "Join the GameDay team as they try to open the first ever theme park from Unicorn.Rentals! Halloween will never be the same as we work through getting the gates open by squashing bugs in our all Serverless architecture that powers the frightful and fabulous attractions at…",
+   "thumbnail": "https://i3.ytimg.com/vi/fexlVhT7BKI/hqdefault.jpg"
+  },
+  {
+   "title": "How do I securely access the Amazon EKS cluster API server endpoint from within a VPC or peered VPC?",
+   "url": "https://www.youtube.com/watch?v=rNDILlKxrzg",
+   "published": "2026-11-21T19:00:18+00:00",
+   "summary": "Want to keep your Amazon EKS API server off the public internet? Harpreet shows how to switch your cluster to private endpoint access so you can reach it only from within your VPC or a peered VPC. 0:00 Introduction 0:20 Before you turn on private access 0:53 Change endpoint…",
+   "thumbnail": "https://i3.ytimg.com/vi/rNDILlKxrzg/hqdefault.jpg"
+  },
+  {
+   "title": "Level Up Before You Graduate",
+   "url": "https://www.youtube.com/watch?v=0VpAGa2yWec",
+   "published": "2026-11-21T06:14:07+00:00",
+   "summary": "We’re showing students how to get start building for free",
+   "thumbnail": "https://i1.ytimg.com/vi/0VpAGa2yWec/hqdefault.jpg"
+  },
+  {
+   "title": "How do I resolve an AWS STS security token error when I use the AWS CLI to assume an IAM role?",
+   "url": "https://www.youtube.com/watch?v=VFzG81EfB0Y",
+   "published": "2026-11-20T19:00:07+00:00",
+   "summary": "Getting the \"security token included in the request is expired\" error when you assume an IAM role with the AWS CLI? Kevin shows how to check your system clock and profiles, set up automatic credential refresh, and manually assume the role. 0:00 Introduction 0:18 Why the token…",
+   "thumbnail": "https://i3.ytimg.com/vi/VFzG81EfB0Y/hqdefault.jpg"
+  },
+  {
+   "title": "Amazon MSK: In-Place Upgrade from Standard to Express Broker | Amazon Web Services",
+   "url": "https://www.youtube.com/watch?v=kyWIT7O-8UI",
+   "published": "2026-11-19T22:58:43+00:00",
+   "summary": "Learn how to seamlessly upgrade your Amazon MSK cluster from Standard to Express brokers — without downtime or data migration. In this hands-on demo, we walk you through the in-place upgrade process, showing you how to unlock the powerful performance benefits of MSK Express…",
+   "thumbnail": "https://i4.ytimg.com/vi/kyWIT7O-8UI/hqdefault.jpg"
+  },
+  {
+   "title": "Amazon Bedrock で Anthropic Claude モデルにアクセスする方法を教えてください。",
+   "url": "https://www.youtube.com/watch?v=Z9eG21TL4aE",
+   "published": "2026-11-19T19:00:32+00:00",
+   "summary": "Yuki さんは、Amazon Bedrock で Anthropic Claude モデルにアクセスする方法をご紹介します。 Getting an \"Access denied\" error when you call Anthropic Claude models on Amazon Bedrock? Yuki shows how to set up the right permissions so you can access the models. For more information, see the Knowledge Center…",
+   "thumbnail": "https://i3.ytimg.com/vi/Z9eG21TL4aE/hqdefault.jpg"
+  },
+  {
+   "title": "AI Agent BUSTED After Reading Secret Data",
+   "url": "https://www.youtube.com/watch?v=0S3NB-EajJY",
+   "published": "2026-11-19T08:18:18+00:00",
+   "summary": "Subscribe to AWS: https://go.aws/subscribe Create a free AWS account: https://go.aws/signup Try AWS for free: https://go.aws/free Connect with an expert: https://go.aws/contact Explore more: https://go.aws/more Next steps: Explore on AWS in Analyst Research…",
+   "thumbnail": "https://i1.ytimg.com/vi/0S3NB-EajJY/hqdefault.jpg"
+  },
+  {
+   "title": "Set your AWS Lambda timeout inside your Amazon API Gateway timeout",
+   "url": "https://www.youtube.com/shorts/-rEm31DFFCM",
+   "published": "2026-11-18T17:53:52+00:00",
+   "summary": "An Amazon API Gateway REST API waits up to 29 seconds for its integration by default. Set your AWS Lambda function timeout shorter than that, so your function returns its result or its own error while API Gateway is still waiting. 📖 Learn more…",
+   "thumbnail": "https://i2.ytimg.com/vi/-rEm31DFFCM/hqdefault.jpg"
+  }
+ ]
+}

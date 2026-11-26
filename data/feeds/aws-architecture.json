@@ -1,0 +1,147 @@
+{
+ "id": "aws-architecture",
+ "name": "AWS Architecture Blog",
+ "role": "river",
+ "items": [
+  {
+   "title": "How Bee implemented Zero Operator Access for personal AI on AWS",
+   "url": "https://aws.amazon.com/blogs/architecture/how-bee-implemented-zero-operator-access-for-personal-ai-on-aws/",
+   "published": "2026-11-20T18:49:05+00:00",
+   "summary": "Bee, an Amazon company, built a personal AI wearable with no mechanism for operators (Bee engineers, other Amazon employees, or AWS infrastructure operators) to access customer data. Learn how Bee uses Amazon EC2 instance attestation and the AWS Nitro System to achieve Zero…",
+   "thumbnail": null
+  },
+  {
+   "title": "AI coding agents on Amazon EC2 Mac: How Cognition scales Devin for macOS",
+   "url": "https://aws.amazon.com/blogs/architecture/ai-coding-agents-on-amazon-ec2-mac-how-cognition-scales-devin-for-macos/",
+   "published": "2026-11-20T01:10:14+00:00",
+   "summary": "Cognition gave its AI software engineer, Devin, a cloud Mac. Each Devin session gets a fresh macOS VM on Amazon EC2 Mac bare metal hosts, so Devin can build, run, and test iOS and macOS apps. Learn how Cognition built it with disk snapshots, a user-space network gateway…",
+   "thumbnail": null
+  },
+  {
+   "title": "How Country Road Group built a pattern-driven integration solution on AWS",
+   "url": "https://aws.amazon.com/blogs/architecture/how-country-road-group-built-a-pattern-driven-integration-solution-on-aws/",
+   "published": "2026-11-19T23:07:30+00:00",
+   "summary": "Country Road Group replaced Microsoft BizTalk with a pattern-driven, serverless integration platform on AWS. Learn how its Strategic Integration Platform works across four processing lanes, and get the open-source Enterprise Integration Patterns CDK library to apply the same…",
+   "thumbnail": null
+  },
+  {
+   "title": "Aderant modernizes analytics data pipeline with Apache Iceberg and AWS Lambda",
+   "url": "https://aws.amazon.com/blogs/architecture/aderant-modernizes-analytics-data-pipeline-with-apache-iceberg-and-aws-lambda/",
+   "published": "2026-11-19T00:36:23+00:00",
+   "summary": "Learn how Aderant modernized the data pipeline behind its Stridyn legal analytics platform with Apache Iceberg, AWS Lambda, and AWS Glue, moving from 15-minute batch cycles to an event-driven medallion architecture that processes change data capture events in single-digit…",
+   "thumbnail": null
+  },
+  {
+   "title": "How United Airlines streams database changes to Apache Iceberg with Amazon Data Firehose",
+   "url": "https://aws.amazon.com/blogs/architecture/how-united-airlines-streams-database-changes-to-apache-iceberg-with-amazon-data-firehose/",
+   "published": "2026-11-18T20:37:39+00:00",
+   "summary": "United Airlines built a near-real-time change data capture pipeline that replicates reference data from Amazon Aurora MySQL to open Apache Iceberg tables using AWS DMS, Amazon Kinesis Data Streams, and Amazon Data Firehose. This post shows how to reproduce the serverless…",
+   "thumbnail": null
+  },
+  {
+   "title": "Resilience testing your agents on Amazon Bedrock AgentCore",
+   "url": "https://aws.amazon.com/blogs/architecture/resilience-testing-your-agents-on-amazon-bedrock-agentcore/",
+   "published": "2026-11-18T20:06:14+00:00",
+   "summary": "When an AI agent's tools fail or return corrupted data, does it fail safe or confidently fabricate an answer? Learn how to inject tool-level faults (cancelled calls, corrupted responses, stripped fields) into a Strands agent on Amazon Bedrock AgentCore using AWS Fault Injection…",
+   "thumbnail": null
+  },
+  {
+   "title": "Block DNS threats with Infoblox rules in Amazon Route 53 Resolver DNS Firewall",
+   "url": "https://aws.amazon.com/blogs/architecture/block-dns-threats-with-infoblox-rules-in-amazon-route-53-resolver-dns-firewall/",
+   "published": "2026-11-18T18:35:14+00:00",
+   "summary": "Infoblox Threat Defense is now available in preview in Amazon Route 53 Resolver DNS Firewall, providing partner-managed DNS threat intelligence. Learn how to add an Infoblox managed rule to a rule group, test it in alert mode, monitor matches, and move to blocking.",
+   "thumbnail": null
+  },
+  {
+   "title": "How Rakbank built centralized observability at scale with Amazon OpenSearch Service",
+   "url": "https://aws.amazon.com/blogs/architecture/how-rakbank-built-centralized-observability-at-scale-with-amazon-opensearch-service/",
+   "published": "2026-11-17T16:03:22+00:00",
+   "summary": "Rakbank re-platformed logging for its retail digital banking workloads on a cross-account, Multi-AZ Amazon OpenSearch Service design that ingests ~150 GB/day through Fluent Bit, using hot/UltraWarm/cold tiering and Amazon S3 archival for 7-year compliance retention and ~55% cost…",
+   "thumbnail": null
+  },
+  {
+   "title": "Announcing updates to the AWS Well-Architected Framework",
+   "url": "https://aws.amazon.com/blogs/architecture/announcing-updates-to-the-aws-well-architected-framework-3/",
+   "published": "2026-11-16T20:03:26+00:00",
+   "summary": "Updates to the AWS Well-Architected Framework reorganize it into Well-Architected Cloud Foundations and Well-Architected Cloud Workloads, add new best practices, and bring the general availability of the AWS Well-Architected Agent for analyzing workloads and guiding remediation.",
+   "thumbnail": null
+  },
+  {
+   "title": "How Thermo Fisher Scientific built AI-powered patient matching on AWS",
+   "url": "https://aws.amazon.com/blogs/architecture/how-thermo-fisher-scientific-built-ai-powered-patient-matching-on-aws/",
+   "published": "2026-11-13T20:26:58+00:00",
+   "summary": "Learn how Thermo Fisher Scientific built an AI-powered patient-matching platform on AWS, modernizing its clinical trial recruitment data foundation and using AWS Countdown Premium to de-risk the production launch.",
+   "thumbnail": null
+  },
+  {
+   "title": "Modular regression testing framework built on AWS for large-scale systems",
+   "url": "https://aws.amazon.com/blogs/architecture/modular-regression-testing-framework-built-on-aws-for-large-scale-systems/",
+   "published": "2026-11-12T21:51:43+00:00",
+   "summary": "Regression testing must catch behavior changes before they reach production, yet synthetic tests miss real-world edge cases. This post walks through a modular framework, built on AWS, that replays a sample of production traffic against new code and automatically gates…",
+   "thumbnail": null
+  },
+  {
+   "title": "Scale distributed AI workloads with Ray and Anyscale on Amazon EC2",
+   "url": "https://aws.amazon.com/blogs/architecture/scale-distributed-ai-workloads-with-ray-and-anyscale-on-amazon-ec2/",
+   "published": "2026-11-12T20:51:20+00:00",
+   "summary": "Building multimodal AI/ML pipelines on Amazon EC2 means scaling distributed compute, controlling costs across stages, and keeping up with new models and hardware. This post shows how the Ray-powered Anyscale application on AWS helps you deploy Ray across three compute options…",
+   "thumbnail": null
+  },
+  {
+   "title": "Inside an enterprise AI agent: A governed, observable loop architecture",
+   "url": "https://aws.amazon.com/blogs/architecture/inside-an-enterprise-ai-agent-a-governed-observable-loop-architecture/",
+   "published": "2026-11-12T19:31:28+00:00",
+   "summary": "This post lays out a five-layer reference architecture for governed, observable enterprise AI agents on AWS: an API gateway, a five-phase agent runtime, a knowledge and state tier, platform services, and a cross-cutting trust and control framework. Each layer maps to managed AWS…",
+   "thumbnail": null
+  },
+  {
+   "title": "How Zillow runs 100 million daily notifications on AWS Step Functions",
+   "url": "https://aws.amazon.com/blogs/architecture/how-zillow-runs-100-million-daily-notifications-on-aws-step-functions/",
+   "published": "2026-11-11T23:25:00+00:00",
+   "summary": "Zillow sends more than 100 million personalized notifications a day, each as a short-lived AWS Step Functions Express workflow. See how the Comms Experience team replaced more than 10 campaign generators with one configuration-driven orchestration platform and a library of…",
+   "thumbnail": null
+  },
+  {
+   "title": "Self-service regional failover with Amazon Application Recovery Controller Region Switch and centralized ingress controls",
+   "url": "https://aws.amazon.com/blogs/architecture/self-service-regional-failover-with-amazon-application-recovery-controller-region-switch-and-centralized-ingress-controls/",
+   "published": "2026-11-10T16:48:09+00:00",
+   "summary": "Application teams in regulated enterprises can execute self-service regional failover with Amazon Application Recovery Controller (ARC) Region Switch, even behind centrally managed ingress proxy fleets. Learn how Transit Gateway peering, Route 53 Private Hosted Zones, and VPC…",
+   "thumbnail": null
+  },
+  {
+   "title": "Transforming fleet analytics for Novus Hi-Tech through agentic AI",
+   "url": "https://aws.amazon.com/blogs/architecture/transforming-fleet-analytics-for-novus-hi-tech-through-agentic-ai/",
+   "published": "2026-11-09T20:34:35+00:00",
+   "summary": "Learn how Novus Hi-Tech, with the AWS Prototyping and AI Customer Engineering (PACE) team, built FleetGPT, an agentic AI solution on Amazon Bedrock that turns fleet IoT data into real-time safety interventions through natural language querying, automated investigation, and…",
+   "thumbnail": null
+  },
+  {
+   "title": "How DeepL keeps closest-exit routing during maintenance with AWS Cloud WAN",
+   "url": "https://aws.amazon.com/blogs/architecture/how-deepl-keeps-closest-exit-routing-during-maintenance-with-aws-cloud-wan/",
+   "published": "2026-11-09T20:15:09+00:00",
+   "summary": "DeepL runs a multi-Region hybrid network across multiple AWS Regions and AWS Direct Connect locations. See how DeepL drains a single Direct Connect link for planned maintenance without packet loss or cross-Region rerouting, using AWS Cloud WAN and an on-premises AS_PATH prepend…",
+   "thumbnail": null
+  },
+  {
+   "title": "How OrderServ achieved up to 64% cost savings with multi-tenant ECS",
+   "url": "https://aws.amazon.com/blogs/architecture/how-orderserv-achieved-up-to-64-cost-savings-with-multi-tenant-ecs/",
+   "published": "2026-11-06T00:09:41+00:00",
+   "summary": "See how Cognizant and AWS Professional Services transformed the OrderServ food-ordering platform into a multi-tenant SaaS offering on shared Amazon ECS, cutting compute costs up to 64%, reducing scaling time from minutes to seconds, and lowering authentication costs by 80%.",
+   "thumbnail": null
+  },
+  {
+   "title": "How TUI scales threat modeling for 100+ teams with Amazon Bedrock",
+   "url": "https://aws.amazon.com/blogs/architecture/how-tui-scales-threat-modeling-for-100-teams-with-amazon-bedrock/",
+   "published": "2026-11-05T18:45:07+00:00",
+   "summary": "Learn how TUI, the world's leading tourism group, built an AI-powered threat modeling system on Amazon Bedrock and Amazon Bedrock AgentCore to scale security assessments across more than 100 product teams, cutting threat modeling time by up to 70% while applying security…",
+   "thumbnail": null
+  },
+  {
+   "title": "How to run a DR readiness engagement",
+   "url": "https://aws.amazon.com/blogs/architecture/how-to-run-a-dr-readiness-engagement/",
+   "published": "2026-11-02T17:26:49+00:00",
+   "summary": "This final post turns the DR framework into a repeatable engagement: a five-step sequence from kickoff and gap assessment through progressive validation to an updated recovery commitment, with a real before-and-after example and ways to compress the timeline from months to…",
+   "thumbnail": null
+  }
+ ]
+}
