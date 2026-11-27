@@ -6,7 +6,7 @@ Site: https://amazonoraws.com[amazonoraws.com]
 
 == How it works
 
-A GitHub Actions workflow (`.github/workflows/daily.yml`) runs daily, on every push to `main`, and on demand. It fetches every source pinned in `data/sources.yaml`, commits the normalized JSON under `data/`, renders the static pages into `dist/`, and publishes them to GitHub Pages. The `CNAME` file serves the site at amazonoraws.com.
+A GitHub Actions workflow (`.github/workflows/daily.yml`) runs daily, on every push to `main`, and on demand. It fetches every source pinned in `data/sources.yaml`, commits the normalized JSON under `data/`, renders the static pages into `dist/`, and publishes them to GitHub Pages. The custom domain amazonoraws.com is set in the repo's Pages settings, with DNS in Route 53.
 
 The browser receives finished HTML. There is no client-side feed parsing.
 

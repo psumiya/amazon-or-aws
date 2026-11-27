@@ -16,7 +16,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 DIST = ROOT / "dist"
 TEMPLATES = ROOT / "templates"
-STATIC = ["CNAME", "robots.txt"]
+STATIC = ["robots.txt"]
 
 
 def parse_time(value):
