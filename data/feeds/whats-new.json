@@ -158,17 +158,17 @@
    "thumbnail": null
   },
   {
-   "title": "Amazon API Gateway announces API Portal",
-   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-api-gateway-announces-api-portal/",
-   "published": "2026-11-23T20:00:00+00:00",
-   "summary": "Today, Amazon API Gateway announces API Portal , a new feature that discovers, governs, and documents the APIs and AI endpoints behind Amazon API Gateway, Application Load Balancer, and Amazon CloudFront across your AWS organization. Many organizations can't see which APIs are…",
-   "thumbnail": null
-  },
-  {
    "title": "Amazon SageMaker HyperPod now supports managed observability and user management extensions for Slurm clusters",
    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/sagemaker-hyperpod-extensions/",
    "published": "2026-11-23T20:00:00+00:00",
    "summary": "Amazon SageMaker HyperPod now supports managed cluster extensions for Slurm clusters. You can install, configure, update, and remove managed features through the SageMaker AI console or API. The first two extensions cover observability and user management. Earlier, every…",
+   "thumbnail": null
+  },
+  {
+   "title": "Amazon API Gateway announces API Portal",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-api-gateway-announces-api-portal/",
+   "published": "2026-11-23T20:00:00+00:00",
+   "summary": "Today, Amazon API Gateway announces API Portal , a new feature that discovers, governs, and documents the APIs and AI endpoints behind Amazon API Gateway, Application Load Balancer, and Amazon CloudFront across your AWS organization. Many organizations can't see which APIs are…",
    "thumbnail": null
   },
   {
